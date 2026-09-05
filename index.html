@@ -20,64 +20,49 @@ content="width=device-width, initial-scale=1.0">
    ===================================================== */
 
 :root {
-
-    --navy: #071827;
-    --navy-light: #102c42;
-    --navy-soft: #183b55;
-
-    --gold: #c7a45b;
-    --gold-light: #e2c982;
-    --gold-dark: #98742f;
-
-    --cream: #f6f3ec;
-    --white: #ffffff;
-
-    --text: #172737;
-    --muted: #748292;
+    --navy:#071827;
+    --navy-light:#102c42;
+    --navy-soft:#183b55;
+    --gold:#c7a45b;
+    --gold-light:#e2c982;
+    --gold-dark:#98742f;
+    --cream:#f6f3ec;
+    --white:#ffffff;
+    --text:#172737;
+    --muted:#748292;
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior:smooth;
 }
 
 body {
-
-    font-family:
-        "Segoe UI",
-        Tahoma,
-        Arial,
-        sans-serif;
-
-    background: var(--cream);
-
-    color: var(--text);
-
-    line-height: 1.8;
-
-    overflow-x: hidden;
+    font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+    background:var(--cream);
+    color:var(--text);
+    line-height:1.8;
+    overflow-x:hidden;
 }
 
 a {
-    text-decoration: none;
-    color: inherit;
+    text-decoration:none;
+    color:inherit;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+    max-width:100%;
+    display:block;
 }
 
 .container {
-
-    width: min(1180px, 90%);
-
-    margin: auto;
+    width:min(1180px,90%);
+    margin:auto;
 }
 
 
@@ -86,140 +71,89 @@ img {
    ===================================================== */
 
 header {
-
-    position: fixed;
-
-    top: 0;
-    right: 0;
-
-    width: 100%;
-
-    z-index: 1000;
-
-    background:
-        rgba(5,18,30,0.92);
-
-    backdrop-filter: blur(18px);
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,0.08);
+    position:fixed;
+    top:0;
+    right:0;
+    width:100%;
+    z-index:1000;
+    background:rgba(5,18,30,.92);
+    backdrop-filter:blur(18px);
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .navbar {
-
-    min-height: 88px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: space-between;
+    min-height:88px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
 }
 
 .brand {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 14px;
+    display:flex;
+    align-items:center;
+    gap:14px;
 }
 
 .brand img {
-
-    width: 64px;
-    height: 64px;
-
-    object-fit: contain;
-
-    border-radius: 8px;
+    width:64px;
+    height:64px;
+    object-fit:contain;
+    border-radius:8px;
 }
 
 .brand-name {
-
-    display: flex;
-
-    flex-direction: column;
-
-    line-height: 1.2;
+    display:flex;
+    flex-direction:column;
+    line-height:1.2;
 }
 
 .brand-name strong {
-
-    color: var(--gold-light);
-
-    font-size: 20px;
-
-    font-weight: 700;
-
-    letter-spacing: .5px;
+    color:var(--gold-light);
+    font-size:20px;
+    font-weight:700;
 }
 
 .brand-name span {
-
-    color: #93a2b0;
-
-    font-size: 9px;
-
-    margin-top: 4px;
-
-    letter-spacing: 1.5px;
+    color:#93a2b0;
+    font-size:9px;
+    margin-top:4px;
+    letter-spacing:1.5px;
 }
 
 .nav-links {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 32px;
+    display:flex;
+    align-items:center;
+    gap:32px;
 }
 
 .nav-links a {
-
-    color: #d5dee5;
-
-    font-size: 12px;
-
-    transition: .3s;
+    color:#d5dee5;
+    font-size:12px;
+    transition:.3s;
 }
 
 .nav-links a:hover {
-    color: var(--gold-light);
+    color:var(--gold-light);
 }
 
 .header-button {
-
-    border:
-        1px solid
-        var(--gold);
-
-    color: var(--gold-light);
-
-    padding: 9px 19px;
-
-    font-size: 11px;
-
-    transition: .3s;
+    border:1px solid var(--gold);
+    color:var(--gold-light);
+    padding:9px 19px;
+    font-size:11px;
+    transition:.3s;
 }
 
 .header-button:hover {
-
-    background: var(--gold);
-
-    color: var(--navy);
+    background:var(--gold);
+    color:var(--navy);
 }
 
 .menu-button {
-
-    display: none;
-
-    color: white;
-
-    font-size: 28px;
-
-    cursor: pointer;
+    display:none;
+    color:white;
+    font-size:28px;
+    cursor:pointer;
 }
 
 
@@ -228,31 +162,23 @@ header {
    ===================================================== */
 
 .hero {
-
-    min-height: 100vh;
-
-    position: relative;
-
-    display: flex;
-
-    align-items: center;
-
-    overflow: hidden;
+    min-height:100vh;
+    position:relative;
+    display:flex;
+    align-items:center;
+    overflow:hidden;
 
     background:
-
         radial-gradient(
             circle at 15% 25%,
             rgba(199,164,91,.15),
             transparent 26%
         ),
-
         radial-gradient(
             circle at 90% 70%,
             rgba(34,78,108,.35),
             transparent 30%
         ),
-
         linear-gradient(
             125deg,
             #030c15,
@@ -262,188 +188,125 @@ header {
 }
 
 .hero-circle {
-
-    position: absolute;
-
-    border:
-        1px solid
-        rgba(199,164,91,.15);
-
-    border-radius: 50%;
+    position:absolute;
+    border:1px solid rgba(199,164,91,.15);
+    border-radius:50%;
 }
 
 .circle-one {
-
-    width: 650px;
-    height: 650px;
-
-    left: -330px;
-    top: 10%;
+    width:650px;
+    height:650px;
+    left:-330px;
+    top:10%;
 }
 
 .circle-two {
-
-    width: 430px;
-    height: 430px;
-
-    left: -220px;
-    top: 25%;
+    width:430px;
+    height:430px;
+    left:-220px;
+    top:25%;
 }
 
 .circle-three {
-
-    width: 220px;
-    height: 220px;
-
-    left: -110px;
-    top: 38%;
+    width:220px;
+    height:220px;
+    left:-110px;
+    top:38%;
 }
 
 .hero-line {
-
-    position: absolute;
-
-    width: 1px;
-    height: 60%;
-
-    left: 11%;
-    top: 20%;
-
-    background:
-        linear-gradient(
-            transparent,
-            var(--gold),
-            transparent
-        );
-
-    opacity: .35;
+    position:absolute;
+    width:1px;
+    height:60%;
+    left:11%;
+    top:20%;
+    background:linear-gradient(
+        transparent,
+        var(--gold),
+        transparent
+    );
+    opacity:.35;
 }
 
 .hero-content {
-
-    position: relative;
-
-    z-index: 5;
-
-    max-width: 850px;
+    position:relative;
+    z-index:5;
+    max-width:850px;
 }
 
 .hero-tag {
-
-    display: flex;
-
-    align-items: center;
-
-    gap: 12px;
-
-    color: var(--gold-light);
-
-    font-size: 12px;
-
-    margin-bottom: 24px;
+    display:flex;
+    align-items:center;
+    gap:12px;
+    color:var(--gold-light);
+    font-size:12px;
+    margin-bottom:24px;
 }
 
 .hero-tag span {
-
-    width: 42px;
-    height: 1px;
-
-    background: var(--gold);
+    width:42px;
+    height:1px;
+    background:var(--gold);
 }
 
 .hero h1 {
-
-    color: white;
-
-    font-size:
-        clamp(48px,7vw,88px);
-
-    line-height: 1.05;
-
-    letter-spacing: -3px;
-
-    margin-bottom: 28px;
+    color:white;
+    font-size:clamp(48px,7vw,88px);
+    line-height:1.05;
+    letter-spacing:-3px;
+    margin-bottom:28px;
 }
 
 .hero h1 em {
-
-    color: var(--gold-light);
-
-    font-style: normal;
+    color:var(--gold-light);
+    font-style:normal;
 }
 
 .hero-description {
-
-    color: #b8c6d2;
-
-    max-width: 650px;
-
-    font-size: 15px;
-
-    margin-bottom: 35px;
+    color:#b8c6d2;
+    max-width:650px;
+    font-size:15px;
+    margin-bottom:35px;
 }
 
 .hero-actions {
-
-    display: flex;
-
-    gap: 13px;
+    display:flex;
+    gap:13px;
 }
 
 .button {
-
-    min-width: 160px;
-
-    padding: 13px 25px;
-
-    display: inline-flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    font-size: 12px;
-
-    transition: .35s;
+    min-width:160px;
+    padding:13px 25px;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    font-size:12px;
+    transition:.35s;
 }
 
 .button-gold {
-
-    color: var(--navy);
-
-    background:
-        linear-gradient(
-            135deg,
-            var(--gold),
-            var(--gold-light)
-        );
-
-    font-weight: 700;
+    color:var(--navy);
+    background:linear-gradient(
+        135deg,
+        var(--gold),
+        var(--gold-light)
+    );
+    font-weight:700;
 }
 
 .button-gold:hover {
-
-    transform: translateY(-4px);
-
-    box-shadow:
-        0 15px 35px
-        rgba(199,164,91,.2);
+    transform:translateY(-4px);
+    box-shadow:0 15px 35px rgba(199,164,91,.2);
 }
 
 .button-outline {
-
-    color: white;
-
-    border:
-        1px solid
-        rgba(255,255,255,.25);
+    color:white;
+    border:1px solid rgba(255,255,255,.25);
 }
 
 .button-outline:hover {
-
-    border-color: var(--gold);
-
-    color: var(--gold-light);
+    border-color:var(--gold);
+    color:var(--gold-light);
 }
 
 
@@ -452,46 +315,32 @@ header {
    ===================================================== */
 
 section {
-    padding: 110px 0;
+    padding:110px 0;
 }
 
 .section-heading {
-
-    max-width: 700px;
-
-    margin:
-        0 auto 65px;
-
-    text-align: center;
+    max-width:700px;
+    margin:0 auto 65px;
+    text-align:center;
 }
 
 .eyebrow {
-
-    color: var(--gold-dark);
-
-    font-size: 10px;
-
-    font-weight: 700;
-
-    letter-spacing: 3px;
+    color:var(--gold-dark);
+    font-size:10px;
+    font-weight:700;
+    letter-spacing:3px;
 }
 
 .section-heading h2 {
-
-    color: var(--navy);
-
-    font-size: 42px;
-
-    line-height: 1.35;
-
-    margin: 8px 0 12px;
+    color:var(--navy);
+    font-size:42px;
+    line-height:1.35;
+    margin:8px 0 12px;
 }
 
 .section-heading p {
-
-    color: var(--muted);
-
-    font-size: 13px;
+    color:var(--muted);
+    font-size:13px;
 }
 
 
@@ -500,176 +349,112 @@ section {
    ===================================================== */
 
 .about {
-    background: var(--cream);
+    background:var(--cream);
 }
 
 .about-layout {
-
-    display: grid;
-
-    grid-template-columns:
-        .9fr 1.1fr;
-
-    gap: 85px;
-
-    align-items: center;
+    display:grid;
+    grid-template-columns:.9fr 1.1fr;
+    gap:85px;
+    align-items:center;
 }
 
 .about-visual {
-
-    height: 500px;
-
-    position: relative;
-
-    background:
-        linear-gradient(
-            145deg,
-            #071827,
-            #0d3048
-        );
-
-    overflow: hidden;
+    height:500px;
+    position:relative;
+    background:linear-gradient(
+        145deg,
+        #071827,
+        #0d3048
+    );
+    overflow:hidden;
 }
 
 .about-visual::before {
-
-    content: "";
-
-    position: absolute;
-
-    width: 330px;
-    height: 330px;
-
-    border:
-        1px solid
-        rgba(199,164,91,.25);
-
-    border-radius: 50%;
-
-    top: 50%;
-    left: 50%;
-
-    transform:
-        translate(-50%,-50%);
+    content:"";
+    position:absolute;
+    width:330px;
+    height:330px;
+    border:1px solid rgba(199,164,91,.25);
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .about-visual::after {
-
-    content: "";
-
-    position: absolute;
-
-    width: 210px;
-    height: 210px;
-
-    border:
-        1px solid
-        rgba(199,164,91,.17);
-
-    border-radius: 50%;
-
-    top: 50%;
-    left: 50%;
-
-    transform:
-        translate(-50%,-50%);
+    content:"";
+    position:absolute;
+    width:210px;
+    height:210px;
+    border:1px solid rgba(199,164,91,.17);
+    border-radius:50%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
 }
 
 .about-symbol {
-
-    position: absolute;
-
-    top: 50%;
-    left: 50%;
-
-    transform:
-        translate(-50%,-50%);
-
-    width: 100px;
-    height: 100px;
-
-    border:
-        1px solid
-        var(--gold);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: var(--gold-light);
-
-    font-size: 42px;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    width:100px;
+    height:100px;
+    border:1px solid var(--gold);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold-light);
+    font-size:42px;
 }
 
 .about-corner {
-
-    position: absolute;
-
-    bottom: 30px;
-    right: 30px;
-
-    color: white;
+    position:absolute;
+    bottom:30px;
+    right:30px;
+    color:white;
 }
 
 .about-corner strong {
-
-    display: block;
-
-    color: var(--gold-light);
-
-    font-size: 24px;
+    display:block;
+    color:var(--gold-light);
+    font-size:24px;
 }
 
 .about-corner span {
-
-    color: #8ea0b1;
-
-    font-size: 10px;
+    color:#8ea0b1;
+    font-size:10px;
 }
 
 .about-text .small-title {
-
-    color: var(--gold-dark);
-
-    font-size: 12px;
-
-    font-weight: bold;
+    color:var(--gold-dark);
+    font-size:12px;
+    font-weight:bold;
 }
 
 .about-text h3 {
-
-    color: var(--navy);
-
-    font-size: 39px;
-
-    line-height: 1.4;
-
-    margin: 10px 0 22px;
+    color:var(--navy);
+    font-size:39px;
+    line-height:1.4;
+    margin:10px 0 22px;
 }
 
 .about-text h3 span {
-    color: var(--gold-dark);
+    color:var(--gold-dark);
 }
 
 .about-text p {
-
-    color: var(--muted);
-
-    font-size: 14px;
-
-    margin-bottom: 17px;
+    color:var(--muted);
+    font-size:14px;
+    margin-bottom:17px;
 }
 
 .gold-line {
-
-    width: 75px;
-    height: 2px;
-
-    background: var(--gold);
-
-    margin-top: 30px;
+    width:75px;
+    height:2px;
+    background:var(--gold);
+    margin-top:30px;
 }
 
 
@@ -678,99 +463,64 @@ section {
    ===================================================== */
 
 .why {
-    background: white;
+    background:white;
 }
 
 .why-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    border-top:
-        1px solid #e4dfd5;
-
-    border-right:
-        1px solid #e4dfd5;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    border-top:1px solid #e4dfd5;
+    border-right:1px solid #e4dfd5;
 }
 
 .why-card {
-
-    min-height: 270px;
-
-    padding: 38px;
-
-    border-left:
-        1px solid #e4dfd5;
-
-    border-bottom:
-        1px solid #e4dfd5;
-
-    transition: .35s;
+    min-height:270px;
+    padding:38px;
+    border-left:1px solid #e4dfd5;
+    border-bottom:1px solid #e4dfd5;
+    transition:.35s;
 }
 
 .why-card:hover {
-
-    background: var(--navy);
-
-    transform: translateY(-5px);
+    background:var(--navy);
+    transform:translateY(-5px);
 }
 
 .why-number {
-
-    color: var(--gold);
-
-    font-size: 11px;
-
-    letter-spacing: 2px;
+    color:var(--gold);
+    font-size:11px;
+    letter-spacing:2px;
 }
 
 .why-icon {
-
-    width: 46px;
-    height: 46px;
-
-    border:
-        1px solid
-        var(--gold);
-
-    margin:
-        28px 0 20px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    color: var(--gold);
-
-    font-size: 20px;
+    width:46px;
+    height:46px;
+    border:1px solid var(--gold);
+    margin:28px 0 20px;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    color:var(--gold);
+    font-size:20px;
 }
 
 .why-card h3 {
-
-    color: var(--navy);
-
-    font-size: 20px;
-
-    margin-bottom: 7px;
+    color:var(--navy);
+    font-size:20px;
+    margin-bottom:7px;
 }
 
 .why-card p {
-
-    color: var(--muted);
-
-    font-size: 12px;
+    color:var(--muted);
+    font-size:12px;
 }
 
 .why-card:hover h3 {
-    color: white;
+    color:white;
 }
 
 .why-card:hover p {
-    color: #9eacb9;
+    color:#9eacb9;
 }
 
 
@@ -779,115 +529,85 @@ section {
    ===================================================== */
 
 .projects {
-
-    background:
-        linear-gradient(
-            180deg,
-            #f3f0e8,
-            #eeeae1
-        );
+    background:linear-gradient(
+        180deg,
+        #f3f0e8,
+        #eeeae1
+    );
 }
 
 .projects-grid {
-
-    display: grid;
-
-    grid-template-columns:
-        repeat(12,1fr);
-
-    gap: 18px;
+    display:grid;
+    grid-template-columns:repeat(12,1fr);
+    gap:18px;
 }
 
 .project {
-
-    position: relative;
-
-    height: 350px;
-
-    overflow: hidden;
-
-    background: var(--navy);
-
-    border:
-        1px solid
-        rgba(199,164,91,.15);
-
-    cursor: default;
+    position:relative;
+    height:350px;
+    overflow:hidden;
+    background:var(--navy);
+    border:1px solid rgba(199,164,91,.15);
+    cursor:default;
 }
 
 .project.clickable {
-    cursor: pointer;
+    cursor:pointer;
 }
 
 .project:nth-child(1) {
-    grid-column: span 7;
+    grid-column:span 7;
 }
 
 .project:nth-child(2) {
-    grid-column: span 5;
+    grid-column:span 5;
 }
 
 .project:nth-child(3) {
-    grid-column: span 5;
+    grid-column:span 5;
 }
 
 .project:nth-child(4) {
-    grid-column: span 7;
+    grid-column:span 7;
 }
 
 .project img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-
-    transition: .6s;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition:.6s;
 }
 
 .project:hover img {
-    transform: scale(1.06);
+    transform:scale(1.06);
 }
 
 .project-overlay {
-
-    position: absolute;
-
-    inset: 0;
-
-    display: flex;
-
-    align-items: flex-end;
-
-    padding: 28px;
-
-    background:
-        linear-gradient(
-            transparent 25%,
-            rgba(2,10,17,.9)
-        );
+    position:absolute;
+    inset:0;
+    display:flex;
+    align-items:flex-end;
+    padding:28px;
+    background:linear-gradient(
+        transparent 25%,
+        rgba(2,10,17,.9)
+    );
 }
 
 .project-info {
-    width: 100%;
+    width:100%;
 }
 
 .project-label {
-
-    color: var(--gold-light);
-
-    font-size: 9px;
-
-    letter-spacing: 2px;
+    color:var(--gold-light);
+    font-size:9px;
+    letter-spacing:2px;
 }
 
 .project h3 {
-
-    color: white;
-
-    font-size: 22px;
-
-    margin-top: 5px;
+    color:white;
+    font-size:22px;
+    margin-top:5px;
 }
 
 
@@ -896,244 +616,150 @@ section {
    ===================================================== */
 
 .project-modal {
-
-    position: fixed;
-
-    inset: 0;
-
-    z-index: 5000;
-
-    background:
-        rgba(2,9,15,.97);
-
-    display: none;
-
-    align-items: center;
-
-    justify-content: center;
-
-    padding: 30px;
-
-    opacity: 0;
-
-    transition: opacity .3s ease;
+    position:fixed;
+    inset:0;
+    z-index:5000;
+    background:rgba(2,9,15,.97);
+    display:none;
+    align-items:center;
+    justify-content:center;
+    padding:30px;
+    opacity:0;
+    transition:opacity .3s ease;
 }
 
 .project-modal.active {
-
-    display: flex;
-
-    opacity: 1;
+    display:flex;
+    opacity:1;
 }
 
 .modal-content {
-
-    width: min(1100px,95%);
-
-    max-height: 95vh;
-
-    position: relative;
-
-    display: flex;
-
-    flex-direction: column;
-
-    align-items: center;
-
-    justify-content: center;
+    width:min(1100px,95%);
+    max-height:95vh;
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:center;
 }
 
 .modal-close {
-
-    position: fixed;
-
-    top: 22px;
-    right: 28px;
-
-    width: 48px;
-    height: 48px;
-
-    border:
-        1px solid
-        rgba(255,255,255,.25);
-
-    background:
-        rgba(0,0,0,.4);
-
-    color: white;
-
-    font-size: 32px;
-
-    line-height: 1;
-
-    cursor: pointer;
-
-    z-index: 5010;
-
-    transition: .3s;
+    position:fixed;
+    top:22px;
+    right:28px;
+    width:48px;
+    height:48px;
+    border:1px solid rgba(255,255,255,.25);
+    background:rgba(0,0,0,.4);
+    color:white;
+    font-size:32px;
+    line-height:1;
+    cursor:pointer;
+    z-index:5010;
+    transition:.3s;
 }
 
 .modal-close:hover {
-
-    background: var(--gold);
-
-    border-color: var(--gold);
-
-    color: var(--navy);
+    background:var(--gold);
+    border-color:var(--gold);
+    color:var(--navy);
 }
 
 .modal-project-title {
-
-    text-align: center;
-
-    margin-bottom: 18px;
+    text-align:center;
+    margin-bottom:18px;
 }
 
 .modal-project-number {
-
-    color: var(--gold-light);
-
-    font-size: 10px;
-
-    letter-spacing: 3px;
-
-    margin-bottom: 3px;
+    color:var(--gold-light);
+    font-size:10px;
+    letter-spacing:3px;
+    margin-bottom:3px;
 }
 
 .modal-project-title h2 {
-
-    color: white;
-
-    font-size: 27px;
-
-    margin: 0;
+    color:white;
+    font-size:27px;
+    margin:0;
 }
 
 .gallery-image-container {
-
-    width: min(850px,85vw);
-
-    height: min(65vh,600px);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: #050f18;
-
-    border:
-        1px solid
-        rgba(199,164,91,.2);
+    width:min(850px,85vw);
+    height:min(65vh,600px);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    background:#050f18;
+    border:1px solid rgba(199,164,91,.2);
 }
 
 .gallery-image-container img {
-
-    width: 100%;
-    height: 100%;
-
-    object-fit: contain;
+    width:100%;
+    height:100%;
+    object-fit:contain;
 }
 
 .gallery-arrow {
-
-    position: absolute;
-
-    top: 52%;
-
-    transform:
-        translateY(-50%);
-
-    width: 50px;
-    height: 50px;
-
-    border:
-        1px solid
-        rgba(199,164,91,.45);
-
-    background:
-        rgba(7,24,39,.85);
-
-    color: var(--gold-light);
-
-    font-size: 18px;
-
-    cursor: pointer;
-
-    z-index: 5;
-
-    transition: .3s;
+    position:absolute;
+    top:52%;
+    transform:translateY(-50%);
+    width:50px;
+    height:50px;
+    border:1px solid rgba(199,164,91,.45);
+    background:rgba(7,24,39,.85);
+    color:var(--gold-light);
+    font-size:18px;
+    cursor:pointer;
+    z-index:5;
+    transition:.3s;
 }
 
 .gallery-arrow:hover {
-
-    background: var(--gold);
-
-    color: var(--navy);
+    background:var(--gold);
+    color:var(--navy);
 }
 
 .gallery-prev {
-    left: 0;
+    left:0;
 }
 
 .gallery-next {
-    right: 0;
+    right:0;
 }
 
 .gallery-counter {
-
-    color: #aab7c2;
-
-    font-size: 11px;
-
-    margin-top: 12px;
+    color:#aab7c2;
+    font-size:11px;
+    margin-top:12px;
 }
 
 .gallery-thumbnails {
-
-    display: flex;
-
-    gap: 10px;
-
-    margin-top: 15px;
-
-    max-width: 90vw;
-
-    overflow-x: auto;
-
-    padding: 5px;
+    display:flex;
+    gap:10px;
+    margin-top:15px;
+    max-width:90vw;
+    overflow-x:auto;
+    padding:5px;
 }
 
 .gallery-thumb {
-
-    width: 75px;
-    height: 55px;
-
-    flex-shrink: 0;
-
-    object-fit: cover;
-
-    opacity: .45;
-
-    cursor: pointer;
-
-    border:
-        1px solid
-        transparent;
-
-    transition: .3s;
+    width:75px;
+    height:55px;
+    flex-shrink:0;
+    object-fit:cover;
+    opacity:.45;
+    cursor:pointer;
+    border:1px solid transparent;
+    transition:.3s;
 }
 
 .gallery-thumb:hover {
-    opacity: .8;
+    opacity:.8;
 }
 
 .gallery-thumb.active {
-
-    opacity: 1;
-
-    border-color: var(--gold);
+    opacity:1;
+    border-color:var(--gold);
 }
 
 
@@ -1142,10 +768,8 @@ section {
    ===================================================== */
 
 .statement {
-
-    position: relative;
-
-    overflow: hidden;
+    position:relative;
+    overflow:hidden;
 
     background:
         radial-gradient(
@@ -1153,188 +777,342 @@ section {
             rgba(199,164,91,.12),
             transparent 25%
         ),
-
         var(--navy);
 
-    padding: 125px 0;
+    padding:125px 0;
 }
 
 .statement-content {
-
-    text-align: center;
-
-    position: relative;
-
-    z-index: 3;
+    text-align:center;
+    position:relative;
+    z-index:3;
 }
 
 .statement-content .eyebrow {
-
-    color: var(--gold-light);
-
-    font-size: 10px;
-
-    letter-spacing: 4px;
+    color:var(--gold-light);
+    font-size:10px;
+    letter-spacing:4px;
 }
 
 .statement-content h2 {
-
-    color: white;
-
-    font-size:
-        clamp(36px,5vw,63px);
-
-    line-height: 1.4;
-
-    max-width: 900px;
-
-    margin: 18px auto;
+    color:white;
+    font-size:clamp(36px,5vw,63px);
+    line-height:1.4;
+    max-width:900px;
+    margin:18px auto;
 }
 
 .statement-content h2 span {
-    color: var(--gold-light);
+    color:var(--gold-light);
 }
 
 .statement-content p {
-
-    color: #8494a4;
-
-    max-width: 600px;
-
-    margin: auto;
-
-    font-size: 13px;
+    color:#8494a4;
+    max-width:600px;
+    margin:auto;
+    font-size:13px;
 }
 
 
 /* =====================================================
-   Contact
+   CONTACT - SOCIAL APPS
    ===================================================== */
 
 .contact {
-    background: var(--cream);
+    background:var(--cream);
 }
 
-.contact-grid {
+.social-apps {
 
-    display: grid;
+    max-width:1000px;
+
+    margin:auto;
+
+    display:grid;
 
     grid-template-columns:
         repeat(3,1fr);
 
-    gap: 20px;
+    gap:22px;
 }
 
-.contact-card {
 
-    background: white;
+/* البطاقة */
+
+.social-app {
+
+    position:relative;
+
+    min-height:220px;
+
+    padding:30px;
+
+    border-radius:26px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:space-between;
+
+    overflow:hidden;
+
+    color:white;
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
 
     border:
-        1px solid #e4ded3;
-
-    padding: 42px 30px;
-
-    text-align: center;
-
-    transition: .35s;
-}
-
-.contact-card:hover {
-
-    transform: translateY(-8px);
+        1px solid
+        rgba(255,255,255,.12);
 
     box-shadow:
-        0 20px 50px
-        rgba(7,24,39,.09);
+        0 15px 35px
+        rgba(0,0,0,.08);
 }
 
-.social-icon {
 
-    width: 68px;
-    height: 68px;
+/* الدائرة الخلفية */
 
-    margin:
-        auto auto 20px;
+.social-app::before {
 
-    border-radius: 19px;
+    content:"";
 
-    display: flex;
+    position:absolute;
 
-    align-items: center;
+    width:240px;
 
-    justify-content: center;
+    height:240px;
+
+    border-radius:50%;
+
+    top:-110px;
+
+    right:-80px;
+
+    background:
+        rgba(255,255,255,.1);
+
+    transition:.5s;
+
 }
 
-.social-icon svg {
 
-    width: 34px;
-    height: 34px;
+/* دائرة ثانية */
+
+.social-app::after {
+
+    content:"";
+
+    position:absolute;
+
+    width:150px;
+
+    height:150px;
+
+    border-radius:50%;
+
+    bottom:-80px;
+
+    left:-50px;
+
+    background:
+        rgba(255,255,255,.07);
+
 }
 
-.whatsapp-icon {
-    background: #25D366;
+
+/* Hover */
+
+.social-app:hover {
+
+    transform:
+        translateY(-12px);
+
+    box-shadow:
+        0 30px 60px
+        rgba(0,0,0,.20);
 }
 
-.instagram-icon {
+.social-app:hover::before {
+
+    transform:
+        scale(1.4);
+}
+
+
+/* =========================
+   WhatsApp
+   ========================= */
+
+.whatsapp-app {
 
     background:
         linear-gradient(
-            135deg,
-            #833AB4,
-            #E1306C,
-            #FCAF45
+            145deg,
+            #075E54,
+            #128C7E 45%,
+            #25D366
         );
 }
 
-.tiktok-icon {
-    background: #050505;
+
+/* =========================
+   Instagram
+   ========================= */
+
+.instagram-app {
+
+    background:
+        radial-gradient(
+            circle at 30% 107%,
+            #fdf497 0%,
+            #fdf497 5%,
+            #fd5949 45%,
+            #d6249f 60%,
+            #285AEB 90%
+        );
 }
 
-.contact-card h3 {
 
-    color: var(--navy);
+/* =========================
+   TikTok
+   ========================= */
 
-    font-size: 20px;
+.tiktok-app {
 
-    margin-bottom: 5px;
+    background:
+        linear-gradient(
+            145deg,
+            #000000,
+            #111111,
+            #191919
+        );
 }
 
-.contact-card p {
 
-    color: var(--muted);
+/* أيقونة التطبيق */
 
-    font-size: 12px;
+.app-icon {
 
-    margin-bottom: 20px;
-}
+    width:72px;
 
-.social-button {
+    height:72px;
 
-    display: inline-flex;
+    border-radius:21px;
 
-    align-items: center;
+    display:flex;
 
-    justify-content: center;
+    align-items:center;
 
-    padding: 9px 22px;
+    justify-content:center;
+
+    background:
+        rgba(255,255,255,.14);
+
+    backdrop-filter:
+        blur(12px);
 
     border:
-        1px solid #dcd6cb;
+        1px solid
+        rgba(255,255,255,.22);
 
-    font-size: 11px;
+    position:relative;
 
-    color: var(--navy);
+    z-index:2;
 
-    transition: .3s;
+    box-shadow:
+        0 10px 25px
+        rgba(0,0,0,.15);
 }
 
-.social-button:hover {
+.app-icon svg {
 
-    background: var(--navy);
+    width:40px;
 
-    border-color: var(--navy);
+    height:40px;
+}
 
-    color: white;
+
+/* اسم التطبيق */
+
+.app-info {
+
+    display:flex;
+
+    flex-direction:column;
+
+    position:relative;
+
+    z-index:2;
+
+    margin-top:22px;
+}
+
+.app-info strong {
+
+    font-size:24px;
+
+    font-weight:700;
+
+    letter-spacing:.2px;
+}
+
+.app-info span {
+
+    font-size:12px;
+
+    margin-top:4px;
+
+    color:
+        rgba(255,255,255,.82);
+}
+
+
+/* زر الدخول */
+
+.app-arrow {
+
+    position:absolute;
+
+    left:25px;
+
+    bottom:27px;
+
+    width:44px;
+
+    height:44px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+        rgba(255,255,255,.14);
+
+    border:
+        1px solid
+        rgba(255,255,255,.18);
+
+    font-size:20px;
+
+    z-index:3;
+
+    transition:.35s;
+}
+
+.social-app:hover .app-arrow {
+
+    transform:
+        translateX(-7px);
+
+    background:
+        rgba(255,255,255,.25);
 }
 
 
@@ -1343,199 +1121,151 @@ section {
    ===================================================== */
 
 footer {
-
-    background: #030d17;
-
-    color: white;
-
-    padding: 65px 0 25px;
+    background:#030d17;
+    color:white;
+    padding:65px 0 25px;
 }
 
 .footer-main {
-
-    display: grid;
-
-    grid-template-columns:
-        1.5fr 1fr 1fr;
-
-    gap: 70px;
-
-    padding-bottom: 40px;
-
-    border-bottom:
-        1px solid
-        rgba(255,255,255,.08);
+    display:grid;
+    grid-template-columns:1.5fr 1fr 1fr;
+    gap:70px;
+    padding-bottom:40px;
+    border-bottom:1px solid rgba(255,255,255,.08);
 }
 
 .footer-logo img {
-
-    width: 75px;
-
-    margin-bottom: 15px;
+    width:75px;
+    margin-bottom:15px;
 }
 
 .footer-brand h3 {
-
-    font-size: 22px;
-
-    margin-bottom: 10px;
+    font-size:22px;
+    margin-bottom:10px;
 }
 
 .footer-brand h3 span {
-    color: var(--gold-light);
+    color:var(--gold-light);
 }
 
 .footer-brand p {
-
-    max-width: 370px;
-
-    color: #6e8091;
-
-    font-size: 11px;
+    max-width:370px;
+    color:#6e8091;
+    font-size:11px;
 }
 
 .footer-title {
-
-    color: var(--gold-light);
-
-    font-size: 12px;
-
-    margin-bottom: 17px;
+    color:var(--gold-light);
+    font-size:12px;
+    margin-bottom:17px;
 }
 
 .footer-links a {
-
-    display: block;
-
-    color: #718293;
-
-    font-size: 11px;
-
-    margin: 9px 0;
-
-    transition: .3s;
+    display:block;
+    color:#718293;
+    font-size:11px;
+    margin:9px 0;
+    transition:.3s;
 }
 
 .footer-links a:hover {
-    color: white;
+    color:white;
 }
 
 .footer-social {
-
-    display: flex;
-
-    gap: 9px;
-
-    margin-top: 20px;
+    display:flex;
+    gap:9px;
+    margin-top:20px;
 }
 
 .footer-social a {
-
-    width: 39px;
-    height: 39px;
-
-    border:
-        1px solid
-        rgba(255,255,255,.12);
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    transition: .3s;
+    width:39px;
+    height:39px;
+    border:1px solid rgba(255,255,255,.12);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
 }
 
 .footer-social svg {
-
-    width: 18px;
-    height: 18px;
-
-    fill: #8795a3;
+    width:18px;
+    height:18px;
+    fill:#8795a3;
 }
 
 .footer-social a:hover {
-    border-color: var(--gold);
+    border-color:var(--gold);
 }
 
 .footer-social a:hover svg {
-    fill: var(--gold-light);
+    fill:var(--gold-light);
 }
 
 .footer-bottom {
-
-    padding-top: 22px;
-
-    display: flex;
-
-    justify-content: space-between;
-
-    align-items: center;
+    padding-top:22px;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
 }
 
-.copyright {
-
-    color: #536474;
-
-    font-size: 10px;
-}
-
+.copyright,
 .developer {
-
-    color: #536474;
-
-    font-size: 10px;
+    color:#536474;
+    font-size:10px;
 }
 
 .developer strong {
-    color: var(--gold-light);
+    color:var(--gold-light);
 }
 
 
 /* =====================================================
-   WhatsApp
+   WhatsApp Floating
    ===================================================== */
 
 .floating-whatsapp {
 
-    position: fixed;
+    position:fixed;
 
-    left: 25px;
-    bottom: 25px;
+    left:25px;
 
-    width: 61px;
-    height: 61px;
+    bottom:25px;
 
-    background: #25D366;
+    width:61px;
 
-    border-radius: 50%;
+    height:61px;
 
-    display: flex;
+    background:#25D366;
 
-    align-items: center;
+    border-radius:50%;
 
-    justify-content: center;
+    display:flex;
 
-    z-index: 999;
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:999;
 
     box-shadow:
         0 12px 30px
         rgba(0,0,0,.25);
 
-    transition: .3s;
+    transition:.3s;
 }
 
 .floating-whatsapp:hover {
-    transform: scale(1.1);
+    transform:scale(1.1);
 }
 
 .floating-whatsapp svg {
 
-    width: 34px;
-    height: 34px;
+    width:34px;
 
-    fill: white;
+    height:34px;
+
+    fill:white;
 }
 
 
@@ -1545,10 +1275,9 @@ footer {
 
 .reveal {
 
-    opacity: 0;
+    opacity:0;
 
-    transform:
-        translateY(25px);
+    transform:translateY(25px);
 
     transition:
         opacity .8s ease,
@@ -1557,10 +1286,9 @@ footer {
 
 .reveal.show {
 
-    opacity: 1;
+    opacity:1;
 
-    transform:
-        translateY(0);
+    transform:translateY(0);
 }
 
 
@@ -1572,50 +1300,51 @@ footer {
 
     .nav-links {
 
-        position: absolute;
+        position:absolute;
 
-        top: 88px;
-        right: 0;
+        top:88px;
 
-        width: 100%;
+        right:0;
 
-        background: var(--navy);
+        width:100%;
 
-        padding: 25px;
+        background:var(--navy);
 
-        display: none;
+        padding:25px;
 
-        flex-direction: column;
+        display:none;
 
-        gap: 20px;
+        flex-direction:column;
+
+        gap:20px;
     }
 
     .nav-links.active {
-        display: flex;
+        display:flex;
     }
 
     .menu-button {
-        display: block;
+        display:block;
     }
 
     .header-button {
-        display: none;
+        display:none;
     }
 
     .about-layout {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 
     .why-grid {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:1fr 1fr;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr 1fr;
+    .social-apps {
+        grid-template-columns:1fr 1fr;
     }
 
     .footer-main {
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns:1fr 1fr;
     }
 }
 
@@ -1627,130 +1356,122 @@ footer {
 @media(max-width:650px) {
 
     section {
-        padding: 80px 0;
+        padding:80px 0;
     }
 
     .brand img {
-
-        width: 55px;
-        height: 55px;
+        width:55px;
+        height:55px;
     }
 
     .brand-name strong {
-        font-size: 17px;
+        font-size:17px;
     }
 
     .hero h1 {
-
-        font-size: 50px;
-
-        letter-spacing: -2px;
+        font-size:50px;
+        letter-spacing:-2px;
     }
 
     .hero-actions {
-        flex-direction: column;
+        flex-direction:column;
     }
 
     .button {
-        width: 180px;
+        width:180px;
     }
 
     .why-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 
     .projects-grid {
-        display: block;
+        display:block;
     }
 
     .project {
-
-        height: 280px;
-
-        margin-bottom: 15px;
+        height:280px;
+        margin-bottom:15px;
     }
 
-    .contact-grid {
-        grid-template-columns: 1fr;
+    .social-apps {
+        grid-template-columns:1fr;
+    }
+
+    .social-app {
+        min-height:190px;
+    }
+
+    .contact {
+        padding-left:0;
+        padding-right:0;
     }
 
     .footer-main {
-        grid-template-columns: 1fr;
+        grid-template-columns:1fr;
     }
 
     .footer-bottom {
-
-        flex-direction: column;
-
-        gap: 10px;
-
-        text-align: center;
+        flex-direction:column;
+        gap:10px;
+        text-align:center;
     }
 
     .floating-whatsapp {
-
-        width: 55px;
-        height: 55px;
-
-        left: 18px;
-        bottom: 18px;
+        width:55px;
+        height:55px;
+        left:18px;
+        bottom:18px;
     }
 
     .project-modal {
-        padding: 15px;
+        padding:15px;
     }
 
     .modal-content {
-        width: 100%;
+        width:100%;
     }
 
     .modal-project-title {
-        margin-bottom: 12px;
+        margin-bottom:12px;
     }
 
     .modal-project-title h2 {
-        font-size: 20px;
+        font-size:20px;
     }
 
     .gallery-image-container {
-
-        width: 94vw;
-
-        height: 55vh;
+        width:94vw;
+        height:55vh;
     }
 
     .gallery-arrow {
-
-        width: 40px;
-        height: 40px;
-
-        font-size: 15px;
+        width:40px;
+        height:40px;
+        font-size:15px;
     }
 
     .gallery-prev {
-        left: 5px;
+        left:5px;
     }
 
     .gallery-next {
-        right: 5px;
+        right:5px;
     }
 
     .modal-close {
-
-        top: 12px;
-        right: 15px;
-
-        width: 42px;
-        height: 42px;
-
-        font-size: 28px;
+        top:12px;
+        right:15px;
+        width:42px;
+        height:42px;
+        font-size:28px;
     }
 
     .gallery-thumb {
-
-        width: 65px;
-        height: 48px;
+        width:65px;
+        height:48px;
     }
+
 }
 
 </style>
@@ -1796,25 +1517,15 @@ class="nav-links"
 id="navLinks"
 >
 
-<a href="#home">
-الرئيسية
-</a>
+<a href="#home">الرئيسية</a>
 
-<a href="#about">
-عن المؤسسة
-</a>
+<a href="#about">عن المؤسسة</a>
 
-<a href="#why">
-لماذا بند الثقة؟
-</a>
+<a href="#why">لماذا بند الثقة؟</a>
 
-<a href="#projects">
-مشاريعنا
-</a>
+<a href="#projects">مشاريعنا</a>
 
-<a href="#contact">
-تواصل معنا
-</a>
+<a href="#contact">تواصل معنا</a>
 
 </nav>
 
@@ -1854,7 +1565,6 @@ id="home"
 
 <div class="hero-line"></div>
 
-
 <div class="container">
 
 <div class="hero-content reveal">
@@ -1866,7 +1576,6 @@ id="home"
 مؤسسة بند الثقة
 
 </div>
-
 
 <h1>
 
@@ -1880,7 +1589,6 @@ id="home"
 
 </h1>
 
-
 <p class="hero-description">
 
 مؤسسة سعودية بهوية واضحة ورؤية
@@ -1890,7 +1598,6 @@ id="home"
 
 </p>
 
-
 <div class="hero-actions">
 
 <a
@@ -1899,7 +1606,6 @@ class="button button-gold"
 >
 استكشف مشاريعنا
 </a>
-
 
 <a
 href="#contact"
@@ -2055,17 +1761,11 @@ WHY BAND ALTHIQA
 
 <div class="why-card reveal">
 
-<div class="why-number">
-01
-</div>
+<div class="why-number">01</div>
 
-<div class="why-icon">
-◇
-</div>
+<div class="why-icon">◇</div>
 
-<h3>
-وضوح الرؤية
-</h3>
+<h3>وضوح الرؤية</h3>
 
 <p>
 نبدأ من رؤية واضحة ونحوّل
@@ -2077,17 +1777,11 @@ WHY BAND ALTHIQA
 
 <div class="why-card reveal">
 
-<div class="why-number">
-02
-</div>
+<div class="why-number">02</div>
 
-<div class="why-icon">
-✦
-</div>
+<div class="why-icon">✦</div>
 
-<h3>
-جودة التفاصيل
-</h3>
+<h3>جودة التفاصيل</h3>
 
 <p>
 نهتم بالتفاصيل التي تصنع
@@ -2099,17 +1793,11 @@ WHY BAND ALTHIQA
 
 <div class="why-card reveal">
 
-<div class="why-number">
-03
-</div>
+<div class="why-number">03</div>
 
-<div class="why-icon">
-◎
-</div>
+<div class="why-icon">◎</div>
 
-<h3>
-رؤية مستقبلية
-</h3>
+<h3>رؤية مستقبلية</h3>
 
 <p>
 نعمل بعقلية تنظر للمستقبل
@@ -2121,17 +1809,11 @@ WHY BAND ALTHIQA
 
 <div class="why-card reveal">
 
-<div class="why-number">
-04
-</div>
+<div class="why-number">04</div>
 
-<div class="why-icon">
-◈
-</div>
+<div class="why-icon">◈</div>
 
-<h3>
-احترافية
-</h3>
+<h3>احترافية</h3>
 
 <p>
 نحرص على أن يكون أسلوب العمل
@@ -2143,17 +1825,11 @@ WHY BAND ALTHIQA
 
 <div class="why-card reveal">
 
-<div class="why-number">
-05
-</div>
+<div class="why-number">05</div>
 
-<div class="why-icon">
-⬡
-</div>
+<div class="why-icon">⬡</div>
 
-<h3>
-قيمة حقيقية
-</h3>
+<h3>قيمة حقيقية</h3>
 
 <p>
 هدفنا صناعة قيمة يمكن ملاحظتها
@@ -2165,17 +1841,11 @@ WHY BAND ALTHIQA
 
 <div class="why-card reveal">
 
-<div class="why-number">
-06
-</div>
+<div class="why-number">06</div>
 
-<div class="why-icon">
-✧
-</div>
+<div class="why-icon">✧</div>
 
-<h3>
-استمرارية
-</h3>
+<h3>استمرارية</h3>
 
 <p>
 نبني خطواتنا على أساس يسمح
@@ -2222,9 +1892,7 @@ OUR PROJECTS
 <div class="projects-grid">
 
 
-<!-- =================================================
-     المشروع الأول
-     ================================================= -->
+<!-- المشروع الأول -->
 
 <div
 class="project clickable reveal"
@@ -2255,9 +1923,7 @@ alt="مشروع قصر قرطبه"
 </div>
 
 
-<!-- =================================================
-     المشروع الثاني
-     ================================================= -->
+<!-- المشروع الثاني -->
 
 <div
 class="project clickable reveal"
@@ -2289,9 +1955,7 @@ greenica via Restaurant & Cafe<br>
 </div>
 
 
-<!-- =================================================
-     المشروع الثالث
-     ================================================= -->
+<!-- المشروع الثالث -->
 
 <div
 class="project clickable reveal"
@@ -2322,9 +1986,7 @@ alt="مشروع منتزه طريق النهضة"
 </div>
 
 
-<!-- =================================================
-     المشروع الرابع
-     ================================================= -->
+<!-- المشروع الرابع -->
 
 <div class="project reveal">
 
@@ -2360,7 +2022,7 @@ PROJECT 04
 
 
 <!-- =====================================================
-     Gallery المشروع الأول
+     Gallery 1
      ===================================================== -->
 
 <div
@@ -2371,11 +2033,9 @@ id="projectModal"
 <button
 class="modal-close"
 onclick="closeProject()"
-aria-label="إغلاق"
 >
 ×
 </button>
-
 
 <div class="modal-content">
 
@@ -2391,14 +2051,12 @@ PROJECT 01
 
 </div>
 
-
 <button
 class="gallery-arrow gallery-prev"
 onclick="previousImage()"
 >
 ❮
 </button>
-
 
 <div class="gallery-image-container">
 
@@ -2410,7 +2068,6 @@ alt="مشروع قصر قرطبه"
 
 </div>
 
-
 <button
 class="gallery-arrow gallery-next"
 onclick="nextImage()"
@@ -2418,14 +2075,12 @@ onclick="nextImage()"
 ❯
 </button>
 
-
 <div
 class="gallery-counter"
 id="galleryCounter"
 >
 1 / 8
 </div>
-
 
 <div
 class="gallery-thumbnails"
@@ -2439,7 +2094,7 @@ id="galleryThumbnails"
 
 
 <!-- =====================================================
-     Gallery المشروع الثاني
+     Gallery 2
      ===================================================== -->
 
 <div
@@ -2450,11 +2105,9 @@ id="projectModal2"
 <button
 class="modal-close"
 onclick="closeProject2()"
-aria-label="إغلاق"
 >
 ×
 </button>
-
 
 <div class="modal-content">
 
@@ -2470,14 +2123,12 @@ greenica via Restaurant & Cafe
 
 </div>
 
-
 <button
 class="gallery-arrow gallery-prev"
 onclick="previousImage2()"
 >
 ❮
 </button>
-
 
 <div class="gallery-image-container">
 
@@ -2489,7 +2140,6 @@ alt="المشروع الثاني"
 
 </div>
 
-
 <button
 class="gallery-arrow gallery-next"
 onclick="nextImage2()"
@@ -2497,14 +2147,12 @@ onclick="nextImage2()"
 ❯
 </button>
 
-
 <div
 class="gallery-counter"
 id="galleryCounter2"
 >
 1 / 8
 </div>
-
 
 <div
 class="gallery-thumbnails"
@@ -2518,7 +2166,7 @@ id="galleryThumbnails2"
 
 
 <!-- =====================================================
-     Gallery المشروع الثالث
+     Gallery 3
      ===================================================== -->
 
 <div
@@ -2529,11 +2177,9 @@ id="projectModal3"
 <button
 class="modal-close"
 onclick="closeProject3()"
-aria-label="إغلاق"
 >
 ×
 </button>
-
 
 <div class="modal-content">
 
@@ -2549,14 +2195,12 @@ PROJECT 03
 
 </div>
 
-
 <button
 class="gallery-arrow gallery-prev"
 onclick="previousImage3()"
 >
 ❮
 </button>
-
 
 <div class="gallery-image-container">
 
@@ -2568,7 +2212,6 @@ alt="مشروع منتزه طريق النهضة"
 
 </div>
 
-
 <button
 class="gallery-arrow gallery-next"
 onclick="nextImage3()"
@@ -2576,14 +2219,12 @@ onclick="nextImage3()"
 ❯
 </button>
 
-
 <div
 class="gallery-counter"
 id="galleryCounter3"
 >
 1 / 6
 </div>
-
 
 <div
 class="gallery-thumbnails"
@@ -2637,7 +2278,7 @@ BAND ALTHIQA
 
 
 <!-- =====================================================
-     Contact
+     Contact - Social Apps
      ===================================================== -->
 
 <section
@@ -2658,122 +2299,156 @@ CONTACT US
 </h2>
 
 <p>
-يمكنك التواصل مع مؤسسة بند الثقة
-من خلال منصات التواصل الرسمية.
+اختر المنصة التي تفضلها للتواصل
+مع مؤسسة بند الثقة
 </p>
 
 </div>
 
 
-<div class="contact-grid">
+<div class="social-apps">
 
 
 <!-- WhatsApp -->
 
-<div class="contact-card reveal">
+<a
+href="https://wa.me/966504550030"
+target="_blank"
+class="social-app whatsapp-app reveal"
+>
 
-<div class="social-icon whatsapp-icon">
+<div class="app-icon">
 
 <svg viewBox="0 0 24 24">
 
 <path
 fill="white"
 d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3z"
- />
+/>
 
 </svg>
 
 </div>
 
-<h3>
+<div class="app-info">
+
+<strong>
 WhatsApp
-</h3>
+</strong>
 
-<p>
-تواصل معنا مباشرة
-</p>
-
-<a
-href="https://wa.me/966504550030"
-target="_blank"
-class="social-button"
->
-مراسلتنا
-</a>
+<span>
+تواصل معنا مباشرة عبر واتساب
+</span>
 
 </div>
+
+<div class="app-arrow">
+←
+</div>
+
+</a>
 
 
 <!-- Instagram -->
 
-<div class="contact-card reveal">
+<a
+href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
+target="_blank"
+class="social-app instagram-app reveal"
+>
 
-<div class="social-icon instagram-icon">
+<div class="app-icon">
 
 <svg viewBox="0 0 24 24">
 
-<path
+<rect
+x="3"
+y="3"
+width="18"
+height="18"
+rx="5"
+fill="none"
+stroke="white"
+stroke-width="2"
+/>
+
+<circle
+cx="12"
+cy="12"
+r="4"
+fill="none"
+stroke="white"
+stroke-width="2"
+/>
+
+<circle
+cx="17.5"
+cy="6.5"
+r="1"
 fill="white"
-d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2zM12 7a5 5 0 1 1 0 10 5 5 0 0 1 0-10z"
- />
+/>
 
 </svg>
 
 </div>
 
-<h3>
+<div class="app-info">
+
+<strong>
 Instagram
-</h3>
+</strong>
 
-<p>
-تابع حساب المؤسسة
-</p>
-
-<a
-href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
-target="_blank"
-class="social-button"
->
-زيارة الحساب
-</a>
+<span>
+تابع حساب بند الثقة الرسمي
+</span>
 
 </div>
+
+<div class="app-arrow">
+←
+</div>
+
+</a>
 
 
 <!-- TikTok -->
 
-<div class="contact-card reveal">
+<a
+href="https://www.tiktok.com/@YOUR_TIKTOK_USERNAME"
+target="_blank"
+class="social-app tiktok-app reveal"
+>
 
-<div class="social-icon tiktok-icon">
+<div class="app-icon">
 
 <svg viewBox="0 0 24 24">
 
 <path
 fill="white"
 d="M16.6 2c.3 1.8 1.3 3.3 3 4.2.7.4 1.5.6 2.4.6v3.3c-1.5 0-2.9-.4-4.1-1.1v7.2c0 4.5-3.4 7.8-7.8 7.8-4.2 0-7.4-3.2-7.4-7.3 0-4.3 3.4-7.5 7.7-7.5.4 0 .8 0 1.2.1v3.4c-.4-.1-.8-.2-1.2-.2-2.4 0-4.2 1.7-4.2 4.1 0 2.2 1.7 3.9 4 3.9 2.5 0 4.3-1.7 4.3-4.4V2h2.1z"
- />
+/>
 
 </svg>
 
 </div>
 
-<h3>
+<div class="app-info">
+
+<strong>
 TikTok
-</h3>
+</strong>
 
-<p>
-تابع أحدث المحتوى
-</p>
-
-<a
-href="https://www.tiktok.com/@YOUR_TIKTOK_USERNAME"
-target="_blank"
-class="social-button"
->
-زيارة الحساب
-</a>
+<span>
+شاهد أحدث محتويات بند الثقة
+</span>
 
 </div>
+
+<div class="app-arrow">
+←
+</div>
+
+</a>
 
 
 </div>
@@ -2799,7 +2474,7 @@ class="social-button"
 <div class="footer-logo">
 
 <img
-src="logo (1).jpg"
+src="logo.jpg.jpeg"
 alt="لوجو بند الثقة"
 >
 
@@ -2884,21 +2559,13 @@ d="M16.6 2c.3 1.8 1.3 3.3 3 4.2.7.4 1.5.6 2.4.6v3.3c-1.5 0-2.9-.4-4.1-1.1v7.2c0 
 روابط سريعة
 </div>
 
-<a href="#home">
-الرئيسية
-</a>
+<a href="#home">الرئيسية</a>
 
-<a href="#about">
-عن المؤسسة
-</a>
+<a href="#about">عن المؤسسة</a>
 
-<a href="#why">
-لماذا بند الثقة؟
-</a>
+<a href="#why">لماذا بند الثقة؟</a>
 
-<a href="#projects">
-مشاريعنا
-</a>
+<a href="#projects">مشاريعنا</a>
 
 </div>
 
@@ -2909,21 +2576,13 @@ d="M16.6 2c.3 1.8 1.3 3.3 3 4.2.7.4 1.5.6 2.4.6v3.3c-1.5 0-2.9-.4-4.1-1.1v7.2c0 
 تواصل معنا
 </div>
 
-<a href="#contact">
-WhatsApp
-</a>
+<a href="#contact">WhatsApp</a>
 
-<a href="#contact">
-Instagram
-</a>
+<a href="#contact">Instagram</a>
 
-<a href="#contact">
-TikTok
-</a>
+<a href="#contact">TikTok</a>
 
-<a href="#contact">
-التواصل الرسمي
-</a>
+<a href="#contact">التواصل الرسمي</a>
 
 </div>
 
@@ -2985,9 +2644,7 @@ d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 2
 <script>
 
 
-/* =====================================================
-   قائمة الموبايل
-   ===================================================== */
+/* قائمة الموبايل */
 
 const menuButton =
 document.getElementById("menuButton");
@@ -3001,7 +2658,8 @@ function() {
 
 navLinks.classList.toggle("active");
 
-});
+}
+);
 
 
 document
@@ -3014,14 +2672,13 @@ function() {
 
 navLinks.classList.remove("active");
 
-});
+}
+);
 
 });
 
 
-/* =====================================================
-   Reveal Animation
-   ===================================================== */
+/* Reveal */
 
 const elements =
 document.querySelectorAll(".reveal");
@@ -3057,7 +2714,7 @@ revealElements();
 
 
 /* =====================================================
-   Gallery المشروع الأول
+   Gallery 1
    ===================================================== */
 
 const projectImages = [
@@ -3076,36 +2733,25 @@ const projectImages = [
 let currentImage = 0;
 
 const projectModal =
-document.getElementById(
-"projectModal"
-);
+document.getElementById("projectModal");
 
 const galleryImage =
-document.getElementById(
-"galleryImage"
-);
+document.getElementById("galleryImage");
 
 const galleryCounter =
-document.getElementById(
-"galleryCounter"
-);
+document.getElementById("galleryCounter");
 
 const galleryThumbnails =
-document.getElementById(
-"galleryThumbnails"
-);
+document.getElementById("galleryThumbnails");
 
 
 function openProject() {
 
 currentImage = 0;
 
-projectModal.classList.add(
-"active"
-);
+projectModal.classList.add("active");
 
-document.body.style.overflow =
-"hidden";
+document.body.style.overflow="hidden";
 
 showGalleryImage();
 
@@ -3133,8 +2779,7 @@ createThumbnails();
 
 function createThumbnails() {
 
-galleryThumbnails.innerHTML =
-"";
+galleryThumbnails.innerHTML="";
 
 projectImages.forEach(
 function(image,index) {
@@ -3142,21 +2787,17 @@ function(image,index) {
 const thumbnail =
 document.createElement("img");
 
-thumbnail.src = image;
+thumbnail.src=image;
 
-thumbnail.alt =
-"صورة " +
-(index + 1);
+thumbnail.alt="صورة "+(index+1);
 
 thumbnail.classList.add(
 "gallery-thumb"
 );
 
-if(index === currentImage) {
+if(index===currentImage) {
 
-thumbnail.classList.add(
-"active"
-);
+thumbnail.classList.add("active");
 
 }
 
@@ -3166,7 +2807,7 @@ function(event) {
 
 event.stopPropagation();
 
-currentImage = index;
+currentImage=index;
 
 showGalleryImage();
 
@@ -3192,7 +2833,7 @@ currentImage >=
 projectImages.length
 ) {
 
-currentImage = 0;
+currentImage=0;
 
 }
 
@@ -3205,10 +2846,10 @@ function previousImage() {
 
 currentImage--;
 
-if(currentImage < 0) {
+if(currentImage<0) {
 
 currentImage =
-projectImages.length - 1;
+projectImages.length-1;
 
 }
 
@@ -3219,12 +2860,9 @@ showGalleryImage();
 
 function closeProject() {
 
-projectModal.classList.remove(
-"active"
-);
+projectModal.classList.remove("active");
 
-document.body.style.overflow =
-"";
+document.body.style.overflow="";
 
 }
 
@@ -3233,10 +2871,7 @@ projectModal.addEventListener(
 "click",
 function(event) {
 
-if(
-event.target ===
-projectModal
-) {
+if(event.target===projectModal) {
 
 closeProject();
 
@@ -3247,7 +2882,7 @@ closeProject();
 
 
 /* =====================================================
-   Gallery المشروع الثاني
+   Gallery 2
    ===================================================== */
 
 const projectImages2 = [
@@ -3263,39 +2898,28 @@ const projectImages2 = [
 
 ];
 
-let currentImage2 = 0;
+let currentImage2=0;
 
 const projectModal2 =
-document.getElementById(
-"projectModal2"
-);
+document.getElementById("projectModal2");
 
 const galleryImage2 =
-document.getElementById(
-"galleryImage2"
-);
+document.getElementById("galleryImage2");
 
 const galleryCounter2 =
-document.getElementById(
-"galleryCounter2"
-);
+document.getElementById("galleryCounter2");
 
 const galleryThumbnails2 =
-document.getElementById(
-"galleryThumbnails2"
-);
+document.getElementById("galleryThumbnails2");
 
 
 function openProject2() {
 
-currentImage2 = 0;
+currentImage2=0;
 
-projectModal2.classList.add(
-"active"
-);
+projectModal2.classList.add("active");
 
-document.body.style.overflow =
-"hidden";
+document.body.style.overflow="hidden";
 
 showGalleryImage2();
 
@@ -3309,10 +2933,10 @@ projectImages2[currentImage2];
 
 galleryImage2.alt =
 "المشروع الثاني - صورة " +
-(currentImage2 + 1);
+(currentImage2+1);
 
 galleryCounter2.textContent =
-(currentImage2 + 1) +
+(currentImage2+1) +
 " / " +
 projectImages2.length;
 
@@ -3323,8 +2947,7 @@ createThumbnails2();
 
 function createThumbnails2() {
 
-galleryThumbnails2.innerHTML =
-"";
+galleryThumbnails2.innerHTML="";
 
 projectImages2.forEach(
 function(image,index) {
@@ -3332,21 +2955,17 @@ function(image,index) {
 const thumbnail =
 document.createElement("img");
 
-thumbnail.src = image;
+thumbnail.src=image;
 
-thumbnail.alt =
-"صورة " +
-(index + 1);
+thumbnail.alt="صورة "+(index+1);
 
 thumbnail.classList.add(
 "gallery-thumb"
 );
 
-if(index === currentImage2) {
+if(index===currentImage2) {
 
-thumbnail.classList.add(
-"active"
-);
+thumbnail.classList.add("active");
 
 }
 
@@ -3356,7 +2975,7 @@ function(event) {
 
 event.stopPropagation();
 
-currentImage2 = index;
+currentImage2=index;
 
 showGalleryImage2();
 
@@ -3378,11 +2997,11 @@ function nextImage2() {
 currentImage2++;
 
 if(
-currentImage2 >=
+currentImage2>=
 projectImages2.length
 ) {
 
-currentImage2 = 0;
+currentImage2=0;
 
 }
 
@@ -3395,10 +3014,10 @@ function previousImage2() {
 
 currentImage2--;
 
-if(currentImage2 < 0) {
+if(currentImage2<0) {
 
-currentImage2 =
-projectImages2.length - 1;
+currentImage2=
+projectImages2.length-1;
 
 }
 
@@ -3409,12 +3028,9 @@ showGalleryImage2();
 
 function closeProject2() {
 
-projectModal2.classList.remove(
-"active"
-);
+projectModal2.classList.remove("active");
 
-document.body.style.overflow =
-"";
+document.body.style.overflow="";
 
 }
 
@@ -3423,10 +3039,7 @@ projectModal2.addEventListener(
 "click",
 function(event) {
 
-if(
-event.target ===
-projectModal2
-) {
+if(event.target===projectModal2) {
 
 closeProject2();
 
@@ -3437,7 +3050,7 @@ closeProject2();
 
 
 /* =====================================================
-   Gallery المشروع الثالث
+   Gallery 3
    ===================================================== */
 
 const projectImages3 = [
@@ -3451,39 +3064,28 @@ const projectImages3 = [
 
 ];
 
-let currentImage3 = 0;
+let currentImage3=0;
 
 const projectModal3 =
-document.getElementById(
-"projectModal3"
-);
+document.getElementById("projectModal3");
 
 const galleryImage3 =
-document.getElementById(
-"galleryImage3"
-);
+document.getElementById("galleryImage3");
 
 const galleryCounter3 =
-document.getElementById(
-"galleryCounter3"
-);
+document.getElementById("galleryCounter3");
 
 const galleryThumbnails3 =
-document.getElementById(
-"galleryThumbnails3"
-);
+document.getElementById("galleryThumbnails3");
 
 
 function openProject3() {
 
-currentImage3 = 0;
+currentImage3=0;
 
-projectModal3.classList.add(
-"active"
-);
+projectModal3.classList.add("active");
 
-document.body.style.overflow =
-"hidden";
+document.body.style.overflow="hidden";
 
 showGalleryImage3();
 
@@ -3497,10 +3099,10 @@ projectImages3[currentImage3];
 
 galleryImage3.alt =
 "مشروع منتزه طريق النهضة - صورة " +
-(currentImage3 + 1);
+(currentImage3+1);
 
 galleryCounter3.textContent =
-(currentImage3 + 1) +
+(currentImage3+1) +
 " / " +
 projectImages3.length;
 
@@ -3511,8 +3113,7 @@ createThumbnails3();
 
 function createThumbnails3() {
 
-galleryThumbnails3.innerHTML =
-"";
+galleryThumbnails3.innerHTML="";
 
 projectImages3.forEach(
 function(image,index) {
@@ -3520,22 +3121,20 @@ function(image,index) {
 const thumbnail =
 document.createElement("img");
 
-thumbnail.src = image;
+thumbnail.src=image;
 
 thumbnail.alt =
-"صورة " +
-(index + 1) +
+"صورة "+
+(index+1)+
 " من مشروع منتزه طريق النهضة";
 
 thumbnail.classList.add(
 "gallery-thumb"
 );
 
-if(index === currentImage3) {
+if(index===currentImage3) {
 
-thumbnail.classList.add(
-"active"
-);
+thumbnail.classList.add("active");
 
 }
 
@@ -3545,7 +3144,7 @@ function(event) {
 
 event.stopPropagation();
 
-currentImage3 = index;
+currentImage3=index;
 
 showGalleryImage3();
 
@@ -3567,11 +3166,11 @@ function nextImage3() {
 currentImage3++;
 
 if(
-currentImage3 >=
+currentImage3>=
 projectImages3.length
 ) {
 
-currentImage3 = 0;
+currentImage3=0;
 
 }
 
@@ -3584,10 +3183,10 @@ function previousImage3() {
 
 currentImage3--;
 
-if(currentImage3 < 0) {
+if(currentImage3<0) {
 
-currentImage3 =
-projectImages3.length - 1;
+currentImage3=
+projectImages3.length-1;
 
 }
 
@@ -3598,12 +3197,9 @@ showGalleryImage3();
 
 function closeProject3() {
 
-projectModal3.classList.remove(
-"active"
-);
+projectModal3.classList.remove("active");
 
-document.body.style.overflow =
-"";
+document.body.style.overflow="";
 
 }
 
@@ -3612,10 +3208,7 @@ projectModal3.addEventListener(
 "click",
 function(event) {
 
-if(
-event.target ===
-projectModal3
-) {
+if(event.target===projectModal3) {
 
 closeProject3();
 
@@ -3635,64 +3228,49 @@ function(event) {
 
 
 if(
-projectModal.classList.contains(
-"active"
-)
+projectModal.classList.contains("active")
 ) {
 
-if(event.key === "Escape") {
+if(event.key==="Escape")
 closeProject();
-}
 
-if(event.key === "ArrowRight") {
+if(event.key==="ArrowRight")
 nextImage();
-}
 
-if(event.key === "ArrowLeft") {
+if(event.key==="ArrowLeft")
 previousImage();
-}
 
 }
 
 
 if(
-projectModal2.classList.contains(
-"active"
-)
+projectModal2.classList.contains("active")
 ) {
 
-if(event.key === "Escape") {
+if(event.key==="Escape")
 closeProject2();
-}
 
-if(event.key === "ArrowRight") {
+if(event.key==="ArrowRight")
 nextImage2();
-}
 
-if(event.key === "ArrowLeft") {
+if(event.key==="ArrowLeft")
 previousImage2();
-}
 
 }
 
 
 if(
-projectModal3.classList.contains(
-"active"
-)
+projectModal3.classList.contains("active")
 ) {
 
-if(event.key === "Escape") {
+if(event.key==="Escape")
 closeProject3();
-}
 
-if(event.key === "ArrowRight") {
+if(event.key==="ArrowRight")
 nextImage3();
-}
 
-if(event.key === "ArrowLeft") {
+if(event.key==="ArrowLeft")
 previousImage3();
-}
 
 }
 
