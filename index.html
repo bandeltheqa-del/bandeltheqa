@@ -1,1621 +1,268 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
-
 <head>
-
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta name="google-site-verification"
-content="8uarxbhJaAb6DKhzYkJZivtsbNWU9rdfbEFXyw9lML4">
-
-<meta name="viewport"
-content="width=device-width, initial-scale=1.0">
-
-<title>بند الثقة | مؤسسة سعودية</title>
+<meta name="description" content="بند الثقة للمقاولات العامة - جودة، التزام، وثقة في كل مشروع">
+<title>بند الثقة | شركه سعوديه  </title>
 
 <style>
-
-/* =====================================================
-   الأساسيات
-   ===================================================== */
-
-:root {
-    --navy:#071827;
-    --navy-light:#102c42;
-    --navy-soft:#183b55;
-    --gold:#c7a45b;
-    --gold-light:#e2c982;
-    --gold-dark:#98742f;
-    --cream:#f6f3ec;
-    --white:#ffffff;
-    --text:#172737;
-    --muted:#748292;
-}
-
-* {
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html {
-    scroll-behavior:smooth;
-}
-
-body {
-    font-family:"Segoe UI",Tahoma,Arial,sans-serif;
-    background:var(--cream);
-    color:var(--text);
-    line-height:1.8;
-    overflow-x:hidden;
-}
-
-a {
-    text-decoration:none;
-    color:inherit;
-}
-
-img {
-    max-width:100%;
-    display:block;
-}
-
-.container {
-    width:min(1180px,90%);
-    margin:auto;
-}
-
-
-/* =====================================================
-   Header
-   ===================================================== */
-
-header {
-    position:fixed;
-    top:0;
-    right:0;
-    width:100%;
-    z-index:1000;
-    background:rgba(5,18,30,.92);
-    backdrop-filter:blur(18px);
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.navbar {
-    min-height:88px;
-    display:flex;
-    align-items:center;
-    justify-content:space-between;
-}
-
-.brand {
-    display:flex;
-    align-items:center;
-    gap:14px;
-}
-
-.brand img {
-    width:64px;
-    height:64px;
-    object-fit:contain;
-    border-radius:8px;
-}
-
-.brand-name {
-    display:flex;
-    flex-direction:column;
-    line-height:1.2;
-}
-
-.brand-name strong {
-    color:var(--gold-light);
-    font-size:20px;
-    font-weight:700;
-}
-
-.brand-name span {
-    color:#93a2b0;
-    font-size:9px;
-    margin-top:4px;
-    letter-spacing:1.5px;
-}
-
-.nav-links {
-    display:flex;
-    align-items:center;
-    gap:32px;
-}
-
-.nav-links a {
-    color:#d5dee5;
-    font-size:12px;
-    transition:.3s;
-}
-
-.nav-links a:hover {
-    color:var(--gold-light);
-}
-
-.header-button {
-    border:1px solid var(--gold);
-    color:var(--gold-light);
-    padding:9px 19px;
-    font-size:11px;
-    transition:.3s;
-}
-
-.header-button:hover {
-    background:var(--gold);
-    color:var(--navy);
-}
-
-.menu-button {
-    display:none;
-    color:white;
-    font-size:28px;
-    cursor:pointer;
-}
-
-
-/* =====================================================
-   Hero
-   ===================================================== */
-
-.hero {
-    min-height:100vh;
-    position:relative;
-    display:flex;
-    align-items:center;
-    overflow:hidden;
-
-    background:
-        radial-gradient(
-            circle at 15% 25%,
-            rgba(199,164,91,.15),
-            transparent 26%
-        ),
-        radial-gradient(
-            circle at 90% 70%,
-            rgba(34,78,108,.35),
-            transparent 30%
-        ),
-        linear-gradient(
-            125deg,
-            #030c15,
-            #071827 55%,
-            #0d2b42
-        );
-}
-
-.hero-circle {
-    position:absolute;
-    border:1px solid rgba(199,164,91,.15);
-    border-radius:50%;
-}
-
-.circle-one {
-    width:650px;
-    height:650px;
-    left:-330px;
-    top:10%;
-}
-
-.circle-two {
-    width:430px;
-    height:430px;
-    left:-220px;
-    top:25%;
-}
-
-.circle-three {
-    width:220px;
-    height:220px;
-    left:-110px;
-    top:38%;
-}
-
-.hero-line {
-    position:absolute;
-    width:1px;
-    height:60%;
-    left:11%;
-    top:20%;
-    background:linear-gradient(
-        transparent,
-        var(--gold),
-        transparent
-    );
-    opacity:.35;
-}
-
-.hero-content {
-    position:relative;
-    z-index:5;
-    max-width:850px;
-}
-
-.hero-tag {
-    display:flex;
-    align-items:center;
-    gap:12px;
-    color:var(--gold-light);
-    font-size:12px;
-    margin-bottom:24px;
-}
-
-.hero-tag span {
-    width:42px;
-    height:1px;
-    background:var(--gold);
-}
-
-.hero h1 {
-    color:white;
-    font-size:clamp(48px,7vw,88px);
-    line-height:1.05;
-    letter-spacing:-3px;
-    margin-bottom:28px;
-}
-
-.hero h1 em {
-    color:var(--gold-light);
-    font-style:normal;
-}
-
-.hero-description {
-    color:#b8c6d2;
-    max-width:650px;
-    font-size:15px;
-    margin-bottom:35px;
-}
-
-.hero-actions {
-    display:flex;
-    gap:13px;
-}
-
-.button {
-    min-width:160px;
-    padding:13px 25px;
-    display:inline-flex;
-    align-items:center;
-    justify-content:center;
-    font-size:12px;
-    transition:.35s;
-}
-
-.button-gold {
-    color:var(--navy);
-    background:linear-gradient(
-        135deg,
-        var(--gold),
-        var(--gold-light)
-    );
-    font-weight:700;
-}
-
-.button-gold:hover {
-    transform:translateY(-4px);
-    box-shadow:0 15px 35px rgba(199,164,91,.2);
-}
-
-.button-outline {
-    color:white;
-    border:1px solid rgba(255,255,255,.25);
-}
-
-.button-outline:hover {
-    border-color:var(--gold);
-    color:var(--gold-light);
-}
-
-
-/* =====================================================
-   Sections
-   ===================================================== */
-
-section {
-    padding:110px 0;
-}
-
-.section-heading {
-    max-width:700px;
-    margin:0 auto 65px;
-    text-align:center;
-}
-
-.eyebrow {
-    color:var(--gold-dark);
-    font-size:10px;
-    font-weight:700;
-    letter-spacing:3px;
-}
-
-.section-heading h2 {
-    color:var(--navy);
-    font-size:42px;
-    line-height:1.35;
-    margin:8px 0 12px;
-}
-
-.section-heading p {
-    color:var(--muted);
-    font-size:13px;
-}
-
-
-/* =====================================================
-   About
-   ===================================================== */
-
-.about {
-    background:var(--cream);
-}
-
-.about-layout {
-    display:grid;
-    grid-template-columns:.9fr 1.1fr;
-    gap:85px;
-    align-items:center;
-}
-
-.about-visual {
-    height:500px;
-    position:relative;
-    background:linear-gradient(
-        145deg,
-        #071827,
-        #0d3048
-    );
-    overflow:hidden;
-}
-
-.about-visual::before {
-    content:"";
-    position:absolute;
-    width:330px;
-    height:330px;
-    border:1px solid rgba(199,164,91,.25);
-    border-radius:50%;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
-.about-visual::after {
-    content:"";
-    position:absolute;
-    width:210px;
-    height:210px;
-    border:1px solid rgba(199,164,91,.17);
-    border-radius:50%;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-}
-
-.about-symbol {
-    position:absolute;
-    top:50%;
-    left:50%;
-    transform:translate(-50%,-50%);
-    width:100px;
-    height:100px;
-    border:1px solid var(--gold);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--gold-light);
-    font-size:42px;
-}
-
-.about-corner {
-    position:absolute;
-    bottom:30px;
-    right:30px;
-    color:white;
-}
-
-.about-corner strong {
-    display:block;
-    color:var(--gold-light);
-    font-size:24px;
-}
-
-.about-corner span {
-    color:#8ea0b1;
-    font-size:10px;
-}
-
-.about-text .small-title {
-    color:var(--gold-dark);
-    font-size:12px;
-    font-weight:bold;
-}
-
-.about-text h3 {
-    color:var(--navy);
-    font-size:39px;
-    line-height:1.4;
-    margin:10px 0 22px;
-}
-
-.about-text h3 span {
-    color:var(--gold-dark);
-}
-
-.about-text p {
-    color:var(--muted);
-    font-size:14px;
-    margin-bottom:17px;
-}
-
-.gold-line {
-    width:75px;
-    height:2px;
-    background:var(--gold);
-    margin-top:30px;
-}
-
-
-/* =====================================================
-   Why
-   ===================================================== */
-
-.why {
-    background:white;
-}
-
-.why-grid {
-    display:grid;
-    grid-template-columns:repeat(3,1fr);
-    border-top:1px solid #e4dfd5;
-    border-right:1px solid #e4dfd5;
-}
-
-.why-card {
-    min-height:270px;
-    padding:38px;
-    border-left:1px solid #e4dfd5;
-    border-bottom:1px solid #e4dfd5;
-    transition:.35s;
-}
-
-.why-card:hover {
-    background:var(--navy);
-    transform:translateY(-5px);
-}
-
-.why-number {
-    color:var(--gold);
-    font-size:11px;
-    letter-spacing:2px;
-}
-
-.why-icon {
-    width:46px;
-    height:46px;
-    border:1px solid var(--gold);
-    margin:28px 0 20px;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    color:var(--gold);
-    font-size:20px;
-}
-
-.why-card h3 {
-    color:var(--navy);
-    font-size:20px;
-    margin-bottom:7px;
-}
-
-.why-card p {
-    color:var(--muted);
-    font-size:12px;
-}
-
-.why-card:hover h3 {
-    color:white;
-}
-
-.why-card:hover p {
-    color:#9eacb9;
-}
-
-
-/* =====================================================
-   Projects
-   ===================================================== */
-
-.projects {
-    background:linear-gradient(
-        180deg,
-        #f3f0e8,
-        #eeeae1
-    );
-}
-
-.projects-grid {
-    display:grid;
-    grid-template-columns:repeat(12,1fr);
-    gap:18px;
-}
-
-.project {
-    position:relative;
-    height:350px;
-    overflow:hidden;
-    background:var(--navy);
-    border:1px solid rgba(199,164,91,.15);
-    cursor:default;
-}
-
-.project.clickable {
-    cursor:pointer;
-}
-
-.project:nth-child(1) {
-    grid-column:span 7;
-}
-
-.project:nth-child(2) {
-    grid-column:span 5;
-}
-
-.project:nth-child(3) {
-    grid-column:span 5;
-}
-
-.project:nth-child(4) {
-    grid-column:span 7;
-}
-
-.project img {
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    transition:.6s;
-}
-
-.project:hover img {
-    transform:scale(1.06);
-}
-
-.project-overlay {
-    position:absolute;
-    inset:0;
-    display:flex;
-    align-items:flex-end;
-    padding:28px;
-    background:linear-gradient(
-        transparent 25%,
-        rgba(2,10,17,.9)
-    );
-}
-
-.project-info {
-    width:100%;
-}
-
-.project-label {
-    color:var(--gold-light);
-    font-size:9px;
-    letter-spacing:2px;
-}
-
-.project h3 {
-    color:white;
-    font-size:22px;
-    margin-top:5px;
-}
-
-
-/* =====================================================
-   Gallery
-   ===================================================== */
-
-.project-modal {
-    position:fixed;
-    inset:0;
-    z-index:5000;
-    background:rgba(2,9,15,.97);
-    display:none;
-    align-items:center;
-    justify-content:center;
-    padding:30px;
-    opacity:0;
-    transition:opacity .3s ease;
-}
-
-.project-modal.active {
-    display:flex;
-    opacity:1;
-}
-
-.modal-content {
-    width:min(1100px,95%);
-    max-height:95vh;
-    position:relative;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    justify-content:center;
-}
-
-.modal-close {
-    position:fixed;
-    top:22px;
-    right:28px;
-    width:48px;
-    height:48px;
-    border:1px solid rgba(255,255,255,.25);
-    background:rgba(0,0,0,.4);
-    color:white;
-    font-size:32px;
-    line-height:1;
-    cursor:pointer;
-    z-index:5010;
-    transition:.3s;
-}
-
-.modal-close:hover {
-    background:var(--gold);
-    border-color:var(--gold);
-    color:var(--navy);
-}
-
-.modal-project-title {
-    text-align:center;
-    margin-bottom:18px;
-}
-
-.modal-project-number {
-    color:var(--gold-light);
-    font-size:10px;
-    letter-spacing:3px;
-    margin-bottom:3px;
-}
-
-.modal-project-title h2 {
-    color:white;
-    font-size:27px;
-    margin:0;
-}
-
-.gallery-image-container {
-    width:min(850px,85vw);
-    height:min(65vh,600px);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    background:#050f18;
-    border:1px solid rgba(199,164,91,.2);
-}
-
-.gallery-image-container img {
-    width:100%;
-    height:100%;
-    object-fit:contain;
-}
-
-.gallery-arrow {
-    position:absolute;
-    top:52%;
-    transform:translateY(-50%);
-    width:50px;
-    height:50px;
-    border:1px solid rgba(199,164,91,.45);
-    background:rgba(7,24,39,.85);
-    color:var(--gold-light);
-    font-size:18px;
-    cursor:pointer;
-    z-index:5;
-    transition:.3s;
-}
-
-.gallery-arrow:hover {
-    background:var(--gold);
-    color:var(--navy);
-}
-
-.gallery-prev {
-    left:0;
-}
-
-.gallery-next {
-    right:0;
-}
-
-.gallery-counter {
-    color:#aab7c2;
-    font-size:11px;
-    margin-top:12px;
-}
-
-.gallery-thumbnails {
-    display:flex;
-    gap:10px;
-    margin-top:15px;
-    max-width:90vw;
-    overflow-x:auto;
-    padding:5px;
-}
-
-.gallery-thumb {
-    width:75px;
-    height:55px;
-    flex-shrink:0;
-    object-fit:cover;
-    opacity:.45;
-    cursor:pointer;
-    border:1px solid transparent;
-    transition:.3s;
-}
-
-.gallery-thumb:hover {
-    opacity:.8;
-}
-
-.gallery-thumb.active {
-    opacity:1;
-    border-color:var(--gold);
-}
-
-
-/* =====================================================
-   Statement
-   ===================================================== */
-
-.statement {
-    position:relative;
-    overflow:hidden;
-
-    background:
-        radial-gradient(
-            circle at 80% 50%,
-            rgba(199,164,91,.12),
-            transparent 25%
-        ),
-        var(--navy);
-
-    padding:125px 0;
-}
-
-.statement-content {
-    text-align:center;
-    position:relative;
-    z-index:3;
-}
-
-.statement-content .eyebrow {
-    color:var(--gold-light);
-    font-size:10px;
-    letter-spacing:4px;
-}
-
-.statement-content h2 {
-    color:white;
-    font-size:clamp(36px,5vw,63px);
-    line-height:1.4;
-    max-width:900px;
-    margin:18px auto;
-}
-
-.statement-content h2 span {
-    color:var(--gold-light);
-}
-
-.statement-content p {
-    color:#8494a4;
-    max-width:600px;
-    margin:auto;
-    font-size:13px;
-}
-
-
-/* =====================================================
-   CONTACT - SOCIAL APPS
-   ===================================================== */
-
-.contact {
-    background:var(--cream);
-}
-
-.social-apps {
-
-    max-width:1000px;
-
-    margin:auto;
-
-    display:grid;
-
-    grid-template-columns:
-        repeat(3,1fr);
-
-    gap:22px;
-}
-
-
-/* البطاقة */
-
-.social-app {
-
-    position:relative;
-
-    min-height:220px;
-
-    padding:30px;
-
-    border-radius:26px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    justify-content:space-between;
-
-    overflow:hidden;
-
-    color:white;
-
-    transition:
-        transform .4s ease,
-        box-shadow .4s ease;
-
-    border:
-        1px solid
-        rgba(255,255,255,.12);
-
-    box-shadow:
-        0 15px 35px
-        rgba(0,0,0,.08);
-}
-
-
-/* الدائرة الخلفية */
-
-.social-app::before {
-
-    content:"";
-
-    position:absolute;
-
-    width:240px;
-
-    height:240px;
-
-    border-radius:50%;
-
-    top:-110px;
-
-    right:-80px;
-
-    background:
-        rgba(255,255,255,.1);
-
-    transition:.5s;
-
-}
-
-
-/* دائرة ثانية */
-
-.social-app::after {
-
-    content:"";
-
-    position:absolute;
-
-    width:150px;
-
-    height:150px;
-
-    border-radius:50%;
-
-    bottom:-80px;
-
-    left:-50px;
-
-    background:
-        rgba(255,255,255,.07);
-
-}
-
-
-/* Hover */
-
-.social-app:hover {
-
-    transform:
-        translateY(-12px);
-
-    box-shadow:
-        0 30px 60px
-        rgba(0,0,0,.20);
-}
-
-.social-app:hover::before {
-
-    transform:
-        scale(1.4);
-}
-
-
-/* =========================
-   WhatsApp
-   ========================= */
-
-.whatsapp-app {
-
-    background:
-        linear-gradient(
-            145deg,
-            #075E54,
-            #128C7E 45%,
-            #25D366
-        );
-}
-
-
-/* =========================
-   Instagram
-   ========================= */
-
-.instagram-app {
-
-    background:
-        radial-gradient(
-            circle at 30% 107%,
-            #fdf497 0%,
-            #fdf497 5%,
-            #fd5949 45%,
-            #d6249f 60%,
-            #285AEB 90%
-        );
-}
-
-
-/* =========================
-   TikTok
-   ========================= */
-
-.tiktok-app {
-
-    background:
-        linear-gradient(
-            145deg,
-            #000000,
-            #111111,
-            #191919
-        );
-}
-
-
-/* أيقونة التطبيق */
-
-.app-icon {
-
-    width:72px;
-
-    height:72px;
-
-    border-radius:21px;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:
-        rgba(255,255,255,.14);
-
-    backdrop-filter:
-        blur(12px);
-
-    border:
-        1px solid
-        rgba(255,255,255,.22);
-
-    position:relative;
-
-    z-index:2;
-
-    box-shadow:
-        0 10px 25px
-        rgba(0,0,0,.15);
-}
-
-.app-icon svg {
-
-    width:40px;
-
-    height:40px;
-}
-
-
-/* اسم التطبيق */
-
-.app-info {
-
-    display:flex;
-
-    flex-direction:column;
-
-    position:relative;
-
-    z-index:2;
-
-    margin-top:22px;
-}
-
-.app-info strong {
-
-    font-size:24px;
-
-    font-weight:700;
-
-    letter-spacing:.2px;
-}
-
-.app-info span {
-
-    font-size:12px;
-
-    margin-top:4px;
-
-    color:
-        rgba(255,255,255,.82);
-}
-
-
-/* زر الدخول */
-
-.app-arrow {
-
-    position:absolute;
-
-    left:25px;
-
-    bottom:27px;
-
-    width:44px;
-
-    height:44px;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    background:
-        rgba(255,255,255,.14);
-
-    border:
-        1px solid
-        rgba(255,255,255,.18);
-
-    font-size:20px;
-
-    z-index:3;
-
-    transition:.35s;
-}
-
-.social-app:hover .app-arrow {
-
-    transform:
-        translateX(-7px);
-
-    background:
-        rgba(255,255,255,.25);
-}
-
-
-/* =====================================================
-   Footer
-   ===================================================== */
-
-footer {
-    background:#030d17;
-    color:white;
-    padding:65px 0 25px;
-}
-
-.footer-main {
-    display:grid;
-    grid-template-columns:1.5fr 1fr 1fr;
-    gap:70px;
-    padding-bottom:40px;
-    border-bottom:1px solid rgba(255,255,255,.08);
-}
-
-.footer-logo img {
-    width:75px;
-    margin-bottom:15px;
-}
-
-.footer-brand h3 {
-    font-size:22px;
-    margin-bottom:10px;
-}
-
-.footer-brand h3 span {
-    color:var(--gold-light);
-}
-
-.footer-brand p {
-    max-width:370px;
-    color:#6e8091;
-    font-size:11px;
-}
-
-.footer-title {
-    color:var(--gold-light);
-    font-size:12px;
-    margin-bottom:17px;
-}
-
-.footer-links a {
-    display:block;
-    color:#718293;
-    font-size:11px;
-    margin:9px 0;
-    transition:.3s;
-}
-
-.footer-links a:hover {
-    color:white;
-}
-
-.footer-social {
-    display:flex;
-    gap:9px;
-    margin-top:20px;
-}
-
-.footer-social a {
-    width:39px;
-    height:39px;
-    border:1px solid rgba(255,255,255,.12);
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    transition:.3s;
-}
-
-.footer-social svg {
-    width:18px;
-    height:18px;
-    fill:#8795a3;
-}
-
-.footer-social a:hover {
-    border-color:var(--gold);
-}
-
-.footer-social a:hover svg {
-    fill:var(--gold-light);
-}
-
-.footer-bottom {
-    padding-top:22px;
-    display:flex;
-    justify-content:space-between;
-    align-items:center;
-}
-
-.copyright,
-.developer {
-    color:#536474;
-    font-size:10px;
-}
-
-.developer strong {
-    color:var(--gold-light);
-}
-
-
-/* =====================================================
-   WhatsApp Floating
-   ===================================================== */
-
-.floating-whatsapp {
-
-    position:fixed;
-
-    left:25px;
-
-    bottom:25px;
-
-    width:61px;
-
-    height:61px;
-
-    background:#25D366;
-
-    border-radius:50%;
-
-    display:flex;
-
-    align-items:center;
-
-    justify-content:center;
-
-    z-index:999;
-
-    box-shadow:
-        0 12px 30px
-        rgba(0,0,0,.25);
-
-    transition:.3s;
-}
-
-.floating-whatsapp:hover {
-    transform:scale(1.1);
-}
-
-.floating-whatsapp svg {
-
-    width:34px;
-
-    height:34px;
-
-    fill:white;
-}
-
-
-/* =====================================================
-   Animation
-   ===================================================== */
-
-.reveal {
-
-    opacity:0;
-
-    transform:translateY(25px);
-
-    transition:
-        opacity .8s ease,
-        transform .8s ease;
-}
-
-.reveal.show {
-
-    opacity:1;
-
-    transform:translateY(0);
-}
-
-
-/* =====================================================
-   Tablet
-   ===================================================== */
-
-@media(max-width:900px) {
-
-    .nav-links {
-
-        position:absolute;
-
-        top:88px;
-
-        right:0;
-
-        width:100%;
-
-        background:var(--navy);
-
-        padding:25px;
-
-        display:none;
-
-        flex-direction:column;
-
-        gap:20px;
-    }
-
-    .nav-links.active {
-        display:flex;
-    }
-
-    .menu-button {
-        display:block;
-    }
-
-    .header-button {
-        display:none;
-    }
-
-    .about-layout {
-        grid-template-columns:1fr;
-    }
-
-    .why-grid {
-        grid-template-columns:1fr 1fr;
-    }
-
-    .social-apps {
-        grid-template-columns:1fr 1fr;
-    }
-
-    .footer-main {
-        grid-template-columns:1fr 1fr;
-    }
-}
-
-
-/* =====================================================
-   Mobile
-   ===================================================== */
-
-@media(max-width:650px) {
-
-    section {
-        padding:80px 0;
-    }
-
-    .brand img {
-        width:55px;
-        height:55px;
-    }
-
-    .brand-name strong {
-        font-size:17px;
-    }
-
-    .hero h1 {
-        font-size:50px;
-        letter-spacing:-2px;
-    }
-
-    .hero-actions {
-        flex-direction:column;
-    }
-
-    .button {
-        width:180px;
-    }
-
-    .why-grid {
-        grid-template-columns:1fr;
-    }
-
-    .projects-grid {
-        display:block;
-    }
-
-    .project {
-        height:280px;
-        margin-bottom:15px;
-    }
-
-    .social-apps {
-        grid-template-columns:1fr;
-    }
-
-    .social-app {
-        min-height:190px;
-    }
-
-    .contact {
-        padding-left:0;
-        padding-right:0;
-    }
-
-    .footer-main {
-        grid-template-columns:1fr;
-    }
-
-    .footer-bottom {
-        flex-direction:column;
-        gap:10px;
-        text-align:center;
-    }
-
-    .floating-whatsapp {
-        width:55px;
-        height:55px;
-        left:18px;
-        bottom:18px;
-    }
-
-    .project-modal {
-        padding:15px;
-    }
-
-    .modal-content {
-        width:100%;
-    }
-
-    .modal-project-title {
-        margin-bottom:12px;
-    }
-
-    .modal-project-title h2 {
-        font-size:20px;
-    }
-
-    .gallery-image-container {
-        width:94vw;
-        height:55vh;
-    }
-
-    .gallery-arrow {
-        width:40px;
-        height:40px;
-        font-size:15px;
-    }
-
-    .gallery-prev {
-        left:5px;
-    }
-
-    .gallery-next {
-        right:5px;
-    }
-
-    .modal-close {
-        top:12px;
-        right:15px;
-        width:42px;
-        height:42px;
-        font-size:28px;
-    }
-
-    .gallery-thumb {
-        width:65px;
-        height:48px;
-    }
-
-}
-
+:root{
+  --navy:#071a2b;
+  --navy-2:#0c263b;
+  --navy-3:#123a55;
+  --gold:#c9a45c;
+  --gold-light:#e5cf99;
+  --gold-dark:#9a7330;
+  --cream:#f5f2eb;
+  --white:#ffffff;
+  --text:#182838;
+  --muted:#6f7d8b;
+  --border:#e7e1d6;
+  --shadow:0 20px 60px rgba(7,26,43,.10);
+  --shadow-hover:0 24px 70px rgba(7,26,43,.16);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Segoe UI",Tahoma,Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.8;overflow-x:hidden}
+a{text-decoration:none;color:inherit}
+img{max-width:100%;display:block}
+button{font-family:inherit}
+.container{width:min(1180px,92%);margin:auto}
+
+/* HEADER */
+header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(7,26,43,.82);border-bottom:1px solid rgba(229,207,153,.18);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
+.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
+.logo{width:82px;height:62px;object-fit:contain;filter:drop-shadow(0 5px 12px rgba(0,0,0,.2))}
+.nav-links{display:flex;align-items:center;gap:34px;list-style:none}
+.nav-links a{color:#f8fafb;font-size:14px;font-weight:600;transition:.25s;position:relative;padding:8px 0}
+.nav-links a::after{content:"";position:absolute;right:0;bottom:0;width:0;height:2px;background:var(--gold-light);transition:.3s}
+.nav-links a:hover{color:var(--gold-light)}
+.nav-links a:hover::after{width:100%}
+.menu-btn{display:none;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:25px;width:45px;height:43px;border-radius:10px;cursor:pointer}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#061725 0%,#0b263b 55%,#071a2b 100%)}
+.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 25%,rgba(201,164,92,.16),transparent 28%),linear-gradient(180deg,rgba(7,26,43,.05),rgba(7,26,43,.62))}
+.hero::after{content:"";position:absolute;width:680px;height:680px;border:1px solid rgba(201,164,92,.18);border-radius:50%;left:-300px;bottom:-360px;box-shadow:0 0 0 80px rgba(201,164,92,.025),0 0 0 160px rgba(201,164,92,.018)}
+.hero-content{position:relative;z-index:2;color:#fff;max-width:850px;padding-top:90px}
+.hero-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--gold-light);font-size:15px;margin-bottom:20px;font-weight:700;letter-spacing:1px}
+.hero-kicker::before{content:"";width:38px;height:1px;background:var(--gold)}
+.hero h1{font-size:clamp(45px,7vw,78px);line-height:1.12;margin-bottom:25px;font-weight:800;letter-spacing:-1px}
+.hero h1 span{color:var(--gold-light)}
+.hero p{color:#e7edf1;font-size:18px;max-width:700px;margin-bottom:38px;line-height:2}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 29px;border-radius:9px;border:1px solid var(--gold);background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--navy);font-weight:800;transition:.3s;box-shadow:0 10px 25px rgba(0,0,0,.12)}
+.btn:hover{transform:translateY(-3px);box-shadow:0 15px 32px rgba(0,0,0,.2)}
+.btn-outline{background:rgba(255,255,255,.04);color:#fff;margin-right:10px;box-shadow:none}
+.btn-outline:hover{background:#fff;color:var(--navy)}
+
+/* GENERAL */
+section{padding:110px 0}
+.section-head{text-align:center;margin-bottom:60px}
+.section-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--gold-dark);font-size:13px;font-weight:800;letter-spacing:1.4px}
+.section-kicker::before,.section-kicker::after{content:"";width:25px;height:1px;background:var(--gold)}
+.section-head h2{color:var(--navy);font-size:clamp(31px,4vw,47px);line-height:1.25;margin:10px 0 14px;font-weight:800}
+.section-head p{color:var(--muted);max-width:690px;margin:auto}
+
+/* INTRO */
+.intro-band{background:#fff;position:relative;overflow:hidden}
+.intro-band::before{content:"";position:absolute;left:-180px;top:-180px;width:420px;height:420px;border:1px solid rgba(201,164,92,.14);border-radius:50%}
+.intro-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:75px;align-items:center}
+.intro-visual{height:440px;position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(145deg,var(--navy),var(--navy-3));box-shadow:var(--shadow)}
+.intro-visual::before{content:"";position:absolute;inset:20px;border:1px solid rgba(229,207,153,.45);border-radius:18px}
+.ornament-grid{position:absolute;inset:0;opacity:.13;background-image:linear-gradient(rgba(229,207,153,.55) 1px,transparent 1px),linear-gradient(90deg,rgba(229,207,153,.55) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 78%,transparent)}
+.ornament-ring{position:absolute;border:1px solid rgba(229,207,153,.35);border-radius:50%}
+.ring-1{width:330px;height:330px;left:50%;top:50%;transform:translate(-50%,-50%)}
+.ring-2{width:245px;height:245px;left:50%;top:50%;transform:translate(-50%,-50%);border-color:rgba(229,207,153,.65)}
+.ornament-line{position:absolute;height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);width:72%;left:14%;opacity:.55}
+.line-1{top:27%}.line-2{bottom:27%}
+.ornament-diamond{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(45deg);width:92px;height:92px;border:1px solid var(--gold-light);display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-weight:800;font-size:25px;letter-spacing:1px;box-shadow:0 0 0 14px rgba(201,164,92,.035)}
+.ornament-diamond::before{content:"";position:absolute;inset:9px;border:1px solid rgba(229,207,153,.35)}
+.ornament-diamond{line-height:1;}
+.ornament-diamond::after{content:"BT";transform:rotate(-45deg);position:absolute}
+.ornament-caption{position:absolute;bottom:40px;left:0;right:0;text-align:center;color:#dfe7eb;font-size:12px;letter-spacing:3px;font-weight:700}
+.intro-text{padding:15px 0}
+.intro-text h2{color:var(--navy);font-size:42px;line-height:1.35;margin:0 0 22px;font-weight:800}
+.intro-text h2 span{color:var(--gold-dark)}
+.intro-text p{color:#687887;margin-bottom:16px;font-size:16px}
+
+/* ABOUT */
+.about{background:var(--cream)}
+.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
+.about-text h3{color:var(--navy);font-size:31px;margin-bottom:18px}
+.about-text p{color:#657585;margin-bottom:16px}
+.about-box{background:linear-gradient(145deg,var(--navy),var(--navy-2));padding:50px;border-radius:22px;border:1px solid rgba(201,164,92,.28);color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
+.about-box::before{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(201,164,92,.2);border-radius:50%;left:-120px;bottom:-120px}
+.about-box::after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.08);border-radius:15px;pointer-events:none}
+.about-box h3,.about-box p{position:relative;z-index:1}.about-box h3{color:var(--gold-light);font-size:28px;margin-bottom:14px}.about-box p{color:#d9e0e6}
+
+/* SERVICES */
+.services{background:#fff}
+.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+.service-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:34px 26px;position:relative;overflow:hidden;transition:.3s;box-shadow:0 7px 25px rgba(7,26,43,.035)}
+.service-card::before{content:"";position:absolute;top:0;right:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold-dark),var(--gold-light));transform:scaleX(0);transform-origin:right;transition:.3s}
+.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);border-color:rgba(201,164,92,.7)}
+.service-card:hover::before{transform:scaleX(1)}
+.service-number{color:var(--gold-dark);font-weight:800;font-size:13px;letter-spacing:2px}
+.service-card h3{color:var(--navy);font-size:20px;margin:12px 0 9px}.service-card p{color:var(--muted);font-size:14px}
+
+/* WHY */
+.why{background:var(--cream)}
+.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.why-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:34px 28px;transition:.3s;position:relative;overflow:hidden}
+.why-card::after{content:"";position:absolute;bottom:0;right:0;width:60px;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:.3s}
+.why-card:hover{transform:translateY(-6px);border-color:rgba(201,164,92,.7);box-shadow:var(--shadow)}
+.why-card:hover::after{transform:scaleX(1)}
+.number{color:var(--gold-dark);font-size:13px;font-weight:800;letter-spacing:1px}.why-card h3{color:var(--navy);margin:9px 0;font-size:21px}.why-card p{color:var(--muted);font-size:15px}
+
+
+/* PROJECTS */
+.projects{background:#fff}.projects-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.project-card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;transition:.3s;box-shadow:0 7px 25px rgba(7,26,43,.035)}
+.project-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);border-color:rgba(201,164,92,.7)}.project-img{height:235px;overflow:hidden;background:#ddd}.project-img img{width:100%;height:100%;object-fit:cover;transition:.5s}.project-card:hover .project-img img{transform:scale(1.08)}
+.project-info{padding:21px}.project-info small{color:var(--gold-dark);font-weight:800}.project-info h3{color:var(--navy);margin:4px 0 7px;font-size:18px}.project-info p{color:var(--muted);font-size:13px}
+
+/* GALLERY */
+.gallery-modal{position:fixed;inset:0;background:rgba(2,10,17,.96);z-index:2000;display:none;align-items:center;justify-content:center;padding:25px}.gallery-modal.active{display:flex}.gallery-inner{width:min(1100px,96vw);position:relative}.gallery-main{height:min(68vh,680px);display:flex;align-items:center;justify-content:center}.gallery-main img{max-height:100%;max-width:100%;object-fit:contain;border-radius:8px}.close-gallery{position:absolute;top:-12px;left:0;width:45px;height:45px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.5);color:#fff;font-size:27px;border-radius:50%;cursor:pointer;z-index:5}.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.5);color:#fff;font-size:27px;cursor:pointer}.gallery-arrow:hover,.close-gallery:hover{background:var(--gold);color:var(--navy)}.prev{right:-60px}.next{left:-60px}.gallery-bottom{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px}.counter{color:#fff;font-size:14px}.thumbs{display:flex;gap:7px;justify-content:center;overflow:auto;max-width:100%;padding:5px}.thumbs img{width:65px;height:50px;object-fit:cover;opacity:.55;cursor:pointer;border:2px solid transparent}.thumbs img.active{opacity:1;border-color:var(--gold)}
+
+/* STATEMENT */
+.statement{background:linear-gradient(135deg,#071a2b,#0d2b42);color:#fff;text-align:center;padding:120px 0;position:relative}.statement::before{content:"✦";position:absolute;top:28px;left:50%;transform:translateX(-50%);color:var(--gold-light);font-size:18px}.statement h2{color:var(--gold-light);font-size:clamp(29px,4vw,46px);margin-bottom:15px}.statement p{color:#d7dfe6;max-width:760px;margin:auto}
+
+/* CONTACT */
+.contact{background:var(--cream);padding:110px 0}.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:stretch}
+.contact-info{background:linear-gradient(145deg,var(--navy),var(--navy-2));color:#fff;padding:48px;border-radius:22px;border:1px solid rgba(201,164,92,.25);box-shadow:var(--shadow);position:relative;overflow:hidden}.contact-info::before{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(201,164,92,.16);border-radius:50%;left:-160px;bottom:-160px}.contact-info h3,.contact-info p,.contact-points{position:relative;z-index:1}.contact-info h3{color:var(--gold-light);font-size:31px;margin-bottom:13px}.contact-info p{color:#cdd6dd;margin-bottom:25px}.contact-points{display:grid;gap:14px}.contact-points div{display:flex;align-items:center;gap:12px;color:#dce4e9;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1)}.point-icon{width:26px;height:26px;border:1px solid rgba(229,207,153,.55);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--gold-light);font-size:13px;flex:none}
+.social-simple{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.social-simple-card{min-height:170px;background:#fff;border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;transition:.3s;box-shadow:0 7px 25px rgba(7,26,43,.035)}.social-simple-card:hover{transform:translateY(-7px);border-color:rgba(201,164,92,.75);box-shadow:var(--shadow)}.simple-icon{width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:15px;background:var(--cream)}.simple-icon svg{width:42px;height:42px}.social-simple-card span{color:var(--navy);font-size:14px;font-weight:800}
+
+/* FOOTER */
+footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-logo{width:76px;height:58px;object-fit:contain}.footer-text{color:#aebac4;font-size:13px}.footer-links{display:flex;gap:20px;color:#d9e0e6;font-size:13px}.footer-links a:hover{color:var(--gold-light)}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:28px;padding-top:20px;text-align:center;color:#82909c;font-size:12px}
+
+
+/* BRAND */
+.brand{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;flex:none}.brand-name{font-size:15px;line-height:1.25;font-weight:800;color:#fff;white-space:nowrap}.brand-name small{font-size:9px;color:var(--gold-light);font-weight:600;letter-spacing:.5px}.footer-brand{display:flex;align-items:center;gap:11px}.footer-brand-name{color:#fff;font-size:15px;line-height:1.25;font-weight:800}.footer-brand-name small{color:var(--gold-light);font-size:9px;font-weight:600}
+
+/* PREMIUM ARCHITECTURAL EMBLEM */
+.intro-visual{background:linear-gradient(145deg,#061725,#0b263b 55%,#071a2b);overflow:hidden}
+.intro-visual:before{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(229,207,153,.16);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
+.architect-grid{position:absolute;inset:0;opacity:.08;background-image:linear-gradient(rgba(229,207,153,.8) 1px,transparent 1px),linear-gradient(90deg,rgba(229,207,153,.8) 1px,transparent 1px);background-size:55px 55px}
+.architect-frame{position:absolute;border:1px solid rgba(229,207,153,.28);transform:rotate(45deg)}
+.af-1{width:250px;height:250px;left:50%;top:50%;margin:-125px;border-radius:18px}
+.af-2{width:190px;height:190px;left:50%;top:50%;margin:-95px;border-color:rgba(229,207,153,.5);border-radius:14px}
+.b-emblem{position:absolute;left:50%;top:48%;width:150px;height:150px;transform:translate(-50%,-50%);border:2px solid var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2;background:rgba(7,26,43,.55);box-shadow:0 0 0 12px rgba(201,164,92,.04),0 18px 45px rgba(0,0,0,.28)}
+.b-letter{font-family:"Times New Roman","Arial",sans-serif;font-size:132px;font-weight:700;line-height:.8;color:var(--gold-light);transform:translateY(-7px);text-shadow:0 5px 18px rgba(0,0,0,.3)}
+.architect-line{position:absolute;width:62px;height:1px;background:var(--gold-light);opacity:.7}
+.ax-1{left:14%;top:50%}.ax-2{right:14%;top:50%}
+.b-caption{position:absolute;bottom:34px;left:0;right:0;text-align:center;color:#e5cf99;font-size:11px;letter-spacing:4px;font-weight:800;z-index:3}
+/* ANIMATION */
+.reveal{opacity:0;transform:translateY(28px);transition:.75s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
+
+/* TABLET */
+@media(max-width:1000px){.services-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-left:none}.about-grid,.intro-grid,.contact-grid{grid-template-columns:1fr}.intro-visual{max-width:620px;width:100%;margin:auto}.about-box{max-width:620px}.contact-grid{gap:30px}}
+
+/* MOBILE */
+@media(max-width:700px){section{padding:78px 0}.nav{min-height:74px}.logo{width:62px;height:50px}.brand-name{font-size:13px}.brand-name small{font-size:8px}.nav-links{position:absolute;top:74px;right:4%;left:4%;display:none;flex-direction:column;align-items:stretch;gap:0;background:rgba(7,26,43,.98);border:1px solid rgba(201,164,92,.2);border-radius:0 0 14px 14px;overflow:hidden}.nav-links.open{display:flex}.nav-links a{display:block;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.08)}.menu-btn{display:block}.hero{min-height:92vh}.hero-content{padding-top:100px}.hero h1{font-size:43px}.hero p{font-size:16px;line-height:1.9}.btn{padding:12px 20px}.btn-outline{margin-right:5px}.intro-grid{gap:40px}.intro-visual{height:330px;border-radius:20px}.intro-text h2{font-size:32px}.services-grid,.projects-grid,.why-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.stat{border-left:none;border-bottom:1px solid rgba(255,255,255,.12)}.stat:nth-last-child(-n+2){border-bottom:none}.contact-info{padding:32px 25px}.social-simple{grid-template-columns:1fr}.social-simple-card{min-height:105px;flex-direction:row;justify-content:flex-start;padding:0 25px}.gallery-main{height:58vh}.close-gallery{top:-5px;left:5px}.gallery-arrow{width:42px;height:42px}.prev{right:8px}.next{left:8px}.footer-row{flex-direction:column;text-align:center}.footer-links{justify-content:center;flex-wrap:wrap}.whatsapp-float{left:17px;bottom:17px;width:55px;height:55px}.whatsapp-float svg{width:29px;height:29px}}
 </style>
-
 </head>
-
 
 <body>
 
-
-<!-- =====================================================
-     Header
-     ===================================================== -->
+<!-- ================= HEADER ================= -->
 
 <header>
-
-<div class="container navbar">
+<div class="container nav">
 
 <a href="#home" class="brand">
-
-<img
-src="logo.jpg.jpeg"
-alt="لوجو بند الثقة"
->
-
-<div class="brand-name">
-
-<strong>
-بند الثقة
-</strong>
-
-<span>
-للمقاولات العامه
-</span>
-
-</div>
-
+<img src="logo.jpg.jpeg" alt="بند الثقة" class="logo">
+<span class="brand-name">بند الثقة<br><small>للمقاولات العامة</small></span>
 </a>
 
+<button class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
 
-<nav
-class="nav-links"
-id="navLinks"
->
-
-<a href="#home">الرئيسية</a>
-
-<a href="#about">عن المؤسسة</a>
-
-<a href="#why">لماذا بند الثقة؟</a>
-
-<a href="#projects">مشاريعنا</a>
-
-<a href="#contact">تواصل معنا</a>
-
-</nav>
-
-
-<a
-href="#contact"
-class="header-button"
->
-تواصل معنا
-</a>
-
-
-<div
-class="menu-button"
-id="menuButton"
->
-☰
-</div>
+<ul class="nav-links" id="navLinks">
+<li><a href="#home">الرئيسية</a></li>
+<li><a href="#about">من نحن</a></li>
+<li><a href="#services">خدماتنا</a></li>
+<li><a href="#why">لماذا نحن</a></li>
+<li><a href="#projects">مشاريعنا</a></li>
+<li><a href="#contact">تواصل معنا</a></li>
+</ul>
 
 </div>
-
 </header>
 
 
-<!-- =====================================================
-     Hero
-     ===================================================== -->
+<main>
 
-<section
-class="hero"
-id="home"
->
+<!-- ================= HERO ================= -->
 
-<div class="hero-circle circle-one"></div>
-<div class="hero-circle circle-two"></div>
-<div class="hero-circle circle-three"></div>
+<section class="hero" id="home">
 
-<div class="hero-line"></div>
+<div class="container hero-content reveal">
 
-<div class="container">
-
-<div class="hero-content reveal">
-
-<div class="hero-tag">
-
-<span></span>
-
-مؤسسة بند الثقة
-
+<div class="hero-kicker">
+شركة بند الثقة للمقاولات العامة
 </div>
 
 <h1>
-
-نبني قيمة
-
-<br>
-
-<em>
-تستحق الثقة.
-</em>
-
+نبني <span>الثقة</span><br>
+قبل أن نبني المكان
 </h1>
 
-<p class="hero-description">
-
-مؤسسة سعودية بهوية واضحة ورؤية
-مستقبلية، نعمل بمنهجية تجمع بين
-الجودة والاحترافية والاهتمام الحقيقي
-بالتفاصيل.
-
+<p>
+نقدم حلولًا متكاملة في أعمال المقاولات والتنفيذ،
+مع اهتمام بالتفاصيل وجودة العمل والالتزام بالمواعيد.
 </p>
 
-<div class="hero-actions">
-
-<a
-href="#projects"
-class="button button-gold"
->
+<a href="#projects" class="btn">
 استكشف مشاريعنا
 </a>
 
-<a
-href="#contact"
-class="button button-outline"
->
+<a href="#contact" class="btn btn-outline">
 تواصل معنا
 </a>
 
 </div>
 
+</section>
+
+
+<!-- ================= INTRO ================= -->
+
+<section class="intro-band">
+
+<div class="container intro-grid">
+
+<div class="intro-visual reveal" aria-hidden="true">
+  <div class="b-emblem"><div class="b-letter">ب</div></div>
+  <div class="b-line b-line-1"></div>
+  <div class="b-line b-line-2"></div>
+  <div class="b-caption">بند الثقة</div>
+</div>
+
+<div class="intro-text reveal">
+
+<div class="mini">
+بند الثقة
+</div>
+
+<h2>
+أكثر من مجرد تنفيذ...<br>
+نحن نبني <span>قيمة تدوم</span>
+</h2>
+
+<p>
+في شركة بند الثقة نرى أن كل مشروع يمثل صورة حقيقية عن مستوى العمل
+والالتزام الذي نقدمه لعملائنا.
+</p>
+
+<p>
+لذلك نبدأ بفهم احتياجات المشروع، ثم ننتقل إلى التخطيط والتنفيذ
+بأسلوب منظم يهتم بكل تفصيلة صغيرة.
+</p>
+
+<a href="#about" class="btn">
+اكتشف بند الثقة
+</a>
+
 </div>
 
 </div>
@@ -1623,100 +270,63 @@ class="button button-outline"
 </section>
 
 
-<!-- =====================================================
-     About
-     ===================================================== -->
+<!-- ================= ABOUT ================= -->
 
-<section
-class="about"
-id="about"
->
+<section class="about" id="about">
 
 <div class="container">
 
-<div class="section-heading reveal">
+<div class="section-head reveal">
 
-<div class="eyebrow">
-ABOUT US
+<div class="section-kicker">
+من نحن
 </div>
 
 <h2>
-
-أكثر من مؤسسة،
-
-<br>
-
-إنها هوية.
-
+خبرة تُبنى عليها الثقة
 </h2>
 
 <p>
-
-نؤمن أن قوة أي مؤسسة تبدأ
-من وضوح هويتها وقيمتها.
-
+نسعى لتقديم مستوى احترافي في كل مشروع من الفكرة وحتى التنفيذ.
 </p>
 
 </div>
 
-
-<div class="about-layout">
-
-
-<div class="about-visual reveal">
-
-<div class="about-symbol">
-ب
-</div>
-
-<div class="about-corner">
-
-<strong>
-بند الثقة
-</strong>
-
-<span>
-رؤية واضحة • قيمة حقيقية
-</span>
-
-</div>
-
-</div>
-
+<div class="about-grid">
 
 <div class="about-text reveal">
 
-<div class="small-title">
-من نحن؟
-</div>
-
 <h3>
-
-مؤسسة سعودية
-<span>
-تنظر للمستقبل.
-</span>
-
+الجودة تبدأ من التفاصيل
 </h3>
 
 <p>
-
-بند الثقة مؤسسة سعودية تسعى
-إلى بناء حضور مهني قوي من خلال
-رؤية واضحة وأسلوب عمل يهتم
-بالجودة والتفاصيل.
-
+في بند الثقة نؤمن أن نجاح أي مشروع يبدأ بفهم احتياجات العميل،
+ثم التخطيط الدقيق والتنفيذ باحتراف.
 </p>
 
 <p>
-
-نعمل على تطوير الأفكار والمشاريع
-وتقديم حلول عملية تعكس مستوى
-يليق بهوية المؤسسة وطموحاتها.
-
+نعمل على تقديم حلول عملية تجمع بين جودة التنفيذ،
+حسن التنظيم، والاهتمام بأدق التفاصيل.
 </p>
 
-<div class="gold-line"></div>
+<p>
+هدفنا ليس فقط إنهاء المشروع، بل تقديم نتيجة يشعر العميل
+بالفخر بها وتستحق ثقته.
+</p>
+
+</div>
+
+<div class="about-box reveal">
+
+<h3>
+رؤيتنا
+</h3>
+
+<p>
+أن نكون اسمًا موثوقًا في مجال المقاولات من خلال أعمال
+تترك أثرًا واضحًا وتُبنى على الجودة والالتزام والوضوح.
+</p>
 
 </div>
 
@@ -1727,133 +337,125 @@ ABOUT US
 </section>
 
 
-<!-- =====================================================
-     Why
-     ===================================================== -->
+<!-- ================= SERVICES ================= -->
 
-<section
-class="why"
-id="why"
->
+<section class="services" id="services">
 
 <div class="container">
 
-<div class="section-heading reveal">
+<div class="section-head reveal">
 
-<div class="eyebrow">
-WHY BAND ALTHIQA
+<div class="section-kicker">
+ماذا نقدم؟
 </div>
 
 <h2>
-لماذا بند الثقة؟
+حلول متكاملة لمشاريعك
 </h2>
 
 <p>
-لأننا نؤمن أن التفاصيل الصغيرة
-تصنع الفرق الكبير.
+نهتم بتقديم خدمات منظمة ومتكاملة تساعد على تحويل الفكرة
+إلى مشروع ناجح على أرض الواقع.
 </p>
 
 </div>
 
+<div class="services-grid">
+
+<div class="service-card reveal">
+<div class="service-number">01</div>
+<h3>أعمال المقاولات</h3>
+<p>
+تنفيذ أعمال المقاولات وفق أسس منظمة واهتمام مستمر بجودة التفاصيل.
+</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-number">02</div>
+<h3>التنفيذ والتشطيبات</h3>
+<p>
+حلول تنفيذ وتشطيبات تهدف للوصول إلى نتيجة احترافية ومتناسقة.
+</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-number">03</div>
+<h3>إدارة المشاريع</h3>
+<p>
+متابعة وتنظيم مراحل المشروع بما يساعد على تحقيق أفضل نتيجة ممكنة.
+</p>
+</div>
+
+<div class="service-card reveal">
+<div class="service-number">04</div>
+<h3>أعمال التطوير</h3>
+<p>
+الاهتمام بتطوير وتنفيذ المشاريع بطريقة عملية تجمع بين الجودة والتنظيم.
+</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ================= WHY ================= -->
+
+<section class="why" id="why">
+
+<div class="container">
+
+<div class="section-head reveal">
+
+<div class="section-kicker">
+لماذا بند الثقة؟
+</div>
+
+<h2>
+التزام في كل خطوة
+</h2>
+
+<p>
+نعمل وفق مبادئ واضحة تجعل تجربة العميل أكثر راحة وثقة.
+</p>
+
+</div>
 
 <div class="why-grid">
 
-
 <div class="why-card reveal">
-
-<div class="why-number">01</div>
-
-<div class="why-icon">◇</div>
-
-<h3>وضوح الرؤية</h3>
-
+<div class="number">01</div>
+<h3>جودة التنفيذ</h3>
 <p>
-نبدأ من رؤية واضحة ونحوّل
-الأفكار إلى خطوات منظمة ومدروسة.
+نهتم بجودة العمل والتفاصيل للوصول إلى نتيجة تليق بتوقعات العميل.
 </p>
-
 </div>
 
-
 <div class="why-card reveal">
-
-<div class="why-number">02</div>
-
-<div class="why-icon">✦</div>
-
-<h3>جودة التفاصيل</h3>
-
+<div class="number">02</div>
+<h3>الالتزام</h3>
 <p>
-نهتم بالتفاصيل التي تصنع
-تجربة احترافية وتعكس قيمة العمل.
+نقدر الوقت ونحرص على التنظيم والمتابعة المستمرة خلال مراحل المشروع.
 </p>
-
 </div>
 
-
 <div class="why-card reveal">
-
-<div class="why-number">03</div>
-
-<div class="why-icon">◎</div>
-
-<h3>رؤية مستقبلية</h3>
-
+<div class="number">03</div>
+<h3>الثقة</h3>
 <p>
-نعمل بعقلية تنظر للمستقبل
-وتسعى إلى التطور المستمر.
+نبني علاقات طويلة المدى مع عملائنا تقوم على الوضوح والمصداقية.
 </p>
-
 </div>
 
-
 <div class="why-card reveal">
-
-<div class="why-number">04</div>
-
-<div class="why-icon">◈</div>
-
-<h3>احترافية</h3>
-
+<div class="number">04</div>
+<h3>الاهتمام بالتفاصيل</h3>
 <p>
-نحرص على أن يكون أسلوب العمل
-والحضور متوافقًا مع مستوى احترافي.
+نؤمن أن التفاصيل الصغيرة هي التي تصنع الفرق في النتيجة النهائية.
 </p>
-
 </div>
-
-
-<div class="why-card reveal">
-
-<div class="why-number">05</div>
-
-<div class="why-icon">⬡</div>
-
-<h3>قيمة حقيقية</h3>
-
-<p>
-هدفنا صناعة قيمة يمكن ملاحظتها
-والاستفادة منها.
-</p>
-
-</div>
-
-
-<div class="why-card reveal">
-
-<div class="why-number">06</div>
-
-<div class="why-icon">✧</div>
-
-<h3>استمرارية</h3>
-
-<p>
-نبني خطواتنا على أساس يسمح
-بالتطور والاستمرار.
-</p>
-
-</div>
-
 </div>
 
 </div>
@@ -1861,29 +463,25 @@ WHY BAND ALTHIQA
 </section>
 
 
-<!-- =====================================================
-     Projects
-     ===================================================== -->
+<!-- ================= PROJECTS ================= -->
 
-<section
-class="projects"
-id="projects"
->
+<section class="projects" id="projects">
 
 <div class="container">
 
-<div class="section-heading reveal">
+<div class="section-head reveal">
 
-<div class="eyebrow">
-OUR PROJECTS
+<div class="section-kicker">
+أعمالنا
 </div>
 
 <h2>
-مشاريعنا
+مشاريع نفتخر بها
 </h2>
 
 <p>
-نماذج من أعمالنا ومشاريعنا
+استعرض مجموعة من مشاريع بند الثقة واضغط على أي مشروع
+لمشاهدة الصور والتفاصيل.
 </p>
 
 </div>
@@ -1892,127 +490,140 @@ OUR PROJECTS
 <div class="projects-grid">
 
 
-<!-- المشروع الأول -->
+<!-- PROJECT 1 -->
 
-<div
-class="project clickable reveal"
-onclick="openProject()"
->
+<div class="project-card reveal" onclick="openProject(1)">
 
-<img
-src="projects/q1.png"
-alt="مشروع قصر قرطبه"
->
-
-<div class="project-overlay">
+<div class="project-img">
+<img src="projects/q1.png" alt="المشروع الأول">
+</div>
 
 <div class="project-info">
-
-<div class="project-label">
-اضغط هنا لعرض المشروع
-</div>
-
-<h3>
-مشروع قصر قرطبه
-</h3>
-
-</div>
-
+<small>مشروع 01</small>
+<h3>مشروع بند الثقة الأول</h3>
+<p>مجموعة من صور المشروع ومراحل التنفيذ.</p>
 </div>
 
 </div>
 
 
-<!-- المشروع الثاني -->
+<!-- PROJECT 2 -->
 
-<div
-class="project clickable reveal"
-onclick="openProject2()"
->
+<div class="project-card reveal" onclick="openProject(2)">
 
-<img
-src="projects2/a1.jpeg"
-alt="حي العارض"
->
-
-<div class="project-overlay">
+<div class="project-img">
+<img src="projects2/a1.jpeg" alt="المشروع الثاني">
+</div>
 
 <div class="project-info">
-
-<div class="project-label">
-اضغط هنا لعرض المشروع
-</div>
-
-<h3>
-greenica via Restaurant & Cafe<br>
-حي العارض
-</h3>
-
-</div>
-
+<small>مشروع 02</small>
+<h3>مشروع بند الثقة الثاني</h3>
+<p>استعرض صور المشروع وتفاصيل الأعمال المنفذة.</p>
 </div>
 
 </div>
 
 
-<!-- المشروع الثالث -->
+<!-- PROJECT 3 -->
 
-<div
-class="project clickable reveal"
-onclick="openProject3()"
->
+<div class="project-card reveal" onclick="openProject(3)">
 
-<img
-src="projects3/n1.jpeg"
-alt="مشروع منتزه طريق النهضة"
->
-
-<div class="project-overlay">
+<div class="project-img">
+<img src="projects3/n1.jpeg" alt="مشروع منتزه طريق النهضة">
+</div>
 
 <div class="project-info">
-
-<div class="project-label">
-اضغط هنا لعرض المشروع
-</div>
-
-<h3>
-مشروع منتزه طريق النهضة
-</h3>
-
-</div>
-
+<small>مشروع 03</small>
+<h3>مشروع منتزه طريق النهضة</h3>
+<p>صور متنوعة من المشروع ومراحل العمل.</p>
 </div>
 
 </div>
 
 
-<!-- المشروع الرابع -->
+<!-- PROJECT 4 -->
 
-<div class="project reveal">
+<div class="project-card reveal" onclick="openProject(4)">
 
-<img
-src="projects/project4.jpg"
-alt="المشروع الرابع"
->
-
-<div class="project-overlay">
+<div class="project-img">
+<img src="projects4/p1.jpeg" alt="المشروع الرابع">
+</div>
 
 <div class="project-info">
-
-<div class="project-label">
-PROJECT 04
-</div>
-
-<h3>
-اسم المشروع الرابع
-</h3>
-
+<small>مشروع 04</small>
+<h3>مشروع بند الثقة الرابع</h3>
+<p>صور وتفاصيل من أعمال المشروع.</p>
 </div>
 
 </div>
 
+
+<!-- PROJECT 5 -->
+
+<div class="project-card reveal" onclick="openProject(5)">
+
+<div class="project-img">
+<img src="projects5/p1.jpeg" alt="المشروع الخامس">
 </div>
 
+<div class="project-info">
+<small>مشروع 05</small>
+<h3>مشروع بند الثقة الخامس</h3>
+<p>صور متنوعة من مراحل التنفيذ.</p>
+</div>
+
+</div>
+
+
+<!-- PROJECT 6 -->
+
+<div class="project-card reveal" onclick="openProject(6)">
+
+<div class="project-img">
+<img src="projects6/p1.jpeg" alt="المشروع السادس">
+</div>
+
+<div class="project-info">
+<small>مشروع 06</small>
+<h3>مشروع بند الثقة السادس</h3>
+<p>استعرض تفاصيل المشروع وصوره.</p>
+</div>
+
+</div>
+
+
+<!-- PROJECT 7 -->
+
+<div class="project-card reveal" onclick="openProject(7)">
+
+<div class="project-img">
+<img src="projects7/p1.jpeg" alt="المشروع السابع">
+</div>
+
+<div class="project-info">
+<small>مشروع 07</small>
+<h3>مشروع بند الثقة السابع</h3>
+<p>نماذج من الأعمال المنفذة.</p>
+</div>
+
+</div>
+
+
+<!-- PROJECT 8 -->
+
+<div class="project-card reveal" onclick="openProject(8)">
+
+<div class="project-img">
+<img src="projects8/p1.jpeg" alt="المشروع الثامن">
+</div>
+
+<div class="project-info">
+<small>مشروع 08</small>
+<h3>مشروع بند الثقة الثامن</h3>
+<p>صور وتفاصيل إضافية من المشروع.</p>
+</div>
+
+</div>
 
 </div>
 
@@ -2021,435 +632,152 @@ PROJECT 04
 </section>
 
 
-<!-- =====================================================
-     Gallery 1
-     ===================================================== -->
-
-<div
-class="project-modal"
-id="projectModal"
->
-
-<button
-class="modal-close"
-onclick="closeProject()"
->
-×
-</button>
-
-<div class="modal-content">
-
-<div class="modal-project-title">
-
-<div class="modal-project-number">
-PROJECT 01
-</div>
-
-<h2>
-مشروع قصر قرطبه
-</h2>
-
-</div>
-
-<button
-class="gallery-arrow gallery-prev"
-onclick="previousImage()"
->
-❮
-</button>
-
-<div class="gallery-image-container">
-
-<img
-id="galleryImage"
-src="projects/q1.png"
-alt="مشروع قصر قرطبه"
->
-
-</div>
-
-<button
-class="gallery-arrow gallery-next"
-onclick="nextImage()"
->
-❯
-</button>
-
-<div
-class="gallery-counter"
-id="galleryCounter"
->
-1 / 8
-</div>
-
-<div
-class="gallery-thumbnails"
-id="galleryThumbnails"
->
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     Gallery 2
-     ===================================================== -->
-
-<div
-class="project-modal"
-id="projectModal2"
->
-
-<button
-class="modal-close"
-onclick="closeProject2()"
->
-×
-</button>
-
-<div class="modal-content">
-
-<div class="modal-project-title">
-
-<div class="modal-project-number">
-PROJECT 02
-</div>
-
-<h2>
-greenica via Restaurant & Cafe
-</h2>
-
-</div>
-
-<button
-class="gallery-arrow gallery-prev"
-onclick="previousImage2()"
->
-❮
-</button>
-
-<div class="gallery-image-container">
-
-<img
-id="galleryImage2"
-src="projects2/a1.jpeg"
-alt="المشروع الثاني"
->
-
-</div>
-
-<button
-class="gallery-arrow gallery-next"
-onclick="nextImage2()"
->
-❯
-</button>
-
-<div
-class="gallery-counter"
-id="galleryCounter2"
->
-1 / 8
-</div>
-
-<div
-class="gallery-thumbnails"
-id="galleryThumbnails2"
->
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     Gallery 3
-     ===================================================== -->
-
-<div
-class="project-modal"
-id="projectModal3"
->
-
-<button
-class="modal-close"
-onclick="closeProject3()"
->
-×
-</button>
-
-<div class="modal-content">
-
-<div class="modal-project-title">
-
-<div class="modal-project-number">
-PROJECT 03
-</div>
-
-<h2>
-مشروع منتزه طريق النهضة
-</h2>
-
-</div>
-
-<button
-class="gallery-arrow gallery-prev"
-onclick="previousImage3()"
->
-❮
-</button>
-
-<div class="gallery-image-container">
-
-<img
-id="galleryImage3"
-src="projects3/n1.jpeg"
-alt="مشروع منتزه طريق النهضة"
->
-
-</div>
-
-<button
-class="gallery-arrow gallery-next"
-onclick="nextImage3()"
->
-❯
-</button>
-
-<div
-class="gallery-counter"
-id="galleryCounter3"
->
-1 / 6
-</div>
-
-<div
-class="gallery-thumbnails"
-id="galleryThumbnails3"
->
-</div>
-
-</div>
-
-</div>
-
-
-<!-- =====================================================
-     Statement
-     ===================================================== -->
+<!-- ================= STATEMENT ================= -->
 
 <section class="statement">
 
-<div class="container">
-
-<div class="statement-content reveal">
-
-<div class="eyebrow">
-BAND ALTHIQA
-</div>
+<div class="container reveal">
 
 <h2>
-
-الثقة لا تُكتب،
-
-<br>
-
-<span>
-بل تُبنى.
-</span>
-
+الجودة ليست وعدًا... بل أسلوب عمل
 </h2>
 
 <p>
-
-ولهذا نحرص أن تكون كل خطوة
-تعكس الاسم الذي نحمله.
-
+نسعى في كل مشروع إلى تقديم عمل احترافي يجمع بين الجودة،
+التنظيم، والاهتمام بالتفاصيل، لأن الثقة التي يمنحها العميل
+لنا هي أهم جزء من أي مشروع.
 </p>
-
-</div>
 
 </div>
 
 </section>
 
 
-<!-- =====================================================
-     Contact - Social Apps
-     ===================================================== -->
+<!-- ================= CONTACT ================= -->
 
-<section
-class="contact"
-id="contact"
->
+<section class="contact" id="contact">
 
 <div class="container">
 
-<div class="section-heading reveal">
+<div class="section-head reveal">
 
-<div class="eyebrow">
-CONTACT US
+<div class="section-kicker">
+تواصل معنا
 </div>
 
 <h2>
-تواصل معنا
+نحن هنا لخدمتك
 </h2>
 
 <p>
-اختر المنصة التي تفضلها للتواصل
-مع مؤسسة بند الثقة
+اختر وسيلة التواصل المناسبة لك وسنتواصل معك.
 </p>
 
 </div>
 
 
-<div class="social-apps">
+<div class="contact-grid">
 
 
-<!-- WhatsApp -->
+<div class="contact-info reveal">
 
-<a
+<h3>
+ابدأ مشروعك معنا
+</h3>
+
+<p>
+للاستفسارات وطلبات المشاريع، يمكنك التواصل معنا مباشرة
+عبر وسائل التواصل التالية.
+</p>
+
+<div class="contact-points">
+  <div><span class="point-icon">✓</span><span>استجابة سريعة للاستفسارات</span></div>
+  <div><span class="point-icon">✓</span><span>حلول متكاملة للمقاولات</span></div>
+  <div><span class="point-icon">✓</span><span>خدمة داخل المملكة العربية السعودية</span></div>
+</div>
+
+</div>
+
+<div class="social-simple reveal">
+
+
+<a class="social-simple-card"
 href="https://wa.me/966504550030"
 target="_blank"
-class="social-app whatsapp-app reveal"
->
+rel="noopener">
 
-<div class="app-icon">
+<div class="simple-icon">
 
-<svg viewBox="0 0 24 24">
-
-<path
-fill="white"
-d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3z"
-/>
-
+<svg viewBox="0 0 32 32" aria-hidden="true">
+  <path fill="#25D366" d="M16 2.4C8.49 2.4 2.4 8.49 2.4 16c0 2.4.63 4.66 1.82 6.62L2.5 29.6l7.15-1.69A13.53 13.53 0 0 0 16 29.6c7.51 0 13.6-6.09 13.6-13.6S23.51 2.4 16 2.4Z"/>
+  <path fill="#fff" d="M22.65 18.87c-.36-.18-2.12-1.05-2.45-1.17-.33-.12-.57-.18-.81.18-.24.36-.93 1.17-1.14 1.41-.21.24-.42.27-.78.09-.36-.18-1.51-.56-2.87-1.78-1.06-.95-1.78-2.12-1.99-2.48-.21-.36-.02-.56.16-.74.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.29-.7-.59-.6-.81-.61h-.69c-.24 0-.63.09-.96.45-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.53 3.86 6.13 5.41.86.37 1.53.59 2.05.75.86.27 1.64.23 2.26.14.69-.1 2.12-.87 2.42-1.71.3-.84.3-1.56.21-1.71-.09-.15-.33-.24-.69-.42Z"/>
 </svg>
 
 </div>
 
-<div class="app-info">
-
-<strong>
-WhatsApp
-</strong>
-
-<span>
-تواصل معنا مباشرة عبر واتساب
-</span>
-
-</div>
-
-<div class="app-arrow">
-←
-</div>
+<span>واتساب</span>
 
 </a>
 
 
-<!-- Instagram -->
-
-<a
+<a class="social-simple-card"
 href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
 target="_blank"
-class="social-app instagram-app reveal"
->
+rel="noopener">
 
-<div class="app-icon">
+<div class="simple-icon">
 
 <svg viewBox="0 0 24 24">
 
-<rect
-x="3"
-y="3"
+<rect x="3" y="3"
 width="18"
 height="18"
 rx="5"
 fill="none"
-stroke="white"
-stroke-width="2"
-/>
+stroke="#C13584"
+stroke-width="2"/>
 
-<circle
-cx="12"
+<circle cx="12"
 cy="12"
-r="4"
+r="4.2"
 fill="none"
-stroke="white"
-stroke-width="2"
-/>
+stroke="#C13584"
+stroke-width="2"/>
 
-<circle
-cx="17.5"
-cy="6.5"
-r="1"
-fill="white"
-/>
+<circle cx="17.5"
+cy="6.7"
+r="1.2"
+fill="#C13584"/>
 
 </svg>
 
 </div>
 
-<div class="app-info">
-
-<strong>
-Instagram
-</strong>
-
-<span>
-تابع حساب بند الثقة الرسمي
-</span>
-
-</div>
-
-<div class="app-arrow">
-←
-</div>
+<span>Instagram</span>
 
 </a>
 
 
-<!-- TikTok -->
-
-<a
+<a class="social-simple-card"
 href="https://www.tiktok.com/@YOUR_TIKTOK_USERNAME"
 target="_blank"
-class="social-app tiktok-app reveal"
->
+rel="noopener">
 
-<div class="app-icon">
+<div class="simple-icon">
 
 <svg viewBox="0 0 24 24">
 
-<path
-fill="white"
-d="M16.6 2c.3 1.8 1.3 3.3 3 4.2.7.4 1.5.6 2.4.6v3.3c-1.5 0-2.9-.4-4.1-1.1v7.2c0 4.5-3.4 7.8-7.8 7.8-4.2 0-7.4-3.2-7.4-7.3 0-4.3 3.4-7.5 7.7-7.5.4 0 .8 0 1.2.1v3.4c-.4-.1-.8-.2-1.2-.2-2.4 0-4.2 1.7-4.2 4.1 0 2.2 1.7 3.9 4 3.9 2.5 0 4.3-1.7 4.3-4.4V2h2.1z"
-/>
+<path fill="#111"
+d="M15.8 3c.3 1.7 1.3 3 3.1 3.8.7.3 1.4.5 2.1.5v3.1c-1.3 0-2.6-.3-3.8-.9v6.2c0 3.5-2.6 5.7-5.9 5.7-3.1 0-5.4-2.3-5.4-5.2 0-3.1 2.6-5.4 5.9-5.4.4 0 .8 0 1.2.1v3.2c-.4-.1-.8-.2-1.2-.2-1.4 0-2.5.9-2.5 2.2 0 1.2 1 2.1 2.2 2.1 1.5 0 2.5-1 2.5-2.8V3h1.8Z"/>
 
 </svg>
 
 </div>
 
-<div class="app-info">
-
-<strong>
-TikTok
-</strong>
-
-<span>
-شاهد أحدث محتويات بند الثقة
-</span>
-
-</div>
-
-<div class="app-arrow">
-←
-</div>
+<span>TikTok</span>
 
 </a>
-
+</div>
 
 </div>
 
@@ -2457,157 +785,40 @@ TikTok
 
 </section>
 
+</main>
 
-<!-- =====================================================
-     Footer
-     ===================================================== -->
+
+<!-- ================= FOOTER ================= -->
 
 <footer>
 
 <div class="container">
 
-<div class="footer-main">
-
+<div class="footer-row">
 
 <div class="footer-brand">
-
-<div class="footer-logo">
-
-<img
-src="logo.jpg.jpeg"
-alt="لوجو بند الثقة"
->
-
+<img src="logo.jpg.jpeg" alt="بند الثقة" class="footer-logo">
+<div class="footer-brand-name">بند الثقة<br><small>للمقاولات العامة</small></div>
 </div>
 
-<h3>
-
-بند
-<span>
-الثقة
-</span>
-
-</h3>
-
-<p>
-
-مؤسسة سعودية بهوية واضحة
-ورؤية مستقبلية، نعمل على
-صناعة قيمة حقيقية تقوم على
-الثقة والجودة.
-
-</p>
-
-
-<div class="footer-social">
-
-<a
-href="https://wa.me/966504550030"
-target="_blank"
->
-
-<svg viewBox="0 0 24 24">
-
-<path
-d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3z"
-/>
-
-</svg>
-
-</a>
-
-
-<a
-href="https://www.instagram.com/YOUR_INSTAGRAM_USERNAME/"
-target="_blank"
->
-
-<svg viewBox="0 0 24 24">
-
-<path
-d="M7.5 2h9A5.5 5.5 0 0 1 22 7.5v9a5.5 5.5 0 0 1-5.5 5.5h-9A5.5 5.5 0 0 1 2 16.5v-9A5.5 5.5 0 0 1 7.5 2z"
-/>
-
-</svg>
-
-</a>
-
-
-<a
-href="https://www.tiktok.com/@YOUR_TIKTOK_USERNAME"
-target="_blank"
->
-
-<svg viewBox="0 0 24 24">
-
-<path
-d="M16.6 2c.3 1.8 1.3 3.3 3 4.2.7.4 1.5.6 2.4.6v3.3c-1.5 0-2.9-.4-4.1-1.1v7.2c0 4.5-3.4 7.8-7.8 7.8-4.2 0-7.4-3.2-7.4-7.3 0-4.3 3.4-7.5 7.7-7.5.4 0 .8 0 1.2.1v3.4c-.4-.1-.8-.2-1.2-.2-2.4 0-4.2 1.7-4.2 4.1 0 2.2 1.7 3.9 4 3.9 2.5 0 4.3-1.7 4.3-4.4V2h2.1z"
-/>
-
-</svg>
-
-</a>
-
+<div class="footer-text">
+نبني الثقة قبل أن نبني المكان.
 </div>
-
-</div>
-
 
 <div class="footer-links">
-
-<div class="footer-title">
-روابط سريعة
-</div>
 
 <a href="#home">الرئيسية</a>
-
-<a href="#about">عن المؤسسة</a>
-
-<a href="#why">لماذا بند الثقة؟</a>
-
-<a href="#projects">مشاريعنا</a>
-
-</div>
-
-
-<div class="footer-links">
-
-<div class="footer-title">
-تواصل معنا
-</div>
-
-<a href="#contact">WhatsApp</a>
-
-<a href="#contact">Instagram</a>
-
-<a href="#contact">TikTok</a>
-
-<a href="#contact">التواصل الرسمي</a>
+<a href="#about">من نحن</a>
+<a href="#projects">المشاريع</a>
+<a href="#contact">تواصل معنا</a>
 
 </div>
 
 </div>
-
-
-<div class="footer-bottom">
 
 <div class="copyright">
-
-© 2026 بند الثقة
-— جميع الحقوق محفوظة
-
-</div>
-
-<div class="developer">
-
-برمجة وتطوير:
-
-<strong>
-م/ سلمى وائل
-</strong>
-
-</div>
-
+© 2026 بند الثقة للمقاولات العامة - جميع الحقوق محفوظة.
+<br>برمجة وتطوير م/ سلمى وائل
 </div>
 
 </div>
@@ -2615,110 +826,169 @@ d="M16.6 2c.3 1.8 1.3 3.3 3 4.2.7.4 1.5.6 2.4.6v3.3c-1.5 0-2.9-.4-4.1-1.1v7.2c0 
 </footer>
 
 
-<!-- =====================================================
-     Floating WhatsApp
-     ===================================================== -->
+<!-- ================= GALLERIES ================= -->
 
-<a
-href="https://wa.me/966504550030"
-target="_blank"
-class="floating-whatsapp"
-title="تواصل معنا عبر واتساب"
->
+<div class="gallery-modal" id="gallery1">
 
-<svg viewBox="0 0 24 24">
+<div class="gallery-inner">
 
-<path
-d="M20.5 3.5A11.8 11.8 0 0 0 12.1 0C5.6 0 .3 5.3.3 11.8c0 2.1.6 4.1 1.6 5.9L.2 24l6.5-1.7a11.8 11.8 0 0 0 5.4 1.3h.1c6.5 0 11.8-5.3 11.8-11.8 0-3.2-1.3-6.1-3.5-8.3z"
-/>
+<button class="close-gallery"
+onclick="closeGallery(1)">
+×
+</button>
 
-</svg>
+<button class="gallery-arrow prev"
+onclick="changeImage(1,-1)">
+›
+</button>
 
-</a>
+<button class="gallery-arrow next"
+onclick="changeImage(1,1)">
+‹
+</button>
+
+<div class="gallery-main">
+<img id="mainImage1" src="projects/q1.png" alt="">
+</div>
+
+<div class="gallery-bottom">
+<div class="counter" id="counter1"></div>
+<div class="thumbs" id="thumbs1"></div>
+</div>
+
+</div>
+
+</div>
 
 
-<!-- =====================================================
-     JavaScript
-     ===================================================== -->
+<div class="gallery-modal" id="gallery2">
+
+<div class="gallery-inner">
+
+<button class="close-gallery"
+onclick="closeGallery(2)">
+×
+</button>
+
+<button class="gallery-arrow prev"
+onclick="changeImage(2,-1)">
+›
+</button>
+
+<button class="gallery-arrow next"
+onclick="changeImage(2,1)">
+‹
+</button>
+
+<div class="gallery-main">
+<img id="mainImage2" src="projects2/a1.jpeg" alt="">
+</div>
+
+<div class="gallery-bottom">
+<div class="counter" id="counter2"></div>
+<div class="thumbs" id="thumbs2"></div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="gallery-modal" id="gallery3">
+
+<div class="gallery-inner">
+
+<button class="close-gallery"
+onclick="closeGallery(3)">
+×
+</button>
+
+<button class="gallery-arrow prev"
+onclick="changeImage(3,-1)">
+›
+</button>
+
+<button class="gallery-arrow next"
+onclick="changeImage(3,1)">
+‹
+</button>
+
+<div class="gallery-main">
+<img id="mainImage3" src="projects3/n1.jpeg" alt="">
+</div>
+
+<div class="gallery-bottom">
+<div class="counter" id="counter3"></div>
+<div class="thumbs" id="thumbs3"></div>
+</div>
+
+</div>
+
+</div>
+
+
+<div class="gallery-modal" id="gallery4">
+<div class="gallery-inner">
+<button class="close-gallery" onclick="closeGallery(4)">×</button>
+<button class="gallery-arrow prev" onclick="changeImage(4,-1)">›</button>
+<button class="gallery-arrow next" onclick="changeImage(4,1)">‹</button>
+<div class="gallery-main"><img id="mainImage4" src="projects4/p1.jpeg" alt=""></div>
+<div class="gallery-bottom"><div class="counter" id="counter4"></div><div class="thumbs" id="thumbs4"></div></div>
+</div>
+</div>
+
+
+<div class="gallery-modal" id="gallery5">
+<div class="gallery-inner">
+<button class="close-gallery" onclick="closeGallery(5)">×</button>
+<button class="gallery-arrow prev" onclick="changeImage(5,-1)">›</button>
+<button class="gallery-arrow next" onclick="changeImage(5,1)">‹</button>
+<div class="gallery-main"><img id="mainImage5" src="projects5/p1.jpeg" alt=""></div>
+<div class="gallery-bottom"><div class="counter" id="counter5"></div><div class="thumbs" id="thumbs5"></div></div>
+</div>
+</div>
+
+
+<div class="gallery-modal" id="gallery6">
+<div class="gallery-inner">
+<button class="close-gallery" onclick="closeGallery(6)">×</button>
+<button class="gallery-arrow prev" onclick="changeImage(6,-1)">›</button>
+<button class="gallery-arrow next" onclick="changeImage(6,1)">‹</button>
+<div class="gallery-main"><img id="mainImage6" src="projects6/p1.jpeg" alt=""></div>
+<div class="gallery-bottom"><div class="counter" id="counter6"></div><div class="thumbs" id="thumbs6"></div></div>
+</div>
+</div>
+
+
+<div class="gallery-modal" id="gallery7">
+<div class="gallery-inner">
+<button class="close-gallery" onclick="closeGallery(7)">×</button>
+<button class="gallery-arrow prev" onclick="changeImage(7,-1)">›</button>
+<button class="gallery-arrow next" onclick="changeImage(7,1)">‹</button>
+<div class="gallery-main"><img id="mainImage7" src="projects7/p1.jpeg" alt=""></div>
+<div class="gallery-bottom"><div class="counter" id="counter7"></div><div class="thumbs" id="thumbs7"></div></div>
+</div>
+</div>
+
+
+<div class="gallery-modal" id="gallery8">
+<div class="gallery-inner">
+<button class="close-gallery" onclick="closeGallery(8)">×</button>
+<button class="gallery-arrow prev" onclick="changeImage(8,-1)">›</button>
+<button class="gallery-arrow next" onclick="changeImage(8,1)">‹</button>
+<div class="gallery-main"><img id="mainImage8" src="projects8/p1.jpeg" alt=""></div>
+<div class="gallery-bottom"><div class="counter" id="counter8"></div><div class="thumbs" id="thumbs8"></div></div>
+</div>
+</div>
+
 
 <script>
 
+/* ================= PROJECT IMAGES ================= */
 
-/* قائمة الموبايل */
+const galleries = {
 
-const menuButton =
-document.getElementById("menuButton");
-
-const navLinks =
-document.getElementById("navLinks");
-
-menuButton.addEventListener(
-"click",
-function() {
-
-navLinks.classList.toggle("active");
-
-}
-);
-
-
-document
-.querySelectorAll(".nav-links a")
-.forEach(function(link) {
-
-link.addEventListener(
-"click",
-function() {
-
-navLinks.classList.remove("active");
-
-}
-);
-
-});
-
-
-/* Reveal */
-
-const elements =
-document.querySelectorAll(".reveal");
-
-function revealElements() {
-
-elements.forEach(
-function(element) {
-
-const position =
-element.getBoundingClientRect().top;
-
-if(
-position <
-window.innerHeight - 80
-) {
-
-element.classList.add("show");
-
-}
-
-}
-);
-
-}
-
-window.addEventListener(
-"scroll",
-revealElements
-);
-
-revealElements();
-
-
-/* =====================================================
-   Gallery 1
-   ===================================================== */
-
-const projectImages = [
-
+1:[
 "projects/q1.png",
 "projects/q2.png",
 "projects/q3.png",
@@ -2727,166 +997,9 @@ const projectImages = [
 "projects/q6.png",
 "projects/q7.png",
 "projects/q8.png"
+],
 
-];
-
-let currentImage = 0;
-
-const projectModal =
-document.getElementById("projectModal");
-
-const galleryImage =
-document.getElementById("galleryImage");
-
-const galleryCounter =
-document.getElementById("galleryCounter");
-
-const galleryThumbnails =
-document.getElementById("galleryThumbnails");
-
-
-function openProject() {
-
-currentImage = 0;
-
-projectModal.classList.add("active");
-
-document.body.style.overflow="hidden";
-
-showGalleryImage();
-
-}
-
-
-function showGalleryImage() {
-
-galleryImage.src =
-projectImages[currentImage];
-
-galleryImage.alt =
-"مشروع قصر قرطبه - صورة " +
-(currentImage + 1);
-
-galleryCounter.textContent =
-(currentImage + 1) +
-" / " +
-projectImages.length;
-
-createThumbnails();
-
-}
-
-
-function createThumbnails() {
-
-galleryThumbnails.innerHTML="";
-
-projectImages.forEach(
-function(image,index) {
-
-const thumbnail =
-document.createElement("img");
-
-thumbnail.src=image;
-
-thumbnail.alt="صورة "+(index+1);
-
-thumbnail.classList.add(
-"gallery-thumb"
-);
-
-if(index===currentImage) {
-
-thumbnail.classList.add("active");
-
-}
-
-thumbnail.addEventListener(
-"click",
-function(event) {
-
-event.stopPropagation();
-
-currentImage=index;
-
-showGalleryImage();
-
-}
-);
-
-galleryThumbnails.appendChild(
-thumbnail
-);
-
-}
-);
-
-}
-
-
-function nextImage() {
-
-currentImage++;
-
-if(
-currentImage >=
-projectImages.length
-) {
-
-currentImage=0;
-
-}
-
-showGalleryImage();
-
-}
-
-
-function previousImage() {
-
-currentImage--;
-
-if(currentImage<0) {
-
-currentImage =
-projectImages.length-1;
-
-}
-
-showGalleryImage();
-
-}
-
-
-function closeProject() {
-
-projectModal.classList.remove("active");
-
-document.body.style.overflow="";
-
-}
-
-
-projectModal.addEventListener(
-"click",
-function(event) {
-
-if(event.target===projectModal) {
-
-closeProject();
-
-}
-
-}
-);
-
-
-/* =====================================================
-   Gallery 2
-   ===================================================== */
-
-const projectImages2 = [
-
+2:[
 "projects2/a1.jpeg",
 "projects2/a2.jpeg",
 "projects2/a3.jpeg",
@@ -2895,389 +1008,276 @@ const projectImages2 = [
 "projects2/a6.jpeg",
 "projects2/a7.jpeg",
 "projects2/a8.jpeg"
+],
 
-];
-
-let currentImage2=0;
-
-const projectModal2 =
-document.getElementById("projectModal2");
-
-const galleryImage2 =
-document.getElementById("galleryImage2");
-
-const galleryCounter2 =
-document.getElementById("galleryCounter2");
-
-const galleryThumbnails2 =
-document.getElementById("galleryThumbnails2");
-
-
-function openProject2() {
-
-currentImage2=0;
-
-projectModal2.classList.add("active");
-
-document.body.style.overflow="hidden";
-
-showGalleryImage2();
-
-}
-
-
-function showGalleryImage2() {
-
-galleryImage2.src =
-projectImages2[currentImage2];
-
-galleryImage2.alt =
-"المشروع الثاني - صورة " +
-(currentImage2+1);
-
-galleryCounter2.textContent =
-(currentImage2+1) +
-" / " +
-projectImages2.length;
-
-createThumbnails2();
-
-}
-
-
-function createThumbnails2() {
-
-galleryThumbnails2.innerHTML="";
-
-projectImages2.forEach(
-function(image,index) {
-
-const thumbnail =
-document.createElement("img");
-
-thumbnail.src=image;
-
-thumbnail.alt="صورة "+(index+1);
-
-thumbnail.classList.add(
-"gallery-thumb"
-);
-
-if(index===currentImage2) {
-
-thumbnail.classList.add("active");
-
-}
-
-thumbnail.addEventListener(
-"click",
-function(event) {
-
-event.stopPropagation();
-
-currentImage2=index;
-
-showGalleryImage2();
-
-}
-);
-
-galleryThumbnails2.appendChild(
-thumbnail
-);
-
-}
-);
-
-}
-
-
-function nextImage2() {
-
-currentImage2++;
-
-if(
-currentImage2>=
-projectImages2.length
-) {
-
-currentImage2=0;
-
-}
-
-showGalleryImage2();
-
-}
-
-
-function previousImage2() {
-
-currentImage2--;
-
-if(currentImage2<0) {
-
-currentImage2=
-projectImages2.length-1;
-
-}
-
-showGalleryImage2();
-
-}
-
-
-function closeProject2() {
-
-projectModal2.classList.remove("active");
-
-document.body.style.overflow="";
-
-}
-
-
-projectModal2.addEventListener(
-"click",
-function(event) {
-
-if(event.target===projectModal2) {
-
-closeProject2();
-
-}
-
-}
-);
-
-
-/* =====================================================
-   Gallery 3
-   ===================================================== */
-
-const projectImages3 = [
-
+3:[
 "projects3/n1.jpeg",
 "projects3/n2.jpeg",
 "projects3/n3.jpeg",
 "projects3/n4.jpeg",
 "projects3/n5.jpeg",
 "projects3/n6.jpeg"
+],
 
-];
+4:[
+"projects4/p1.jpeg",
+"projects4/p2.jpeg",
+"projects4/p3.jpeg",
+"projects4/p4.jpeg",
+"projects4/p5.jpeg",
+"projects4/p6.jpeg"
+],
 
-let currentImage3=0;
+5:[
+"projects5/p1.jpeg",
+"projects5/p2.jpeg",
+"projects5/p3.jpeg",
+"projects5/p4.jpeg",
+"projects5/p5.jpeg",
+"projects5/p6.jpeg"
+],
 
-const projectModal3 =
-document.getElementById("projectModal3");
+6:[
+"projects6/p1.jpeg",
+"projects6/p2.jpeg",
+"projects6/p3.jpeg",
+"projects6/p4.jpeg",
+"projects6/p5.jpeg",
+"projects6/p6.jpeg"
+],
 
-const galleryImage3 =
-document.getElementById("galleryImage3");
+7:[
+"projects7/p1.jpeg",
+"projects7/p2.jpeg",
+"projects7/p3.jpeg",
+"projects7/p4.jpeg",
+"projects7/p5.jpeg",
+"projects7/p6.jpeg"
+],
 
-const galleryCounter3 =
-document.getElementById("galleryCounter3");
+8:[
+"projects8/p1.jpeg",
+"projects8/p2.jpeg",
+"projects8/p3.jpeg",
+"projects8/p4.jpeg",
+"projects8/p5.jpeg",
+"projects8/p6.jpeg"
+]
 
-const galleryThumbnails3 =
-document.getElementById("galleryThumbnails3");
+};
 
 
-function openProject3() {
+const currentIndex = {
+1:0,
+2:0,
+3:0,
+4:0,
+5:0,
+6:0,
+7:0,
+8:0
+};
 
-currentImage3=0;
 
-projectModal3.classList.add("active");
+/* ================= GALLERY ================= */
+
+function buildThumbs(id){
+
+const box = document.getElementById("thumbs"+id);
+
+box.innerHTML = "";
+
+galleries[id].forEach((src,index)=>{
+
+const img = document.createElement("img");
+
+img.src = src;
+
+img.alt = "صورة "+(index+1);
+
+img.onclick = () => showImage(id,index);
+
+box.appendChild(img);
+
+});
+
+}
+
+
+function showImage(id,index){
+
+const list = galleries[id];
+
+if(index < 0)
+index = list.length-1;
+
+if(index >= list.length)
+index = 0;
+
+currentIndex[id] = index;
+
+document.getElementById("mainImage"+id).src = list[index];
+
+document.getElementById("counter"+id).textContent =
+(index+1)+" / "+list.length;
+
+document
+.querySelectorAll("#thumbs"+id+" img")
+.forEach((img,i)=>{
+img.classList.toggle("active",i===index);
+});
+
+}
+
+
+function openGallery(id){
+
+buildThumbs(id);
+
+showImage(id,0);
+
+document
+.getElementById("gallery"+id)
+.classList.add("active");
 
 document.body.style.overflow="hidden";
 
-showGalleryImage3();
-
 }
 
 
-function showGalleryImage3() {
+function closeGallery(id){
 
-galleryImage3.src =
-projectImages3[currentImage3];
-
-galleryImage3.alt =
-"مشروع منتزه طريق النهضة - صورة " +
-(currentImage3+1);
-
-galleryCounter3.textContent =
-(currentImage3+1) +
-" / " +
-projectImages3.length;
-
-createThumbnails3();
-
-}
-
-
-function createThumbnails3() {
-
-galleryThumbnails3.innerHTML="";
-
-projectImages3.forEach(
-function(image,index) {
-
-const thumbnail =
-document.createElement("img");
-
-thumbnail.src=image;
-
-thumbnail.alt =
-"صورة "+
-(index+1)+
-" من مشروع منتزه طريق النهضة";
-
-thumbnail.classList.add(
-"gallery-thumb"
-);
-
-if(index===currentImage3) {
-
-thumbnail.classList.add("active");
-
-}
-
-thumbnail.addEventListener(
-"click",
-function(event) {
-
-event.stopPropagation();
-
-currentImage3=index;
-
-showGalleryImage3();
-
-}
-);
-
-galleryThumbnails3.appendChild(
-thumbnail
-);
-
-}
-);
-
-}
-
-
-function nextImage3() {
-
-currentImage3++;
-
-if(
-currentImage3>=
-projectImages3.length
-) {
-
-currentImage3=0;
-
-}
-
-showGalleryImage3();
-
-}
-
-
-function previousImage3() {
-
-currentImage3--;
-
-if(currentImage3<0) {
-
-currentImage3=
-projectImages3.length-1;
-
-}
-
-showGalleryImage3();
-
-}
-
-
-function closeProject3() {
-
-projectModal3.classList.remove("active");
+document
+.getElementById("gallery"+id)
+.classList.remove("active");
 
 document.body.style.overflow="";
 
 }
 
 
-projectModal3.addEventListener(
-"click",
-function(event) {
+function changeImage(id,step){
 
-if(event.target===projectModal3) {
-
-closeProject3();
-
-}
-
-}
+showImage(
+id,
+currentIndex[id]+step
 );
 
-
-/* =====================================================
-   Keyboard
-   ===================================================== */
-
-document.addEventListener(
-"keydown",
-function(event) {
+}
 
 
-if(
-projectModal.classList.contains("active")
-) {
+function openProject(id){
 
-if(event.key==="Escape")
-closeProject();
-
-if(event.key==="ArrowRight")
-nextImage();
-
-if(event.key==="ArrowLeft")
-previousImage();
+openGallery(id);
 
 }
 
 
-if(
-projectModal2.classList.contains("active")
-) {
+/* ================= CLOSE ON BACKGROUND ================= */
 
-if(event.key==="Escape")
-closeProject2();
+document
+.querySelectorAll(".gallery-modal")
+.forEach(modal=>{
 
-if(event.key==="ArrowRight")
-nextImage2();
+modal.addEventListener("click",e=>{
 
-if(event.key==="ArrowLeft")
-previousImage2();
+if(e.target === modal){
 
-}
-
-
-if(
-projectModal3.classList.contains("active")
-) {
-
-if(event.key==="Escape")
-closeProject3();
-
-if(event.key==="ArrowRight")
-nextImage3();
-
-if(event.key==="ArrowLeft")
-previousImage3();
+closeGallery(
+modal.id.replace("gallery","")
+);
 
 }
 
 });
 
+});
+
+
+/* ================= KEYBOARD ================= */
+
+document.addEventListener("keydown",e=>{
+
+const active =
+document.querySelector(".gallery-modal.active");
+
+if(!active)
+return;
+
+const id =
+Number(active.id.replace("gallery",""));
+
+if(e.key === "Escape")
+closeGallery(id);
+
+if(e.key === "ArrowRight")
+changeImage(id,-1);
+
+if(e.key === "ArrowLeft")
+changeImage(id,1);
+
+});
+
+
+/* ================= MOBILE MENU ================= */
+
+const menuBtn =
+document.getElementById("menuBtn");
+
+const navLinks =
+document.getElementById("navLinks");
+
+menuBtn.addEventListener("click",()=>{
+
+navLinks.classList.toggle("open");
+
+});
+
+
+document
+.querySelectorAll("#navLinks a")
+.forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+navLinks.classList.remove("open");
+
+});
+
+});
+
+
+/* ================= SCROLL ANIMATION ================= */
+
+const observer =
+new IntersectionObserver(
+
+entries=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+});
+
+},
+
+{
+threshold:.12
+}
+
+);
+
+
+document
+.querySelectorAll(".reveal")
+.forEach(el=>observer.observe(el));
+
 </script>
 
 </body>
-
 </html>
