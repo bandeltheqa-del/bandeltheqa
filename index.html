@@ -1,193 +1,730 @@
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-  <meta name="google-site-verification" content="MifUC5Ggy81sJ7vlxXvyOL44RvPTZA9JDjR_7yGUHv4" />
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <meta name="description" content="بند الثقة للمقاولات العامة - جودة، التزام، وثقة في كل مشروع">
-<title>بند الثقة | شركه سعوديه  </title>
+<title>بند الثقة | شركة للمقاولات العامة</title>
 
 <style>
 :root{
-  --navy:#071a2b;
-  --navy-2:#0c263b;
-  --navy-3:#123a55;
-  --gold:#c9a45c;
-  --gold-light:#e5cf99;
-  --gold-dark:#9a7330;
-  --cream:#f5f2eb;
-  --white:#ffffff;
-  --text:#182838;
-  --muted:#6f7d8b;
-  --border:#e7e1d6;
-  --shadow:0 20px 60px rgba(7,26,43,.10);
-  --shadow-hover:0 24px 70px rgba(7,26,43,.16);
+--navy:#071a2b;
+--navy2:#0c263b;
+--gold:#c9a45c;
+--gold-light:#e5cf99;
+--cream:#f5f2eb;
+--text:#182838;
+--muted:#6f7d8b;
+--border:#e7e1d6;
+--shadow:0 20px 60px rgba(7,26,43,.10);
 }
 
 *{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
-body{font-family:"Segoe UI",Tahoma,Arial,sans-serif;background:var(--cream);color:var(--text);line-height:1.8;overflow-x:hidden}
+body{
+font-family:"Segoe UI",Tahoma,Arial,sans-serif;
+background:var(--cream);
+color:var(--text);
+line-height:1.8;
+overflow-x:hidden
+}
 a{text-decoration:none;color:inherit}
 img{max-width:100%;display:block}
-button{font-family:inherit}
 .container{width:min(1180px,92%);margin:auto}
 
 /* HEADER */
-header{position:fixed;top:0;left:0;right:0;z-index:1000;background:rgba(7,26,43,.82);border-bottom:1px solid rgba(229,207,153,.18);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px)}
-.nav{min-height:82px;display:flex;align-items:center;justify-content:space-between;gap:30px}
-.logo{width:82px;height:62px;object-fit:contain;filter:drop-shadow(0 5px 12px rgba(0,0,0,.2))}
-.nav-links{display:flex;align-items:center;gap:34px;list-style:none}
-.nav-links a{color:#f8fafb;font-size:14px;font-weight:600;transition:.25s;position:relative;padding:8px 0}
-.nav-links a::after{content:"";position:absolute;right:0;bottom:0;width:0;height:2px;background:var(--gold-light);transition:.3s}
+
+header{
+position:fixed;
+inset:0 0 auto;
+z-index:1000;
+background:rgba(7,26,43,.9);
+border-bottom:1px solid rgba(229,207,153,.18);
+backdrop-filter:blur(15px)
+}
+
+.nav{
+min-height:82px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:25px
+}
+
+.brand{
+display:flex;
+align-items:center;
+gap:11px;
+color:#fff
+}
+
+.logo{
+width:72px;
+height:60px;
+object-fit:contain
+}
+
+.brand-name{
+font-size:15px;
+line-height:1.3;
+font-weight:800;
+white-space:nowrap
+}
+
+.brand-name small{
+font-size:10px;
+color:var(--gold-light)
+}
+
+.nav-links{
+display:flex;
+align-items:center;
+gap:28px;
+list-style:none
+}
+
+.nav-links a{
+color:#fff;
+font-size:14px;
+font-weight:600;
+transition:.25s
+}
+
 .nav-links a:hover{color:var(--gold-light)}
-.nav-links a:hover::after{width:100%}
-.menu-btn{display:none;background:rgba(255,255,255,.04);border:1px solid rgba(255,255,255,.2);color:#fff;font-size:25px;width:45px;height:43px;border-radius:10px;cursor:pointer}
+
+.menu-btn{
+display:none;
+background:transparent;
+border:1px solid #ffffff55;
+color:white;
+font-size:25px;
+width:44px;
+height:42px;
+border-radius:9px
+}
 
 /* HERO */
-.hero{min-height:100vh;display:flex;align-items:center;position:relative;overflow:hidden;background:linear-gradient(135deg,#061725 0%,#0b263b 55%,#071a2b 100%)}
-.hero::before{content:"";position:absolute;inset:0;background:radial-gradient(circle at 15% 25%,rgba(201,164,92,.16),transparent 28%),linear-gradient(180deg,rgba(7,26,43,.05),rgba(7,26,43,.62))}
-.hero::after{content:"";position:absolute;width:680px;height:680px;border:1px solid rgba(201,164,92,.18);border-radius:50%;left:-300px;bottom:-360px;box-shadow:0 0 0 80px rgba(201,164,92,.025),0 0 0 160px rgba(201,164,92,.018)}
-.hero-content{position:relative;z-index:2;color:#fff;max-width:850px;padding-top:90px}
-.hero-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--gold-light);font-size:15px;margin-bottom:20px;font-weight:700;letter-spacing:1px}
-.hero-kicker::before{content:"";width:38px;height:1px;background:var(--gold)}
-.hero h1{font-size:clamp(45px,7vw,78px);line-height:1.12;margin-bottom:25px;font-weight:800;letter-spacing:-1px}
+
+.hero{
+min-height:100vh;
+display:flex;
+align-items:center;
+position:relative;
+background:linear-gradient(135deg,#061725,#0b263b 55%,#071a2b);
+color:white
+}
+
+.hero:before{
+content:"";
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 15% 25%,#c9a45c29,transparent 30%),
+linear-gradient(180deg,transparent,#071a2b99)
+}
+
+.hero-content{
+position:relative;
+padding-top:100px;
+max-width:850px
+}
+
+.kicker{
+color:var(--gold-light);
+font-weight:800;
+margin-bottom:18px
+}
+
+.hero h1{
+font-size:clamp(42px,7vw,76px);
+line-height:1.2;
+margin-bottom:24px
+}
+
 .hero h1 span{color:var(--gold-light)}
-.hero p{color:#e7edf1;font-size:18px;max-width:700px;margin-bottom:38px;line-height:2}
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;padding:14px 29px;border-radius:9px;border:1px solid var(--gold);background:linear-gradient(135deg,var(--gold-light),var(--gold));color:var(--navy);font-weight:800;transition:.3s;box-shadow:0 10px 25px rgba(0,0,0,.12)}
-.btn:hover{transform:translateY(-3px);box-shadow:0 15px 32px rgba(0,0,0,.2)}
-.btn-outline{background:rgba(255,255,255,.04);color:#fff;margin-right:10px;box-shadow:none}
-.btn-outline:hover{background:#fff;color:var(--navy)}
+
+.hero p{
+font-size:18px;
+color:#e7edf1;
+max-width:700px;
+margin-bottom:32px
+}
+
+.btn{
+display:inline-block;
+padding:12px 25px;
+border-radius:8px;
+background:linear-gradient(135deg,var(--gold-light),var(--gold));
+color:var(--navy);
+font-weight:800;
+margin:4px
+}
+
+.btn-outline{
+background:transparent;
+border:1px solid var(--gold);
+color:white
+}
 
 /* GENERAL */
-section{padding:110px 0}
-.section-head{text-align:center;margin-bottom:60px}
-.section-kicker{display:inline-flex;align-items:center;gap:12px;color:var(--gold-dark);font-size:13px;font-weight:800;letter-spacing:1.4px}
-.section-kicker::before,.section-kicker::after{content:"";width:25px;height:1px;background:var(--gold)}
-.section-head h2{color:var(--navy);font-size:clamp(31px,4vw,47px);line-height:1.25;margin:10px 0 14px;font-weight:800}
-.section-head p{color:var(--muted);max-width:690px;margin:auto}
+
+section{padding:95px 0}
+
+.section-head{
+text-align:center;
+margin-bottom:48px
+}
+
+.section-kicker{
+color:#9a7330;
+font-size:13px;
+font-weight:800
+}
+
+.section-head h2{
+font-size:clamp(30px,4vw,45px);
+color:var(--navy);
+line-height:1.3;
+margin:10px 0
+}
+
+.section-head p{
+color:var(--muted);
+max-width:700px;
+margin:auto
+}
 
 /* INTRO */
-.intro-band{background:#fff;position:relative;overflow:hidden}
-.intro-band::before{content:"";position:absolute;left:-180px;top:-180px;width:420px;height:420px;border:1px solid rgba(201,164,92,.14);border-radius:50%}
-.intro-grid{display:grid;grid-template-columns:.95fr 1.05fr;gap:75px;align-items:center}
-.intro-visual{height:440px;position:relative;overflow:hidden;border-radius:26px;background:linear-gradient(145deg,var(--navy),var(--navy-3));box-shadow:var(--shadow)}
-.intro-visual::before{content:"";position:absolute;inset:20px;border:1px solid rgba(229,207,153,.45);border-radius:18px}
-.ornament-grid{position:absolute;inset:0;opacity:.13;background-image:linear-gradient(rgba(229,207,153,.55) 1px,transparent 1px),linear-gradient(90deg,rgba(229,207,153,.55) 1px,transparent 1px);background-size:42px 42px;mask-image:linear-gradient(to bottom,transparent,#000 22%,#000 78%,transparent)}
-.ornament-ring{position:absolute;border:1px solid rgba(229,207,153,.35);border-radius:50%}
-.ring-1{width:330px;height:330px;left:50%;top:50%;transform:translate(-50%,-50%)}
-.ring-2{width:245px;height:245px;left:50%;top:50%;transform:translate(-50%,-50%);border-color:rgba(229,207,153,.65)}
-.ornament-line{position:absolute;height:1px;background:linear-gradient(90deg,transparent,var(--gold-light),transparent);width:72%;left:14%;opacity:.55}
-.line-1{top:27%}.line-2{bottom:27%}
-.ornament-diamond{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(45deg);width:92px;height:92px;border:1px solid var(--gold-light);display:flex;align-items:center;justify-content:center;color:var(--gold-light);font-weight:800;font-size:25px;letter-spacing:1px;box-shadow:0 0 0 14px rgba(201,164,92,.035)}
-.ornament-diamond::before{content:"";position:absolute;inset:9px;border:1px solid rgba(229,207,153,.35)}
-.ornament-diamond{line-height:1;}
-.ornament-diamond::after{content:"BT";transform:rotate(-45deg);position:absolute}
-.ornament-caption{position:absolute;bottom:40px;left:0;right:0;text-align:center;color:#dfe7eb;font-size:12px;letter-spacing:3px;font-weight:700}
-.intro-text{padding:15px 0}
-.intro-text h2{color:var(--navy);font-size:42px;line-height:1.35;margin:0 0 22px;font-weight:800}
-.intro-text h2 span{color:var(--gold-dark)}
-.intro-text p{color:#687887;margin-bottom:16px;font-size:16px}
+
+.intro-band,.services,.projects{background:#fff}
+
+.intro-grid,.about-grid,.contact-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:55px;
+align-items:center
+}
+
+.intro-visual{
+height:390px;
+border-radius:22px;
+background:linear-gradient(145deg,#061725,#0b263b);
+display:grid;
+place-items:center;
+position:relative;
+overflow:hidden;
+box-shadow:var(--shadow)
+}
+
+.intro-visual:before{
+content:"";
+position:absolute;
+width:270px;
+height:270px;
+border:1px solid #e5cf9955;
+border-radius:50%
+}
+
+.emblem{
+width:145px;
+height:145px;
+border:2px solid var(--gold-light);
+border-radius:50%;
+display:grid;
+place-items:center;
+color:var(--gold-light);
+font-size:100px;
+font-weight:bold;
+z-index:1
+}
+
+.intro-caption{
+position:absolute;
+bottom:28px;
+color:var(--gold-light);
+letter-spacing:4px;
+font-size:12px
+}
+
+.intro-text h2{
+font-size:38px;
+color:var(--navy);
+line-height:1.4;
+margin:12px 0
+}
+
+.intro-text h2 span{color:#9a7330}
+
+.intro-text p,.about-text p{
+color:#687887;
+margin:0 0 14px
+}
 
 /* ABOUT */
-.about{background:var(--cream)}
-.about-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:70px;align-items:center}
-.about-text h3{color:var(--navy);font-size:31px;margin-bottom:18px}
-.about-text p{color:#657585;margin-bottom:16px}
-.about-box{background:linear-gradient(145deg,var(--navy),var(--navy-2));padding:50px;border-radius:22px;border:1px solid rgba(201,164,92,.28);color:#fff;box-shadow:var(--shadow);position:relative;overflow:hidden}
-.about-box::before{content:"";position:absolute;width:250px;height:250px;border:1px solid rgba(201,164,92,.2);border-radius:50%;left:-120px;bottom:-120px}
-.about-box::after{content:"";position:absolute;inset:18px;border:1px solid rgba(255,255,255,.08);border-radius:15px;pointer-events:none}
-.about-box h3,.about-box p{position:relative;z-index:1}.about-box h3{color:var(--gold-light);font-size:28px;margin-bottom:14px}.about-box p{color:#d9e0e6}
+
+.about-box,.contact-info{
+background:linear-gradient(145deg,var(--navy),var(--navy2));
+padding:42px;
+border-radius:20px;
+color:white;
+box-shadow:var(--shadow)
+}
+
+.about-box h3,.contact-info h3{
+color:var(--gold-light);
+font-size:27px;
+margin-bottom:12px
+}
+
+.about-text h3{
+font-size:29px;
+color:var(--navy);
+margin-bottom:15px
+}
 
 /* SERVICES */
-.services{background:#fff}
-.services-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
-.service-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:34px 26px;position:relative;overflow:hidden;transition:.3s;box-shadow:0 7px 25px rgba(7,26,43,.035)}
-.service-card::before{content:"";position:absolute;top:0;right:0;width:100%;height:3px;background:linear-gradient(90deg,var(--gold-dark),var(--gold-light));transform:scaleX(0);transform-origin:right;transition:.3s}
-.service-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);border-color:rgba(201,164,92,.7)}
-.service-card:hover::before{transform:scaleX(1)}
-.service-number{color:var(--gold-dark);font-weight:800;font-size:13px;letter-spacing:2px}
-.service-card h3{color:var(--navy);font-size:20px;margin:12px 0 9px}.service-card p{color:var(--muted);font-size:14px}
 
-/* WHY */
+.services-grid,.why-grid,.projects-grid{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:20px
+}
+
+.service-card,.why-card,.project-card{
+background:white;
+border:1px solid var(--border);
+border-radius:15px;
+overflow:hidden;
+transition:.3s;
+box-shadow:0 7px 25px #071a2b09
+}
+
+.service-card,.why-card{padding:28px 23px}
+
+.service-card:hover,.why-card:hover,.project-card:hover{
+transform:translateY(-7px);
+box-shadow:var(--shadow);
+border-color:var(--gold)
+}
+
+.number{
+color:#9a7330;
+font-weight:800;
+font-size:13px
+}
+
+.service-card h3,.why-card h3,.project-info h3{
+color:var(--navy);
+margin:9px 0;
+font-size:19px
+}
+
+.service-card p,.why-card p,.project-info p{
+color:var(--muted);
+font-size:14px
+}
+
 .why{background:var(--cream)}
-.why-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-.why-card{background:#fff;border:1px solid var(--border);border-radius:16px;padding:34px 28px;transition:.3s;position:relative;overflow:hidden}
-.why-card::after{content:"";position:absolute;bottom:0;right:0;width:60px;height:3px;background:var(--gold);transform:scaleX(0);transform-origin:right;transition:.3s}
-.why-card:hover{transform:translateY(-6px);border-color:rgba(201,164,92,.7);box-shadow:var(--shadow)}
-.why-card:hover::after{transform:scaleX(1)}
-.number{color:var(--gold-dark);font-size:13px;font-weight:800;letter-spacing:1px}.why-card h3{color:var(--navy);margin:9px 0;font-size:21px}.why-card p{color:var(--muted);font-size:15px}
 
 /* PROJECTS */
-.projects{background:#fff}.projects-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}.project-card{background:#fff;border:1px solid var(--border);border-radius:16px;overflow:hidden;cursor:pointer;transition:.3s;box-shadow:0 7px 25px rgba(7,26,43,.035)}
-.project-card:hover{transform:translateY(-8px);box-shadow:var(--shadow-hover);border-color:rgba(201,164,92,.7)}.project-img{height:235px;overflow:hidden;background:#ddd}.project-img img{width:100%;height:100%;object-fit:cover;transition:.5s}.project-card:hover .project-img img{transform:scale(1.08)}
-.project-info{padding:21px}.project-info small{color:var(--gold-dark);font-weight:800}.project-info h3{color:var(--navy);margin:4px 0 7px;font-size:18px}.project-info p{color:var(--muted);font-size:13px}
 
-/* GALLERY */
-.gallery-modal{position:fixed;inset:0;background:rgba(2,10,17,.96);z-index:2000;display:none;align-items:center;justify-content:center;padding:25px}.gallery-modal.active{display:flex}.gallery-inner{width:min(1100px,96vw);position:relative}.gallery-main{height:min(68vh,680px);display:flex;align-items:center;justify-content:center}.gallery-main img{max-height:100%;max-width:100%;object-fit:contain;border-radius:8px}
+.projects-grid{
+grid-template-columns:repeat(4,1fr)
+}
 
-/* VIDEO */
-.gallery-main video{max-height:100%;max-width:100%;object-fit:contain;border-radius:8px;background:#000}
-.video-thumb{width:65px;height:50px;display:flex;align-items:center;justify-content:center;flex:none;opacity:.55;cursor:pointer;border:2px solid transparent;background:#101820;color:#fff;font-size:11px;border-radius:3px}
-.video-thumb.active{opacity:1;border-color:var(--gold)}
+.project-card{cursor:pointer}
 
-.close-gallery{position:absolute;top:-12px;left:0;width:45px;height:45px;border:1px solid rgba(255,255,255,.3);background:rgba(0,0,0,.5);color:#fff;font-size:27px;border-radius:50%;cursor:pointer;z-index:5}.gallery-arrow{position:absolute;top:50%;transform:translateY(-50%);width:48px;height:48px;border-radius:50%;border:1px solid rgba(255,255,255,.4);background:rgba(0,0,0,.5);color:#fff;font-size:27px;cursor:pointer}.gallery-arrow:hover,.close-gallery:hover{background:var(--gold);color:var(--navy)}.prev{right:-60px}.next{left:-60px}.gallery-bottom{display:flex;align-items:center;justify-content:center;gap:12px;flex-wrap:wrap;margin-top:18px}.counter{color:#fff;font-size:14px}.thumbs{display:flex;gap:7px;justify-content:center;overflow:auto;max-width:100%;padding:5px}.thumbs img{width:65px;height:50px;object-fit:cover;opacity:.55;cursor:pointer;border:2px solid transparent}.thumbs img.active{opacity:1;border-color:var(--gold)}
+.project-img{
+height:220px;
+background:#ddd;
+overflow:hidden
+}
+
+.project-img img{
+width:100%;
+height:100%;
+object-fit:cover;
+transition:.4s
+}
+
+.project-card:hover .project-img img{
+transform:scale(1.06)
+}
+
+.project-info{padding:18px}
+
+.project-info small{
+color:#9a7330;
+font-weight:800
+}
 
 /* STATEMENT */
-.statement{background:linear-gradient(135deg,#071a2b,#0d2b42);color:#fff;text-align:center;padding:120px 0;position:relative}.statement::before{content:"✦";position:absolute;top:28px;left:50%;transform:translateX(-50%);color:var(--gold-light);font-size:18px}.statement h2{color:var(--gold-light);font-size:clamp(29px,4vw,46px);margin-bottom:15px}.statement p{color:#d7dfe6;max-width:760px;margin:auto}
+
+.statement{
+background:linear-gradient(135deg,#071a2b,#0d2b42);
+color:white;
+text-align:center
+}
+
+.statement h2{
+color:var(--gold-light);
+font-size:clamp(28px,4vw,43px);
+margin-bottom:14px
+}
+
+.statement p{
+max-width:760px;
+margin:auto;
+color:#d7dfe6
+}
 
 /* CONTACT */
-.contact{background:var(--cream);padding:110px 0}.contact-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:55px;align-items:stretch}
-.contact-info{background:linear-gradient(145deg,var(--navy),var(--navy-2));color:#fff;padding:48px;border-radius:22px;border:1px solid rgba(201,164,92,.25);box-shadow:var(--shadow);position:relative;overflow:hidden}.contact-info::before{content:"";position:absolute;width:300px;height:300px;border:1px solid rgba(201,164,92,.16);border-radius:50%;left:-160px;bottom:-160px}.contact-info h3,.contact-info p,.contact-points{position:relative;z-index:1}.contact-info h3{color:var(--gold-light);font-size:31px;margin-bottom:13px}.contact-info p{color:#cdd6dd;margin-bottom:25px}.contact-points{display:grid;gap:14px}.contact-points div{display:flex;align-items:center;gap:12px;color:#dce4e9;padding:12px 0;border-bottom:1px solid rgba(255,255,255,.1)}.point-icon{width:26px;height:26px;border:1px solid rgba(229,207,153,.55);border-radius:50%;display:inline-flex;align-items:center;justify-content:center;color:var(--gold-light);font-size:13px;flex:none}
-.social-simple{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}.social-simple-card{min-height:170px;background:#fff;border:1px solid var(--border);border-radius:18px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:13px;transition:.3s;box-shadow:0 7px 25px rgba(7,26,43,.035)}.social-simple-card:hover{transform:translateY(-7px);border-color:rgba(201,164,92,.75);box-shadow:var(--shadow)}.simple-icon{width:58px;height:58px;display:flex;align-items:center;justify-content:center;border-radius:15px;background:var(--cream)}.simple-icon svg{width:42px;height:42px}.social-simple-card span{color:var(--navy);font-size:14px;font-weight:800}
+
+.contact{background:var(--cream)}
+
+.contact-info p{
+color:#d5dde4;
+margin-bottom:18px
+}
+
+.contact-points{
+display:grid;
+gap:12px
+}
+
+.contact-points div{
+color:#e2e8ed;
+border-bottom:1px solid #ffffff20;
+padding:8px 0
+}
+
+.social-simple{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px
+}
+
+.social-card{
+background:white;
+border:1px solid var(--border);
+border-radius:15px;
+min-height:125px;
+display:grid;
+place-items:center;
+font-weight:800;
+color:var(--navy);
+transition:.25s
+}
+
+.social-card:hover{
+transform:translateY(-5px);
+border-color:var(--gold)
+}
+
+.social-card span{font-size:27px}
 
 /* FOOTER */
-footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:flex;align-items:center;justify-content:space-between;gap:25px}.footer-logo{width:76px;height:58px;object-fit:contain}.footer-text{color:#aebac4;font-size:13px}.footer-links{display:flex;gap:20px;color:#d9e0e6;font-size:13px}.footer-links a:hover{color:var(--gold-light)}.copyright{border-top:1px solid rgba(255,255,255,.1);margin-top:28px;padding-top:20px;text-align:center;color:#82909c;font-size:12px}
 
-/* BRAND */
-.brand{display:flex;align-items:center;gap:11px;color:#fff;text-decoration:none;flex:none}.brand-name{font-size:15px;line-height:1.25;font-weight:800;color:#fff;white-space:nowrap}.brand-name small{font-size:9px;color:var(--gold-light);font-weight:600;letter-spacing:.5px}.footer-brand{display:flex;align-items:center;gap:11px}.footer-brand-name{color:#fff;font-size:15px;line-height:1.25;font-weight:800}.footer-brand-name small{color:var(--gold-light);font-size:9px;font-weight:600}
+footer{
+background:#051522;
+color:white;
+padding:38px 0 22px
+}
 
-/* PREMIUM ARCHITECTURAL EMBLEM */
-.intro-visual{background:linear-gradient(145deg,#061725,#0b263b 55%,#071a2b);overflow:hidden}
-.intro-visual:before{content:"";position:absolute;width:360px;height:360px;border:1px solid rgba(229,207,153,.16);border-radius:50%;left:50%;top:50%;transform:translate(-50%,-50%)}
-.architect-grid{position:absolute;inset:0;opacity:.08;background-image:linear-gradient(rgba(229,207,153,.8) 1px,transparent 1px),linear-gradient(90deg,rgba(229,207,153,.8) 1px,transparent 1px);background-size:55px 55px}
-.architect-frame{position:absolute;border:1px solid rgba(229,207,153,.28);transform:rotate(45deg)}
-.af-1{width:250px;height:250px;left:50%;top:50%;margin:-125px;border-radius:18px}
-.af-2{width:190px;height:190px;left:50%;top:50%;margin:-95px;border-color:rgba(229,207,153,.5);border-radius:14px}
-.b-emblem{position:absolute;left:50%;top:48%;width:150px;height:150px;transform:translate(-50%,-50%);border:2px solid var(--gold-light);border-radius:50%;display:flex;align-items:center;justify-content:center;z-index:2;background:rgba(7,26,43,.55);box-shadow:0 0 0 12px rgba(201,164,92,.04),0 18px 45px rgba(0,0,0,.28)}
-.b-letter{font-family:"Times New Roman","Arial",sans-serif;font-size:132px;font-weight:700;line-height:.8;color:var(--gold-light);transform:translateY(-7px);text-shadow:0 5px 18px rgba(0,0,0,.3)}
-.architect-line{position:absolute;width:62px;height:1px;background:var(--gold-light);opacity:.7}
-.ax-1{left:14%;top:50%}.ax-2{right:14%;top:50%}
-.b-caption{position:absolute;bottom:34px;left:0;right:0;text-align:center;color:#e5cf99;font-size:11px;letter-spacing:4px;font-weight:800;z-index:3}
+.footer-row{
+display:flex;
+justify-content:space-between;
+align-items:center;
+gap:20px;
+flex-wrap:wrap
+}
+
+.footer-brand{
+display:flex;
+align-items:center;
+gap:10px;
+font-weight:800
+}
+
+.footer-logo{
+width:65px;
+height:52px;
+object-fit:contain
+}
+
+.footer-brand small{
+color:var(--gold-light);
+font-size:10px
+}
+
+.footer-text,.copyright{
+color:#aebac4;
+font-size:13px
+}
+
+.footer-links{
+display:flex;
+gap:17px;
+font-size:13px
+}
+
+.copyright{
+text-align:center;
+border-top:1px solid #ffffff20;
+margin-top:25px;
+padding-top:18px
+}
+
+.ss{
+color:var(--gold);
+display:inline-block;
+margin-top:5px
+}
+
+/* GALLERY */
+
+.gallery-modal{
+position:fixed;
+inset:0;
+background:#020a11f5;
+z-index:2000;
+display:none;
+align-items:center;
+justify-content:center;
+padding:22px
+}
+
+.gallery-modal.active{display:flex}
+
+.gallery-inner{
+width:min(1100px,96vw);
+position:relative
+}
+
+.gallery-main{
+height:min(68vh,680px);
+display:flex;
+align-items:center;
+justify-content:center
+}
+
+.gallery-main img,.gallery-main video{
+max-height:100%;
+max-width:100%;
+object-fit:contain;
+border-radius:8px
+}
+
+.close-gallery,.gallery-arrow{
+position:absolute;
+border:1px solid #ffffff66;
+background:#0008;
+color:white;
+cursor:pointer;
+border-radius:50%;
+z-index:5
+}
+
+.close-gallery{
+top:-10px;
+left:0;
+width:44px;
+height:44px;
+font-size:27px
+}
+
+.gallery-arrow{
+top:50%;
+transform:translateY(-50%);
+width:46px;
+height:46px;
+font-size:26px
+}
+
+.gallery-arrow:hover,.close-gallery:hover{
+background:var(--gold);
+color:var(--navy)
+}
+
+.prev{right:-58px}
+.next{left:-58px}
+
+.gallery-bottom{
+display:flex;
+flex-direction:column;
+align-items:center;
+gap:10px;
+margin-top:15px
+}
+
+.counter{
+color:white;
+font-size:14px
+}
+
+.thumbs{
+display:flex;
+gap:7px;
+justify-content:center;
+overflow:auto;
+max-width:100%;
+padding:5px
+}
+
+.thumbs img,.video-thumb{
+width:65px;
+height:50px;
+object-fit:cover;
+opacity:.55;
+cursor:pointer;
+border:2px solid transparent;
+flex:none
+}
+
+.thumbs .active{
+opacity:1;
+border-color:var(--gold)
+}
+
+.video-thumb{
+display:grid;
+place-items:center;
+background:#101820;
+color:white;
+font-size:11px
+}
+
 /* ANIMATION */
-.reveal{opacity:0;transform:translateY(28px);transition:.75s cubic-bezier(.2,.7,.2,1)}.reveal.show{opacity:1;transform:none}
+
+.reveal{
+opacity:0;
+transform:translateY(22px);
+transition:.7s
+}
+
+.reveal.show{
+opacity:1;
+transform:none
+}
 
 /* TABLET */
-@media(max-width:1000px){.services-grid{grid-template-columns:repeat(2,1fr)}.projects-grid{grid-template-columns:repeat(2,1fr)}.stats-grid{grid-template-columns:repeat(2,1fr)}.stat:nth-child(2){border-left:none}.about-grid,.intro-grid,.contact-grid{grid-template-columns:1fr}.intro-visual{max-width:620px;width:100%;margin:auto}.about-box{max-width:620px}.contact-grid{gap:30px}}
+
+@media(max-width:1000px){
+
+.services-grid,.projects-grid{
+grid-template-columns:repeat(2,1fr)
+}
+
+.intro-grid,.about-grid,.contact-grid{
+grid-template-columns:1fr
+}
+
+.intro-visual{
+max-width:620px;
+width:100%;
+margin:auto
+}
+
+}
 
 /* MOBILE */
-@media(max-width:700px){section{padding:78px 0}.nav{min-height:74px}.logo{width:62px;height:50px}.brand-name{font-size:13px}.brand-name small{font-size:8px}.nav-links{position:absolute;top:74px;right:4%;left:4%;display:none;flex-direction:column;align-items:stretch;gap:0;background:rgba(7,26,43,.98);border:1px solid rgba(201,164,92,.2);border-radius:0 0 14px 14px;overflow:hidden}.nav-links.open{display:flex}.nav-links a{display:block;padding:14px 18px;border-bottom:1px solid rgba(255,255,255,.08)}.menu-btn{display:block}.hero{min-height:92vh}.hero-content{padding-top:100px}.hero h1{font-size:43px}.hero p{font-size:16px;line-height:1.9}.btn{padding:12px 20px}.btn-outline{margin-right:5px}.intro-grid{gap:40px}.intro-visual{height:330px;border-radius:20px}.intro-text h2{font-size:32px}.services-grid,.projects-grid,.why-grid{grid-template-columns:1fr}.stats-grid{grid-template-columns:1fr 1fr}.stat{border-left:none;border-bottom:1px solid rgba(255,255,255,.12)}.stat:nth-last-child(-n+2){border-bottom:none}.contact-info{padding:32px 25px}.social-simple{grid-template-columns:1fr}.social-simple-card{min-height:105px;flex-direction:row;justify-content:flex-start;padding:0 25px}.gallery-main{height:58vh}.close-gallery{top:-5px;left:5px}.gallery-arrow{width:42px;height:42px}.prev{right:8px}.next{left:8px}.footer-row{flex-direction:column;text-align:center}.footer-links{justify-content:center;flex-wrap:wrap}.whatsapp-float{left:17px;bottom:17px;width:55px;height:55px}.whatsapp-float svg{width:29px;height:29px}}
 
-.ss {
-  color: gold;
-  text-align: center;
+@media(max-width:700px){
+
+section{padding:72px 0}
+
+.nav{min-height:72px}
+
+.logo{
+width:57px;
+height:48px
+}
+
+.brand-name{font-size:13px}
+
+.menu-btn{display:block}
+
+.nav-links{
+display:none;
+position:absolute;
+top:72px;
+right:4%;
+left:4%;
+background:#071a2b;
+flex-direction:column;
+align-items:stretch;
+gap:0;
+border:1px solid #c9a45c44
+}
+
+.nav-links.open{display:flex}
+
+.nav-links a{
+display:block;
+padding:12px 17px;
+border-bottom:1px solid #ffffff15
+}
+
+.hero{min-height:90vh}
+
+.hero h1{font-size:43px}
+
+.hero p{font-size:16px}
+
+.services-grid,.why-grid,.projects-grid{
+grid-template-columns:1fr
+}
+
+.intro-visual{height:310px}
+
+.intro-text h2{font-size:31px}
+
+.about-box,.contact-info{
+padding:30px 24px
+}
+
+.social-simple{grid-template-columns:1fr}
+
+.footer-row{
+flex-direction:column;
+text-align:center
+}
+
+.footer-links{
+flex-wrap:wrap;
+justify-content:center
+}
+
+.prev{right:5px}
+.next{left:5px}
+
+.gallery-main{height:58vh}
+
+.close-gallery{
+left:5px;
+top:0
+}
+
 }
 </style>
 </head>
 
 <body>
 
-<!-- ================= HEADER ================= -->
+<!-- HEADER -->
 
 <header>
 <div class="container nav">
 
 <a href="#home" class="brand">
-<img src="logo.jpg.jpeg" alt="بند الثقة" class="logo">
-<span class="brand-name">بند الثقة<br><small>للمقاولات العامة</small></span>
+<img src="logo.jpg.jpeg" alt="شعار بند الثقة" class="logo">
+<span class="brand-name">
+بند الثقة<br>
+<small>للمقاولات العامة</small>
+</span>
 </a>
 
-<button class="menu-btn" id="menuBtn" aria-label="القائمة">☰</button>
+<button class="menu-btn" id="menuBtn">☰</button>
 
 <ul class="nav-links" id="navLinks">
 <li><a href="#home">الرئيسية</a></li>
@@ -201,16 +738,15 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 </div>
 </header>
 
-
 <main>
 
-<!-- ================= HERO ================= -->
+<!-- HERO -->
 
 <section class="hero" id="home">
 
 <div class="container hero-content reveal">
 
-<div class="hero-kicker">
+<div class="kicker">
 شركة بند الثقة للمقاولات العامة
 </div>
 
@@ -224,37 +760,28 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 مع اهتمام بالتفاصيل وجودة العمل والالتزام بالمواعيد.
 </p>
 
-<a href="#projects" class="btn">
-استكشف مشاريعنا
-</a>
+<a href="#projects" class="btn">استكشف مشاريعنا</a>
 
-<a href="#contact" class="btn btn-outline">
-تواصل معنا
-</a>
+<a href="#contact" class="btn btn-outline">تواصل معنا</a>
 
 </div>
 
 </section>
 
-
-<!-- ================= INTRO ================= -->
+<!-- INTRO -->
 
 <section class="intro-band">
 
 <div class="container intro-grid">
 
-<div class="intro-visual reveal" aria-hidden="true">
-  <div class="b-emblem"><div class="b-letter">ب</div></div>
-  <div class="b-line b-line-1"></div>
-  <div class="b-line b-line-2"></div>
-  <div class="b-caption">بند الثقة</div>
+<div class="intro-visual reveal">
+<div class="emblem">ب</div>
+<div class="intro-caption">بند الثقة</div>
 </div>
 
 <div class="intro-text reveal">
 
-<div class="mini">
-بند الثقة
-</div>
+<div class="section-kicker">بند الثقة</div>
 
 <h2>
 أكثر من مجرد تنفيذ...<br>
@@ -262,18 +789,16 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 </h2>
 
 <p>
-في شركة بند الثقة نرى أن كل مشروع يمثل صورة حقيقية عن مستوى العمل
-والالتزام الذي نقدمه لعملائنا.
+في شركة بند الثقة نرى أن كل مشروع يمثل صورة حقيقية
+عن مستوى العمل والالتزام الذي نقدمه لعملائنا.
 </p>
 
 <p>
-لذلك نبدأ بفهم احتياجات المشروع، ثم ننتقل إلى التخطيط والتنفيذ
-بأسلوب منظم يهتم بكل تفصيلة صغيرة.
+لذلك نبدأ بفهم احتياجات المشروع، ثم ننتقل إلى التخطيط
+والتنفيذ بأسلوب منظم يهتم بكل تفصيلة صغيرة.
 </p>
 
-<a href="#about" class="btn">
-اكتشف بند الثقة
-</a>
+<a href="#about" class="btn">اكتشف بند الثقة</a>
 
 </div>
 
@@ -281,8 +806,7 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 
 </section>
 
-
-<!-- ================= ABOUT ================= -->
+<!-- ABOUT -->
 
 <section class="about" id="about">
 
@@ -290,13 +814,9 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 
 <div class="section-head reveal">
 
-<div class="section-kicker">
-من نحن
-</div>
+<div class="section-kicker">من نحن</div>
 
-<h2>
-خبره تُبنى عليها الثقة  
-</h2>
+<h2>خبرة تُبنى عليها الثقة</h2>
 
 <p>
 نسعى لتقديم مستوى احترافي في كل مشروع من الفكرة وحتى التنفيذ.
@@ -308,9 +828,7 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 
 <div class="about-text reveal">
 
-<h3>
-الجودة تبدأ من التفاصيل
-</h3>
+<h3>الجودة تبدأ من التفاصيل</h3>
 
 <p>
 في بند الثقة نؤمن أن نجاح أي مشروع يبدأ بفهم احتياجات العميل،
@@ -320,10 +838,9 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 <p>
 نعمل على تقديم حلول عملية تجمع بين جودة التنفيذ،
 حسن التنظيم، والاهتمام بأدق التفاصيل.
-  <br>
-  خبره لأكثر من 25 عاما.
 </p>
-  
+
+<p>خبرة لأكثر من 25 عامًا.</p>
 
 <p>
 هدفنا ليس فقط إنهاء المشروع، بل تقديم نتيجة يشعر العميل
@@ -334,9 +851,7 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 
 <div class="about-box reveal">
 
-<h3>
-رؤيتنا
-</h3>
+<h3>رؤيتنا</h3>
 
 <p>
 أن نكون اسمًا موثوقًا في مجال المقاولات من خلال أعمال
@@ -346,13 +861,10 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-
-<!-- ================= SERVICES ================= -->
+<!-- SERVICES -->
 
 <section class="services" id="services">
 
@@ -360,13 +872,9 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 
 <div class="section-head reveal">
 
-<div class="section-kicker">
-ماذا نقدم؟
-</div>
+<div class="section-kicker">ماذا نقدم؟</div>
 
-<h2>
-حلول متكاملة لمشاريعك
-</h2>
+<h2>حلول متكاملة لمشاريعك</h2>
 
 <p>
 نهتم بتقديم خدمات منظمة ومتكاملة تساعد على تحويل الفكرة
@@ -378,45 +886,34 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 <div class="services-grid">
 
 <div class="service-card reveal">
-<div class="service-number">01</div>
+<div class="number">01</div>
 <h3>أعمال المقاولات</h3>
-<p>
-تنفيذ أعمال المقاولات وفق أسس منظمة واهتمام مستمر بجودة التفاصيل.
-</p>
+<p>تنفيذ أعمال المقاولات وفق أسس منظمة واهتمام مستمر بجودة التفاصيل.</p>
 </div>
 
 <div class="service-card reveal">
-<div class="service-number">02</div>
+<div class="number">02</div>
 <h3>التنفيذ والتشطيبات</h3>
-<p>
-حلول تنفيذ وتشطيبات تهدف للوصول إلى نتيجة احترافية ومتناسقة.
-</p>
+<p>حلول تنفيذ وتشطيبات تهدف للوصول إلى نتيجة احترافية ومتناسقة.</p>
 </div>
 
 <div class="service-card reveal">
-<div class="service-number">03</div>
+<div class="number">03</div>
 <h3>إدارة المشاريع</h3>
-<p>
-متابعة وتنظيم مراحل المشروع بما يساعد على تحقيق أفضل نتيجة ممكنة.
-</p>
+<p>متابعة وتنظيم مراحل المشروع بما يساعد على تحقيق أفضل نتيجة ممكنة.</p>
 </div>
 
 <div class="service-card reveal">
-<div class="service-number">04</div>
+<div class="number">04</div>
 <h3>أعمال التطوير</h3>
-<p>
-الاهتمام بتطوير وتنفيذ المشاريع بطريقة عملية تجمع بين الجودة والتنظيم.
-</p>
+<p>الاهتمام بتطوير وتنفيذ المشاريع بطريقة عملية تجمع بين الجودة والتنظيم.</p>
 </div>
 
 </div>
-
 </div>
-
 </section>
 
-
-<!-- ================= WHY ================= -->
+<!-- WHY -->
 
 <section class="why" id="why">
 
@@ -424,13 +921,9 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 
 <div class="section-head reveal">
 
-<div class="section-kicker">
-لماذا بند الثقة؟
-</div>
+<div class="section-kicker">لماذا بند الثقة؟</div>
 
-<h2>
-التزام في كل خطوة
-</h2>
+<h2>التزام في كل خطوة</h2>
 
 <p>
 نعمل وفق مبادئ واضحة تجعل تجربة العميل أكثر راحة وثقة.
@@ -443,215 +936,54 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 <div class="why-card reveal">
 <div class="number">01</div>
 <h3>جودة التنفيذ</h3>
-<p>
-نهتم بجودة العمل والتفاصيل للوصول إلى نتيجة تليق بتوقعات العميل.
-</p>
+<p>نهتم بجودة العمل والتفاصيل للوصول إلى نتيجة تليق بتوقعات العميل.</p>
 </div>
 
 <div class="why-card reveal">
 <div class="number">02</div>
 <h3>الالتزام</h3>
-<p>
-نقدر الوقت ونحرص على التنظيم والمتابعة المستمرة خلال مراحل المشروع.
-</p>
+<p>نقدر الوقت ونحرص على التنظيم والمتابعة المستمرة خلال مراحل المشروع.</p>
 </div>
 
 <div class="why-card reveal">
 <div class="number">03</div>
 <h3>الثقة</h3>
-<p>
-نبني علاقات طويلة المدى مع عملائنا تقوم على الوضوح والمصداقية.
-</p>
+<p>نبني علاقات طويلة المدى مع عملائنا تقوم على الوضوح والمصداقية.</p>
 </div>
 
 <div class="why-card reveal">
 <div class="number">04</div>
 <h3>الاهتمام بالتفاصيل</h3>
-<p>
-نؤمن أن التفاصيل الصغيرة هي التي تصنع الفرق في النتيجة النهائية.
-</p>
-</div>
+<p>نؤمن أن التفاصيل الصغيرة هي التي تصنع الفرق في النتيجة النهائية.</p>
 </div>
 
 </div>
-
+</div>
 </section>
 
-
-<!-- ================= PROJECTS ================= -->
+<!-- PROJECTS -->
 
 <section class="projects" id="projects">
 
 <div class="container">
 
 <div class="section-head reveal">
-
-<div class="section-kicker">
-أعمالنا
+<div class="section-kicker">أعمالنا</div>
+<h2>مشاريع نفتخر بها</h2>
 </div>
 
-<h2>
-مشاريع نفتخر بها
-</h2>
-
+<div class="projects-grid" id="projectsGrid"></div>
 
 </div>
-
-
-<div class="projects-grid">
-
-
-<!-- PROJECT 1 -->
-
-<div class="project-card reveal" onclick="openProject(1)">
-
-<div class="project-img">
-<img src="projects/q1.png" alt="المشروع الأول">
-</div>
-
-<div class="project-info">
-<small>مشروع 01</small>
-<h3>مشروع قصر قرطبه</h3>
-<p>اضغط هنا لعرض صور هذا المشروع</p>
-</div>
-
-</div>
-
-
-<!-- PROJECT 2 -->
-
-<div class="project-card reveal" onclick="openProject(2)">
-
-<div class="project-img">
-<img src="projects2/a1.jpeg" alt="المشروع الثاني">
-</div>
-
-<div class="project-info">
-<small>مشروع 02</small>
-<h3>greenica vie Restaurant & Cafe مشروعنا في حي العارض بالرياض</h3>
-<p>اضغط هنا لعرض صور هذا المشروع</p>
-</div>
-
-</div>
-
-
-<!-- PROJECT 3 -->
-
-<div class="project-card reveal" onclick="openProject(3)">
-
-<div class="project-img">
-<img src="projects3/n1.jpeg" alt="مشروع منتزه طريق النهضة">
-</div>
-
-<div class="project-info">
-<small>مشروع 03</small>
-<h3>مشروع منتزه طريق النهضة</h3>
-<p>اضغط هنا لعرض صور هذا المشروع</p>
-</div>
-
-</div>
-
-
-<!-- PROJECT 4 -->
-
-<div class="project-card reveal" onclick="openProject(4)">
-
-<div class="project-img">
-<img src="projects4/k1.jpeg" alt="مشروع القيروان">
-</div>
-
-<div class="project-info">
-<small>مشروع 04</small>
-<h3>مشروع القيروان</h3>
-<p>اضغط هنا لعرض صور هذا المشروع</p>
-</div>
-
-</div>
-
-
-<!-- PROJECT 5 -->
-
-<div class="project-card reveal" onclick="openProject(5)">
-
-<div class="project-img">
-<img src="projects5/h1.jpeg" alt="المشروع الخامس">
-</div>
-
-<div class="project-info">
-<small>مشروع 05</small>
-<h3>مشروع ترميم الحياه مول </h3>
-<p>اضغط هنا لعرض صور هذا المشروع.</p>
-</div>
-
-</div>
-
-
-<!-- PROJECT 6 -->
-
-<div class="project-card reveal" onclick="openProject(6)">
-
-<div class="project-img">
-<img src="projects6/L1.jpeg" alt="مشروع اللوحات الإرشادية بمدينة الرياض">
-</div>
-
-<div class="project-info">
-<small>مشروع 06</small>
-<h3>مشروع اللوحات الإرشادية بمدينة الرياض</h3>
-<p>استعرض تفاصيل المشروع وصوره.</p>
-</div>
-
-</div>
-
-
-<!-- PROJECT 7 -->
-
-<div class="project-card reveal" onclick="openProject(7)">
-
-<div class="project-img">
-<img src="projects7/p1.jpeg" alt="المشروع السابع">
-</div>
-
-<div class="project-info">
-<small>مشروع 07</small>
-<h3>مشروع بند الثقة السابع</h3>
-<p>نماذج من الأعمال المنفذة.</p>
-</div>
-
-</div>
-
-
-<!-- PROJECT 8 -->
-
-<div class="project-card reveal" onclick="openProject(8)">
-
-<div class="project-img">
-<img src="projects8/p1.jpeg" alt="المشروع الثامن">
-</div>
-
-<div class="project-info">
-<small>مشروع 08</small>
-<h3>مشروع بند الثقة الثامن</h3>
-<p>صور وتفاصيل إضافية من المشروع.</p>
-</div>
-
-</div>
-
-</div>
-
-</div>
-
 </section>
 
-
-<!-- ================= STATEMENT ================= -->
+<!-- STATEMENT -->
 
 <section class="statement">
 
 <div class="container reveal">
 
-<h2>
-الجودة ليست وعدًا... بل أسلوب عمل
-</h2>
+<h2>الجودة ليست وعدًا... بل أسلوب عمل</h2>
 
 <p>
 نسعى في كل مشروع إلى تقديم عمل احترافي يجمع بين الجودة،
@@ -660,11 +992,9 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 </p>
 
 </div>
-
 </section>
 
-
-<!-- ================= CONTACT ================= -->
+<!-- CONTACT -->
 
 <section class="contact" id="contact">
 
@@ -672,29 +1002,19 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 
 <div class="section-head reveal">
 
-<div class="section-kicker">
-تواصل معنا
-</div>
+<div class="section-kicker">تواصل معنا</div>
 
-<h2>
-نحن هنا لخدمتك
-</h2>
+<h2>نحن هنا لخدمتك</h2>
 
-<p>
-اختر وسيلة التواصل المناسبة لك وسنتواصل معك.
-</p>
+<p>اختر وسيلة التواصل المناسبة لك وسنتواصل معك.</p>
 
 </div>
-
 
 <div class="contact-grid">
 
-
 <div class="contact-info reveal">
 
-<h3>
-ابدأ مشروعك معنا
-</h3>
+<h3>ابدأ مشروعك معنا</h3>
 
 <p>
 للاستفسارات وطلبات المشاريع، يمكنك التواصل معنا مباشرة
@@ -702,126 +1022,47 @@ footer{background:#051522;color:#fff;padding:50px 0 25px}.footer-row{display:fle
 </p>
 
 <div class="contact-points">
-  <div><span class="point-icon">✓</span><span>استجابة سريعة للاستفسارات</span></div>
-  <div><span class="point-icon">✓</span><span>حلول متكاملة للمقاولات</span></div>
-  <div><span class="point-icon">✓</span><span>خدمة داخل المملكة العربية السعودية</span></div>
+<div>✓ استجابة سريعة للاستفسارات</div>
+<div>✓ حلول متكاملة للمقاولات</div>
+<div>✓ خدمة داخل المملكة العربية السعودية</div>
 </div>
 
 </div>
 
 <div class="social-simple reveal">
 
-
-<a class="social-simple-card"
+<a class="social-card"
 href="https://wa.me/966504550030"
-target="_blank"
-rel="noopener">
-
-<div class="simple-icon">
-
-<svg viewBox="0 0 32 32" aria-hidden="true">
-  <path fill="#25D366" d="M16 2.4C8.49 2.4 2.4 8.49 2.4 16c0 2.4.63 4.66 1.82 6.62L2.5 29.6l7.15-1.69A13.53 13.53 0 0 0 16 29.6c7.51 0 13.6-6.09 13.6-13.6S23.51 2.4 16 2.4Z"/>
-  <path fill="#fff" d="M22.65 18.87c-.36-.18-2.12-1.05-2.45-1.17-.33-.12-.57-.18-.81.18-.24.36-.93 1.17-1.14 1.41-.21.24-.42.27-.78.09-.36-.18-1.51-.56-2.87-1.78-1.06-.95-1.78-2.12-1.99-2.48-.21-.36-.02-.56.16-.74.16-.16.36-.42.54-.63.18-.21.24-.36.36-.6.12-.24.06-.45-.03-.63-.09-.18-.81-1.95-1.11-2.67-.29-.7-.59-.6-.81-.61h-.69c-.24 0-.63.09-.96.45-.33.36-1.26 1.23-1.26 3s1.29 3.48 1.47 3.72c.18.24 2.53 3.86 6.13 5.41.86.37 1.53.59 2.05.75.86.27 1.64.23 2.26.14.69-.1 2.12-.87 2.42-1.71.3-.84.3-1.56.21-1.71-.09-.15-.33-.24-.69-.42Z"/>
-</svg>
-
-</div>
-
-<span>واتساب</span>
-
+target="_blank" rel="noopener">
+<span>☏</span>واتساب
 </a>
 
-
-<a class="social-simple-card"
+<a class="social-card"
 href="https://www.instagram.com/bandeltheqa?stkn=MWIzb3BuYmZraDliOQ=="
-target="_blank"
-rel="noopener">
-
-<div class="simple-icon">
-
-<svg viewBox="0 0 24 24">
-
-<rect x="3" y="3"
-width="18"
-height="18"
-rx="5"
-fill="none"
-stroke="#C13584"
-stroke-width="2"/>
-
-<circle cx="12"
-cy="12"
-r="4.2"
-fill="none"
-stroke="#C13584"
-stroke-width="2"/>
-
-<circle cx="17.5"
-cy="6.7"
-r="1.2"
-fill="#C13584"/>
-
-</svg>
-
-</div>
-
-<span>Instagram</span>
-
+target="_blank" rel="noopener">
+<span>◎</span>Instagram
 </a>
 
-
-<a class="social-simple-card"
+<a class="social-card"
 href="https://vm.tiktok.com/ZS9DL6Hyu4uCC-tq3qJ/"
-target="_blank"
-rel="noopener">
-
-<div class="simple-icon">
-
-<svg viewBox="0 0 24 24">
-
-<path fill="#111"
-d="M15.8 3c.3 1.7 1.3 3 3.1 3.8.7.3 1.4.5 2.1.5v3.1c-1.3 0-2.6-.3-3.8-.9v6.2c0 3.5-2.6 5.7-5.9 5.7-3.1 0-5.4-2.3-5.4-5.2 0-3.1 2.6-5.4 5.9-5.4.4 0 .8 0 1.2.1v3.2c-.4-.1-.8-.2-1.2-.2-1.4 0-2.5.9-2.5 2.2 0 1.2 1 2.1 2.2 2.1 1.5 0 2.5-1 2.5-2.8V3h1.8Z"/>
-
-</svg>
-
-</div>
-
-<span>TikTok</span>
-
+target="_blank" rel="noopener">
+<span>♪</span>TikTok
 </a>
 
-<!-- ================= FACEBOOK ================= -->
-<!-- غيّري الرابط التالي إلى رابط صفحة Facebook الخاصة ببند الثقة -->
-<a class="social-simple-card"
+<a class="social-card"
 href="https://www.facebook.com/profile.php?id=61594770760113&locale=ar_AR"
-target="_blank"
-rel="noopener"
-aria-label="فيسبوك بند الثقة">
-
-<div class="simple-icon">
-
-<svg viewBox="0 0 24 24" aria-hidden="true">
-  <path fill="#1877F2" d="M24 12.07C24 5.4 18.63 0 12 0S0 5.4 0 12.07C0 18.09 4.39 23.08 10.13 24v-8.44H7.08v-3.49h3.05V9.41c0-3.03 1.79-4.72 4.53-4.72 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.96.93-1.96 1.88v2.29h3.34l-.53 3.49h-2.81V24C19.61 23.08 24 18.09 24 12.07Z"/>
-  <path fill="#fff" d="M16.68 15.56l.53-3.49h-3.34V9.78c0-.95.47-1.88 1.96-1.88h1.51V4.93s-1.37-.24-2.68-.24c-2.74 0-4.53 1.69-4.53 4.72v2.66H7.08v3.49h3.05V24c.61.1 1.23.15 1.87.15s1.26-.05 1.87-.15v-8.44h2.81Z"/>
-</svg>
-
-</div>
-
-<span>Facebook</span>
-
+target="_blank" rel="noopener">
+<span>f</span>Facebook
 </a>
 
 </div>
-
 </div>
-
 </div>
-
 </section>
 
 </main>
 
-
-<!-- ================= FOOTER ================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -830,8 +1071,14 @@ aria-label="فيسبوك بند الثقة">
 <div class="footer-row">
 
 <div class="footer-brand">
+
 <img src="logo.jpg.jpeg" alt="بند الثقة" class="footer-logo">
-<div class="footer-brand-name">بند الثقة<br><small>للمقاولات العامة</small></div>
+
+<div>
+بند الثقة<br>
+<small>للمقاولات العامة</small>
+</div>
+
 </div>
 
 <div class="footer-text">
@@ -839,696 +1086,363 @@ aria-label="فيسبوك بند الثقة">
 </div>
 
 <div class="footer-links">
-
 <a href="#home">الرئيسية</a>
 <a href="#about">من نحن</a>
 <a href="#projects">المشاريع</a>
 <a href="#contact">تواصل معنا</a>
-
 </div>
 
 </div>
 
-<span class="copyright">
+<div class="copyright">
+
 © 2026 بند الثقة للمقاولات العامة - جميع الحقوق محفوظة.
-<br><span class="ss">برمجة وتطوير م/ سلمى وائل</span>
-</span>
+
+<br>
+
+<span class="ss">برمجة وتطوير م/ سلمى وائل</span>
 
 </div>
-
+</div>
 </footer>
 
+<!-- GALLERY -->
 
-<!-- ================= GALLERIES ================= -->
-
-<div class="gallery-modal" id="gallery1">
-
-<div class="gallery-inner">
-
-<button class="close-gallery"
-onclick="closeGallery(1)">
-×
-</button>
-
-<button class="gallery-arrow prev"
-onclick="changeImage(1,-1)">
-›
-</button>
-
-<button class="gallery-arrow next"
-onclick="changeImage(1,1)">
-‹
-</button>
-
-<div class="gallery-main">
-<img id="mainImage1" src="projects/q1.png" alt="">
-</div>
-
-<div class="gallery-bottom">
-<div class="counter" id="counter1"></div>
-<div class="thumbs" id="thumbs1"></div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="gallery-modal" id="gallery2">
+<div class="gallery-modal" id="galleryModal">
 
 <div class="gallery-inner">
 
-<button class="close-gallery"
-onclick="closeGallery(2)">
-×
-</button>
+<button class="close-gallery" id="closeGallery">×</button>
 
-<button class="gallery-arrow prev"
-onclick="changeImage(2,-1)">
-›
-</button>
+<button class="gallery-arrow prev" id="prevImage">›</button>
 
-<button class="gallery-arrow next"
-onclick="changeImage(2,1)">
-‹
-</button>
+<button class="gallery-arrow next" id="nextImage">‹</button>
 
-<div class="gallery-main">
-<img id="mainImage2" src="projects2/a1.jpeg" alt="">
-</div>
-
-<div class="gallery-bottom">
-<div class="counter" id="counter2"></div>
-<div class="thumbs" id="thumbs2"></div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="gallery-modal" id="gallery3">
-
-<div class="gallery-inner">
-
-<button class="close-gallery"
-onclick="closeGallery(3)">
-×
-</button>
-
-<button class="gallery-arrow prev"
-onclick="changeImage(3,-1)">
-›
-</button>
-
-<button class="gallery-arrow next"
-onclick="changeImage(3,1)">
-‹
-</button>
-
-<div class="gallery-main">
-<img id="mainImage3" src="projects3/n1.jpeg" alt="">
-</div>
-
-<div class="gallery-bottom">
-<div class="counter" id="counter3"></div>
-<div class="thumbs" id="thumbs3"></div>
-</div>
-
-</div>
-
-</div>
-
-
-<!-- PROJECT 4 - AL QIRWAN -->
-
-<div class="gallery-modal" id="gallery4">
-
-<div class="gallery-inner">
-
-<button class="close-gallery"
-onclick="closeGallery(4)">
-×
-</button>
-
-<button class="gallery-arrow prev"
-onclick="changeImage(4,-1)">
-›
-</button>
-
-<button class="gallery-arrow next"
-onclick="changeImage(4,1)">
-‹
-</button>
-
-<div class="gallery-main">
-
-<img id="mainImage4"
-src="projects4/k1.jpeg"
-alt="مشروع القيروان">
-
-<video id="mainVideo4"
-controls
-playsinline
-style="display:none;">
-
-<source id="mainVideoSource4"
-src=""
-type="video/mp4">
-
-متصفحك لا يدعم تشغيل الفيديو.
-
-</video>
-
-</div>
+<div class="gallery-main" id="galleryMain"></div>
 
 <div class="gallery-bottom">
 
-<div class="counter"
-id="counter4"></div>
+<div class="counter" id="counter"></div>
 
-<div class="thumbs"
-id="thumbs4"></div>
+<div class="thumbs" id="thumbs"></div>
 
 </div>
-
 </div>
-
 </div>
-
-
-<!-- PROJECT 5 -->
-
-<div class="gallery-modal" id="gallery5">
-
-<div class="gallery-inner">
-
-<button class="close-gallery"
-onclick="closeGallery(5)">
-×
-</button>
-
-<button class="gallery-arrow prev"
-onclick="changeImage(5,-1)">
-›
-</button>
-
-<button class="gallery-arrow next"
-onclick="changeImage(5,1)">
-‹
-</button>
-
-<div class="gallery-main">
-
-<img id="mainImage5"
-src="projects5/h1.jpeg"
-alt="المشروع الخامس">
-
-<video id="mainVideo5"
-controls
-playsinline
-style="display:none;">
-
-<source id="mainVideoSource5"
-src=""
-type="video/mp4">
-
-متصفحك لا يدعم تشغيل الفيديو.
-
-</video>
-
-</div>
-
-<div class="gallery-bottom">
-
-<div class="counter"
-id="counter5"></div>
-
-<div class="thumbs"
-id="thumbs5"></div>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="gallery-modal" id="gallery6">
-
-<div class="gallery-inner">
-
-<button class="close-gallery"
-onclick="closeGallery(6)">
-×
-</button>
-
-<button class="gallery-arrow prev"
-onclick="changeImage(6,-1)">
-›
-</button>
-
-<button class="gallery-arrow next"
-onclick="changeImage(6,1)">
-‹
-</button>
-
-<div class="gallery-main">
-<img id="mainImage6" src="projects6/L1.jpeg" alt="مشروع اللوحات الإرشادية بمدينة الرياض">
-</div>
-
-<div class="gallery-bottom">
-<div class="counter" id="counter6"></div>
-<div class="thumbs" id="thumbs6"></div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="gallery-modal" id="gallery7">
-
-<div class="gallery-inner">
-
-<button class="close-gallery"
-onclick="closeGallery(7)">
-×
-</button>
-
-<button class="gallery-arrow prev"
-onclick="changeImage(7,-1)">
-›
-</button>
-
-<button class="gallery-arrow next"
-onclick="changeImage(7,1)">
-‹
-</button>
-
-<div class="gallery-main">
-<img id="mainImage7" src="projects7/p1.jpeg" alt="">
-</div>
-
-<div class="gallery-bottom">
-<div class="counter" id="counter7"></div>
-<div class="thumbs" id="thumbs7"></div>
-</div>
-
-</div>
-
-</div>
-
-
-<div class="gallery-modal" id="gallery8">
-
-<div class="gallery-inner">
-
-<button class="close-gallery"
-onclick="closeGallery(8)">
-×
-</button>
-
-<button class="gallery-arrow prev"
-onclick="changeImage(8,-1)">
-›
-</button>
-
-<button class="gallery-arrow next"
-onclick="changeImage(8,1)">
-‹
-</button>
-
-<div class="gallery-main">
-<img id="mainImage8" src="projects8/p1.jpeg" alt="">
-</div>
-
-<div class="gallery-bottom">
-<div class="counter" id="counter8"></div>
-<div class="thumbs" id="thumbs8"></div>
-</div>
-
-</div>
-
-</div>
-
 
 <script>
 
-/* ================= PROJECT IMAGES ================= */
+/* ================= PROJECTS ================= */
 
-const galleries = {
+const projects = [
 
-1:[
-"projects/q1.png",
-"projects/q2.png",
-"projects/q3.png",
-"projects/q4.png",
-"projects/q5.png",
-"projects/q6.png",
-"projects/q7.png",
-"projects/q8.png"
-],
-
-2:[
-"projects2/a1.jpeg",
-"projects2/a2.jpeg",
-"projects2/a3.jpeg",
-"projects2/a4.jpeg",
-"projects2/a5.jpeg",
-"projects2/a6.jpeg",
-"projects2/a7.jpeg",
-"projects2/a8.jpeg"
-],
-
-3:[
-"projects3/n1.jpeg",
-"projects3/n2.jpeg",
-"projects3/n3.jpeg",
-"projects3/n4.jpeg",
-"projects3/n5.jpeg",
-"projects3/n6.jpeg"
-],
-
-4:[
-"projects4/k1.jpeg",
-"projects4/k2.jpeg",
-"projects4/k3.jpeg",
-"projects4/k4.jpeg",
-"projects4/k5.jpeg",
-"projects4/k6.jpeg",
-"projects4/kv7.mp4"
-],
-
-5:[
-"projects5/h1.jpeg",
-"projects5/h2.jpeg",
-"projects5/h3.jpeg",
-"projects5/h4.jpeg",
-"projects5/h5.jpeg",
-"projects5/h6.jpeg",
-"projects5/hv7.mp4"
-],
-
-6:[
-"projects6/L1.jpeg",
-"projects6/L2.jpeg",
-"projects6/L3.jpeg",
-"projects6/L4.jpeg",
-"projects6/L5.jpeg",
-"projects6/L6.jpeg",
-"projects6/L7.jpeg",
-"projects6/L8.jpeg",
-"projects6/L9.jpeg"
-],
-
-7:[
-"projects7/p1.jpeg",
-"projects7/p2.jpeg",
-"projects7/p3.jpeg",
-"projects7/p4.jpeg",
-"projects7/p5.jpeg",
-"projects7/p6.jpeg"
-],
-
-8:[
-"projects8/p1.jpeg",
-"projects8/p2.jpeg",
-"projects8/p3.jpeg",
-"projects8/p4.jpeg",
-"projects8/p5.jpeg",
-"projects8/p6.jpeg"
+{
+title:"مشروع قصر قرطبه",
+folder:"projects",
+cover:"q1.png",
+images:[
+"q1.png","q2.png","q3.png","q4.png",
+"q5.png","q6.png","q7.png","q8.png"
 ]
+},
 
-};
+{
+title:"greenica vie Restaurant & Cafe - حي العارض بالرياض",
+folder:"projects2",
+cover:"a1.jpeg",
+images:[
+"a1.jpeg","a2.jpeg","a3.jpeg","a4.jpeg",
+"a5.jpeg","a6.jpeg","a7.jpeg","a8.jpeg"
+]
+},
+
+{
+title:"مشروع منتزه طريق النهضة",
+folder:"projects3",
+cover:"n1.jpeg",
+images:[
+"n1.jpeg","n2.jpeg","n3.jpeg",
+"n4.jpeg","n5.jpeg","n6.jpeg"
+]
+},
+
+{
+title:"مشروع القيروان",
+folder:"projects4",
+cover:"k1.jpeg",
+images:[
+"k1.jpeg","k2.jpeg","k3.jpeg",
+"k4.jpeg","k5.jpeg","k6.jpeg","kv7.mp4"
+]
+},
+
+{
+title:"مشروع ترميم الحياة مول",
+folder:"projects5",
+cover:"h1.jpeg",
+images:[
+"h1.jpeg","h2.jpeg","h3.jpeg",
+"h4.jpeg","h5.jpeg","h6.jpeg","hv7.mp4"
+]
+},
+
+{
+title:"مشروع اللوحات الإرشادية بمدينة الرياض",
+folder:"projects6",
+cover:"L1.jpeg",
+images:[
+"L1.jpeg","L2.jpeg","L3.jpeg","L4.jpeg",
+"L5.jpeg","L6.jpeg","L7.jpeg","L8.jpeg","L9.jpeg"
+]
+},
+
+/* PROJECT 7 - الصور الـ 11 */
+
+{
+title:"مشروع بند الثقة السابع",
+folder:"projects7",
+cover:"sh.jpeg",
+images:[
+"sh.jpeg",
+"sh2.jpeg",
+"sh3.jpeg",
+"sh4.jpeg",
+"sh5.jpeg",
+"sh6.jpeg",
+"sh7.jpeg",
+"sh8.jpeg",
+"sh9.jpeg",
+"sh10.jpeg",
+"sh11.jpeg"
+]
+},
+
+{
+title:"مشروع بند الثقة الثامن",
+folder:"projects8",
+cover:"p1.jpeg",
+images:[
+"p1.jpeg","p2.jpeg","p3.jpeg",
+"p4.jpeg","p5.jpeg","p6.jpeg"
+]
+}
+
+];
 
 
-const currentIndex = {
-1:0,
-2:0,
-3:0,
-4:0,
-5:0,
-6:0,
-7:0,
-8:0
-};
+/* ================= DISPLAY PROJECTS ================= */
+
+const projectsGrid=document.getElementById("projectsGrid");
+
+projects.forEach((project,index)=>{
+
+const card=document.createElement("article");
+
+card.className="project-card reveal";
+
+card.innerHTML=`
+<div class="project-img">
+<img src="${project.folder}/${project.cover}" alt="${project.title}">
+</div>
+
+<div class="project-info">
+<small>مشروع ${String(index+1).padStart(2,"0")}</small>
+<h3>${project.title}</h3>
+<p>اضغط هنا لعرض صور هذا المشروع</p>
+</div>
+`;
+
+card.addEventListener("click",()=>openGallery(index));
+
+projectsGrid.appendChild(card);
+
+});
 
 
 /* ================= GALLERY ================= */
 
-function buildThumbs(id){
+const modal=document.getElementById("galleryModal");
 
-const box = document.getElementById("thumbs"+id);
+const galleryMain=document.getElementById("galleryMain");
 
-box.innerHTML = "";
+const thumbs=document.getElementById("thumbs");
 
-galleries[id].forEach((src,index)=>{
+const counter=document.getElementById("counter");
 
-/* الفيديو */
+let activeProject=0;
 
-if(src.toLowerCase().endsWith(".mp4")){
+let activeIndex=0;
 
-const videoThumb = document.createElement("div");
 
-videoThumb.className = "video-thumb";
+function openGallery(projectIndex){
 
-videoThumb.textContent = "▶ فيديو";
+activeProject=projectIndex;
 
-videoThumb.onclick = function(){
+activeIndex=0;
 
-showImage(id,index);
+renderGallery();
 
-};
-
-box.appendChild(videoThumb);
-
-}
-
-/* الصور */
-
-else{
-
-const img = document.createElement("img");
-
-img.src = src;
-
-img.alt = "صورة "+(index+1);
-
-img.onclick = function(){
-
-showImage(id,index);
-
-};
-
-box.appendChild(img);
-
-}
-
-});
-
-}
-
-
-function showImage(id,index){
-
-const list = galleries[id];
-
-if(index < 0)
-index = list.length-1;
-
-if(index >= list.length)
-index = 0;
-
-currentIndex[id] = index;
-
-const src = list[index];
-
-const mainImage =
-document.getElementById("mainImage"+id);
-
-const mainVideo =
-document.getElementById("mainVideo"+id);
-
-const mainVideoSource =
-document.getElementById("mainVideoSource"+id);
-
-
-/* لو فيديو */
-
-if(src.toLowerCase().endsWith(".mp4")){
-
-if(mainImage){
-mainImage.style.display = "none";
-}
-
-if(mainVideo){
-
-mainVideo.style.display = "block";
-
-mainVideoSource.src = src;
-
-mainVideo.load();
-
-}
-
-}
-
-
-/* لو صورة */
-
-else{
-
-if(mainVideo){
-
-mainVideo.pause();
-
-mainVideo.style.display = "none";
-
-}
-
-if(mainImage){
-
-mainImage.style.display = "block";
-
-mainImage.src = src;
-
-}
-
-}
-
-
-/* العداد */
-
-document.getElementById("counter"+id).textContent =
-(index+1)+" / "+list.length;
-
-
-/* تحديد العنصر الحالي */
-
-document
-.querySelectorAll(
-"#thumbs"+id+" img, #thumbs"+id+" .video-thumb"
-)
-.forEach((item,i)=>{
-
-item.classList.toggle(
-"active",
-i===index
-);
-
-});
-
-}
-
-
-function openGallery(id){
-
-buildThumbs(id);
-
-showImage(id,0);
-
-document
-.getElementById("gallery"+id)
-.classList.add("active");
+modal.classList.add("active");
 
 document.body.style.overflow="hidden";
 
 }
 
 
-function closeGallery(id){
+function closeGallery(){
 
-const mainVideo =
-document.getElementById("mainVideo"+id);
+const video=galleryMain.querySelector("video");
 
-if(mainVideo){
+if(video) video.pause();
 
-mainVideo.pause();
-
-mainVideo.style.display = "none";
-
-}
-
-document
-.getElementById("gallery"+id)
-.classList.remove("active");
+modal.classList.remove("active");
 
 document.body.style.overflow="";
 
 }
 
 
-function changeImage(id,step){
+function showImage(index){
 
-showImage(
-id,
-currentIndex[id]+step
-);
+const list=projects[activeProject].images;
 
-}
+activeIndex=(index+list.length)%list.length;
 
-
-function openProject(id){
-
-openGallery(id);
+renderGallery();
 
 }
 
 
-/* ================= CLOSE ON BACKGROUND ================= */
+function renderGallery(){
 
-document
-.querySelectorAll(".gallery-modal")
-.forEach(modal=>{
+const project=projects[activeProject];
+
+const src=project.folder+"/"+project.images[activeIndex];
+
+galleryMain.innerHTML="";
+
+
+/* VIDEO OR IMAGE */
+
+if(src.toLowerCase().endsWith(".mp4")){
+
+const video=document.createElement("video");
+
+video.src=src;
+
+video.controls=true;
+
+video.playsInline=true;
+
+galleryMain.appendChild(video);
+
+}else{
+
+const img=document.createElement("img");
+
+img.src=src;
+
+img.alt=project.title+" - صورة "+(activeIndex+1);
+
+galleryMain.appendChild(img);
+
+}
+
+
+/* COUNTER */
+
+counter.textContent=
+(activeIndex+1)+" / "+project.images.length;
+
+
+/* THUMBNAILS */
+
+thumbs.innerHTML="";
+
+project.images.forEach((file,index)=>{
+
+const path=project.folder+"/"+file;
+
+let item;
+
+if(file.toLowerCase().endsWith(".mp4")){
+
+item=document.createElement("button");
+
+item.type="button";
+
+item.className="video-thumb";
+
+item.textContent="▶ فيديو";
+
+}else{
+
+item=document.createElement("img");
+
+item.src=path;
+
+item.alt="صورة مصغرة "+(index+1);
+
+}
+
+if(index===activeIndex){
+
+item.classList.add("active");
+
+}
+
+item.addEventListener("click",()=>showImage(index));
+
+thumbs.appendChild(item);
+
+});
+
+}
+
+
+/* ================= GALLERY BUTTONS ================= */
+
+document.getElementById("closeGallery")
+.addEventListener("click",closeGallery);
+
+document.getElementById("prevImage")
+.addEventListener("click",()=>showImage(activeIndex-1));
+
+document.getElementById("nextImage")
+.addEventListener("click",()=>showImage(activeIndex+1));
+
 
 modal.addEventListener("click",e=>{
 
-if(e.target === modal){
+if(e.target===modal){
 
-closeGallery(
-modal.id.replace("gallery","")
-);
+closeGallery();
 
 }
 
 });
 
-});
 
-
-/* ================= KEYBOARD ================= */
+/* KEYBOARD */
 
 document.addEventListener("keydown",e=>{
 
-const active =
-document.querySelector(".gallery-modal.active");
+if(!modal.classList.contains("active"))return;
 
-if(!active)
-return;
+if(e.key==="Escape")closeGallery();
 
-const id =
-Number(active.id.replace("gallery",""));
+if(e.key==="ArrowRight")showImage(activeIndex-1);
 
-if(e.key === "Escape")
-closeGallery(id);
-
-if(e.key === "ArrowRight")
-changeImage(id,-1);
-
-if(e.key === "ArrowLeft")
-changeImage(id,1);
+if(e.key==="ArrowLeft")showImage(activeIndex+1);
 
 });
 
 
 /* ================= MOBILE MENU ================= */
 
-const menuBtn =
-document.getElementById("menuBtn");
+const menuBtn=document.getElementById("menuBtn");
 
-const navLinks =
-document.getElementById("navLinks");
+const navLinks=document.getElementById("navLinks");
 
 menuBtn.addEventListener("click",()=>{
 
@@ -1536,10 +1450,7 @@ navLinks.classList.toggle("open");
 
 });
 
-
-document
-.querySelectorAll("#navLinks a")
-.forEach(link=>{
+document.querySelectorAll("#navLinks a").forEach(link=>{
 
 link.addEventListener("click",()=>{
 
@@ -1552,10 +1463,7 @@ navLinks.classList.remove("open");
 
 /* ================= SCROLL ANIMATION ================= */
 
-const observer =
-new IntersectionObserver(
-
-entries=>{
+const observer=new IntersectionObserver(entries=>{
 
 entries.forEach(entry=>{
 
@@ -1567,21 +1475,16 @@ entry.target.classList.add("show");
 
 });
 
-},
-
-{
-threshold:.12
-}
-
-);
+},{threshold:.12});
 
 
-document
-.querySelectorAll(".reveal")
-.forEach(el=>observer.observe(el));
+document.querySelectorAll(".reveal").forEach(el=>{
+
+observer.observe(el);
+
+});
 
 </script>
 
 </body>
 </html>
-
